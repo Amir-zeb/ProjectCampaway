@@ -19,5 +19,3 @@ if (open_media_btn) {
         media_sec.classList.remove("close");
     })
 }
-
-console.log("there");
