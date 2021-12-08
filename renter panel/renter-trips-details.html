@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips | Renter Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./renter-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a href="#" class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/media/scene1.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_wrapper">
+                                            <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Switch To Host Dashboard</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/chat.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/road-trip.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Trips</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/heart.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Favourites</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user 1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Become A Host</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user 1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Profile</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user 1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Account</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Help</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="renter_reservation">
+        <div class="breadcrumb_links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>
+                            Trips
+                        </h2>
+                        <div class="links">
+                            <a href="./renter-dashboard.html">Dashboard</a> > <a href="#">Trips</a> > <a href="#"
+                                class="active">Trips Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="trips_details">
+            <div class="flex_wrapper">
+                <div class="column_left">
+                    <div class="success_msg">
+                        <p>Well done! Payment received the reservation has been booked</p><span>&times;</span>
+                    </div>
+                    <h3>Reservation #1440<span class="badge">Booked</span></h3>
+                    <div class="cancel_booking">
+                        <form action="">
+                            <h4>Cancel Reason</h4>
+                            <div class="input_wrapper">
+                                <textarea name="" id="" rows="3"></textarea>
+                            </div>
+                            <div class="">
+                                <p>
+                                    Depending on the Host's Terms & Conditions, you may receive a full or partial refund
+                                    on your booking minus service fees as specified in our <a href="#">Terms of Use</a>
+                                </p>
+                                <a href="#">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="column_right">
+                    <h3>Payment</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td align="left">
+                                        <strong>Total</strong>
+                                    </td>
+                                    <td align="left">
+                                        $6,450.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        Includes taxes and fees
+                                    </td>
+                                    <td align="right">
+                                        <a href="#">View Details</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_wrapper">
+                        <a href="#">View My Invoice</a>
+                        <a href="#">Edit My Booking</a>
+                        <a href="#">Cancel My Booking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

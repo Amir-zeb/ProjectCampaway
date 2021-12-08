@@ -1,0 +1,60 @@
+.trips_table{
+    table{
+        border-bottom: 1px solid #333;
+        min-width: 720px;
+        th{
+            border: 1px solid #333;
+            border-left: 0;
+            border-right: 0;
+            font-size: clamp(0.7rem,1vw,0.9rem);
+            padding: 1em 0.2em;
+            text-align: center;
+            color: #333;
+            vertical-align: middle;
+        }
+        td{
+            align-items: center;
+            vertical-align: middle;
+            text-align: center;
+            border: 0;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid #333;
+            img{
+                max-width: 85px;
+                min-width: 45px;
+            }
+            p{
+                font-size: clamp(0.7rem,1vw,0.9rem);
+                color: $primary_color;
+                strong{
+                    color: inherit;
+                    font-weight: 600;
+                }
+            }
+            .badge{
+                background-color: $green;
+                border-radius: 10px;
+            }
+            .btn_wrapper{
+                display: flex;
+                column-gap: 10px;
+                justify-content: center;
+            }
+            a{
+                color: $primary_color;
+                &:not(.view_all){
+                    border: 2px solid $primary_color;
+                    font-size: clamp(0.7rem,1vw,0.95rem);
+                    padding: 0.2em 0.5em;
+                    border-radius: 5px;
+                }
+                &.view_all{
+                    font-size: 0.7rem;
+                    text-decoration: underline;
+                    text-decoration-color: $primary_color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import url('../../fonts/poppins-fonts.css?family=poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    color: #333;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5
+,h6{
+    margin: 0;
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    &:hover{
+        @extend a;
+    }
+}
+
+ul,
+ol{
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    margin: 0;
+}
+
+:root{
+    --primaryColor: #2C615F;
+    --green: #8AC544;
+    --light-grey:#F8F8F8;
+    --grey:#D8D8D8;
+}
+
+$primary_color: var(--primaryColor);
+$green: var(--green);
+$light-grey: var(--light-grey);
+$grey: var(--grey);
+
+@import 'mixins','breadcrumb','header','chatbox','renterDashboard','renterTrips','renter_style';
