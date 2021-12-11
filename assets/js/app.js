@@ -19,3 +19,10 @@ if (open_media_btn) {
         media_sec.classList.remove("close");
     })
 }
+
+var cancel_booking = document.querySelector('.cancel_booking');
+
+function CloseMsg() {
+    console.log("there");
+    cancel_booking.classList.remove("d-none");
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | Renter Dashboard</title>
+    <title>Trips Details | Renter Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -54,7 +54,7 @@
                     <div class="user_dropdown">
                         <a href="#" class="user_info">
                             <div class="img_wrapper">
-                                <img src="../assets/images/media/scene1.png" alt="user-image" class="img-fluid">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
                             </div>
                             <div class="user_info">
                                 <h4>Lea Joe</h4>
@@ -65,7 +65,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="img_wrapper">
-                                            <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Switch To Host Dashboard</h4>
                                     </a>
@@ -97,7 +97,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user 1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Become A Host</h4>
                                     </a>
@@ -105,15 +105,15 @@
                                 <li>
                                     <a href="#">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user 1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Profile</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./renter-account.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user 1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Account</h4>
                                     </a>
@@ -141,7 +141,7 @@
             </div>
         </nav>
     </header>
-    <main class="renter_reservation">
+    <main class="renter_trips">
         <div class="breadcrumb_links">
             <div class="container">
                 <div class="row">
@@ -150,8 +150,8 @@
                             Trips
                         </h2>
                         <div class="links">
-                            <a href="./renter-dashboard.html">Dashboard</a> > <a href="#">Trips</a> > <a href="#"
-                                class="active">Trips Details</a>
+                            <a href="./renter-dashboard.html">Dashboard</a> > <a href="./renter-trips.html">Trips</a> >
+                            <a class="active">Trips Details</a>
                         </div>
                     </div>
                 </div>
@@ -163,23 +163,146 @@
                     <div class="success_msg">
                         <p>Well done! Payment received the reservation has been booked</p><span>&times;</span>
                     </div>
-                    <h3>Reservation #1440<span class="badge">Booked</span></h3>
-                    <div class="cancel_booking">
+                    <div class="heading_wrapper">
+                        <h3>Reservation #1440<span class="badge">Booked</span></h3>
+                        <div class="icon_wrapper">
+                            <a href="#" class="img_wrapper">
+                                <img src="../assets/images/icons/fax.png" alt="">
+                            </a>
+                            <a href="#" class="img_wrapper">
+                                <img src="../assets/images/icons/evenlope.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cancel_booking d-none">
                         <form action="">
                             <h4>Cancel Reason</h4>
                             <div class="input_wrapper">
                                 <textarea name="" id="" rows="3"></textarea>
                             </div>
-                            <div class="">
+                            <div class="wrapper">
                                 <p>
                                     Depending on the Host's Terms & Conditions, you may receive a full or partial refund
                                     on your booking minus service fees as specified in our <a href="#">Terms of Use</a>
                                 </p>
-                                <a href="#">Submit</a>
+                                <input type="button" value="Submit">
                             </div>
                         </form>
                     </div>
-
+                    <div class="booked_details">
+                        <div class="wrapper">
+                            <div class="table-responsive">
+                                <table class="table details tanle">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" align="left" width="280px">
+                                                <h5>Date Booked:</h5>
+                                                <span>November 01, 2021 14:07</span>
+                                            </td>
+                                            <td valign="top" align="left" width="250px">
+                                                <p><strong>Host:</strong> Lea</p>
+                                                <p><strong>Listing Name:</strong> LABC</p>
+                                                <p><strong>Site Name</strong> LXYZ</p>
+                                            </td>
+                                            <td valign="top" align="right">
+                                                <div class="img_wrapper">
+                                                    <img src="../assets/images/users/Ellipse-35.png" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left">
+                                                <h5>Details:</h5>
+                                            </td>
+                                            <td valign="top" align="left">
+                                                <span>Check In: <strong>04-11-2021</strong></span>
+                                                <br />
+                                                <span>Check Out: <strong>06-11-2021</strong></span>
+                                            </td>
+                                            <td colspan="2" valign="top" align="left">
+                                                <span>Nights: <strong>4</strong></span>
+                                                <br />
+                                                <span>Campers: <strong>6</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left" style="border: 0;">
+                                                <h5>Additional Services:</h5>
+                                            </td>
+                                            <td colspan="3" valign="top" align="left" style="border: 0;">
+                                                <div class="flex_span">
+                                                    <span>XYC Services</span>
+                                                    <span>XYC Services</span>
+                                                    <span>XYC Services</span>
+                                                    <span>XYC Services</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left">
+                                                <h5>Payment:</h5>
+                                            </td>
+                                            <td colspan="3" valign="top" align="left">
+                                                <table width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>7 nights (0)</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$1,400.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>Cleaning fee</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$40.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>Security Deposit</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$1.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>Services fees</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$14.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" class="pb-3">
+                                                                <font>Taxes 15%</font>
+                                                            </td>
+                                                            <td align="right" class="pb-3">
+                                                                <font><strong>$100.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" class="pt-3">
+                                                                <font><strong>Total</strong></font>
+                                                            </td>
+                                                            <td align="right" class="pt-3">
+                                                                <font><strong>$1,900.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="column_right">
                     <h3>Payment</h3>
@@ -190,25 +313,25 @@
                                     <td align="left">
                                         <strong>Total</strong>
                                     </td>
-                                    <td align="left">
+                                    <td align="right">
                                         $6,450.00
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="right">
+                                    <td align="left" valign="center">
                                         Includes taxes and fees
                                     </td>
                                     <td align="right">
-                                        <a href="#">View Details</a>
+                                        <a href="#" onclick="CloseMsg()">View Details</a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="btn_wrapper">
-                        <a href="#">View My Invoice</a>
-                        <a href="#">Edit My Booking</a>
-                        <a href="#">Cancel My Booking</a>
+                        <a href="renter-invoice.html" class="green">View My Invoice</a>
+                        <a href="#" class="grey">Edit My Booking</a>
+                        <a onclick="CloseMsg()">Cancel My Booking</a>
                     </div>
                 </div>
             </div>

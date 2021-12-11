@@ -1,5 +1,5 @@
 .breadcrumb{
-    border-bottom: 1px solid #333;
+    border-bottom: 1px dashed $borderColor;
     .container-fluid{
         padding-left: 4em;
         padding-right: 4em;
@@ -25,6 +25,20 @@
             &.active{
                 color: $primary_color !important;
             }
+        }
+    }
+    .links2{
+        margin-top: 0.5em;
+        display: flex;
+        a{
+            color: $primary_color;
+            text-decoration: underline;
+            font-size: clamp(0.7rem,2vw,0.9rem);
+            text-underline-position: under;
+            font-weight: 600;
+        }
+        p{
+            font-size: clamp(0.7rem,2vw,0.9rem);
         }
     }
 }

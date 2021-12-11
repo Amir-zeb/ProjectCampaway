@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Renter Dashboard</title>
+    <title>Trips Invoice | Renter Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -141,118 +141,74 @@
             </div>
         </nav>
     </header>
-    <main class="renter_dashboard">
-        <div class="breadcrumb">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>
-                            Dashboard
-                            <!-- <p>
-                                <a href="#">Link 1</a> > <a href="#" class="active">Link 2</a>
-                            </p> -->
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="welcome_msg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4>
-                            Welcome back [USER NAME]
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="upcommings">
-            <h4 class="sec_hd">
-                My Upcoming Trips
-            </h4>
-            <div class="table-responsive trips_table">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>ID</th>
-                            <th>Status</th>
-                            <th>Date</th>
-                            <th>Address</th>
-                            <th>Check-in</th>
-                            <th>Check-out</th>
-                            <th>Campers</th>
-                            <th>Pets</th>
-                            <th>Subtotal</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="img_wrapper">
-                                    <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
+    <main class="renter_account">
+        <div class="container-fluid px-5">
+            <section class="page_heading">
+                <h2>Verify Your Information</h2>
+            </section>
+            <section class="verify_account">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="" class="global_form_wrapper">
+                                <div class="wrapper">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Email Address</label><br>
+                                        <input type="email" name="" id="" value="Lea">
+                                    </div>
+                                    <input type="button" class="bg_green form_btn" value="Get Verified">
                                 </div>
-                            </td>
-                            <td>
-                                <p>#1441</p>
-                            </td>
-                            <td>
-                                <span class="badge">Booked</span>
-                            </td>
-                            <td>
-                                <p>
-                                    08/11/1990
-                                </p>
-                            </td>
-                            <td>
-                                <p>Abc road</p>
-                            </td>
-                            <td>
-                                <p>
-                                    08/11/1990
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    08/11/1990
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    1
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    No
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    <strong>$123.12</strong>
-                                </p>
-                            </td>
-                            <td>
-                                <a href="./renter-trips.html">Details</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="10"></td>
-                            <td>
-                                <a href="#" class="view_all">View all</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <section class="renter_chatarea">
-            <h4 class="sec_hd">
-                My Massages
-            </h4>
-        </section>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert_msg">
+                                <p>Upload your ID, Passport or Driver License</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section_heading">
+                                <h4>
+                                    Upload your ID to get Verified
+                                </h4>
+                            </div>
+                            <form action="" class="global_form_wrapper">
+                                <div class="wrapper2">
+                                    <div class="wrap">
+                                        <div class="img_wrapper">
+                                            <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="cap">
+                                            <p>
+                                                Choose an image from your computer
+                                                <span>Upload your Passport or Driver License</span>
+                                            </p>
+                                            <div class="btn_wrapper">
+                                                <div>
+                                                    <input type="file" name="pick_img" class="d-none" id="pick_img">
+                                                    <a class="common_btn bg_grey hover_light text-white"><label
+                                                            for="pick_img">Upload</label></a>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="common_btn txt_grey hover_dark">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap">
+                                        <input type="button" class="bg_grey form_btn" value="Verify your ID"
+                                            data-for="id-verification">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>

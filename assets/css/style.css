@@ -1,4 +1,5 @@
 @import url("../../fonts/poppins-fonts.css?family=poppins:100,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +7,7 @@
   color: #333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins";
-  scroll-behavior: smooth;
+  font-family: "Quicksand";
 }
 
 p,
@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 h4,
-h5, h6 {
+h5,
+.noti_sec .tab-content form table td h6, h6 {
   margin: 0;
   color: inherit;
 }
@@ -41,10 +42,48 @@ table {
   --green: #8AC544;
   --light-grey:#F8F8F8;
   --grey:#D8D8D8;
+  --txtColor: #4F5962;
+  --borderColor: #AAAEB1;
+  --light-purple: #F4C8C7;
+  --dark-purple: #942C3B;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.bg_green {
+  background-color: var(--green);
+}
+
+.bg_grey {
+  background-color: var(--primaryColor);
+}
+
+.txt_grey {
+  color: var(--primaryColor);
+}
+
+.common_btn {
+  padding: 0.7em 1.2em;
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+  font-weight: 500;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.hover_dark:hover {
+  background-color: var(--primaryColor);
+  color: #fff !important;
+}
+
+.hover_light:hover {
+  background-color: #fff;
+  color: var(--primaryColor) !important;
 }
 
 .breadcrumb {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px dashed var(--borderColor);
 }
 
 .breadcrumb .container-fluid {
@@ -78,6 +117,173 @@ table {
 
 .breadcrumb_links .links a.active {
   color: var(--primaryColor) !important;
+}
+
+.breadcrumb_links .links2 {
+  margin-top: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumb_links .links2 a {
+  color: var(--primaryColor);
+  text-decoration: underline;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  text-underline-position: under;
+  font-weight: 600;
+}
+
+.breadcrumb_links .links2 p {
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.custom_toggle {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+  border: 2px solid #333;
+  border-radius: 20px;
+}
+
+.custom_toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom_toggle input:checked + .slider {
+  background-color: var(--green);
+}
+
+.custom_toggle input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px var(--green);
+          box-shadow: 0 0 1px var(--green);
+}
+
+.custom_toggle input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.custom_toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.custom_toggle .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--primaryColor);
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 5;
+}
+
+.custom_toggle .slider.round {
+  border-radius: 34px;
+}
+
+.custom_toggle .slider.round:before {
+  border-radius: 50%;
+}
+
+.custom_toggle font {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.custom_toggle font.on {
+  left: 5px;
+  color: #fff;
+}
+
+.custom_toggle font.off {
+  right: 5px;
+  color: var(--primaryColor);
+}
+
+.custom_checkbox {
+  /* The container */
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: clamp(0.75rem, 2vw, 0.95rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* On mouse-over, add a grey background color */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+}
+
+.custom_checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.custom_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+}
+
+.custom_checkbox input:checked ~ .checkmark {
+  background-color: var(--primaryColor);
+}
+
+.custom_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom_checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid var(--primaryColor);
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Style the checkmark/indicator */
+}
+
+.custom_checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom_checkbox .checkmark:after {
+  top: 3px;
+  left: 6px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 header {
@@ -924,7 +1130,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 }
 
 .welcome_msg {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px dashed var(--borderColor);
 }
 
 .welcome_msg h4 {
@@ -938,12 +1144,11 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 }
 
 .trips_table table {
-  border-bottom: 1px solid #333;
   min-width: 720px;
 }
 
 .trips_table table th {
-  border: 1px solid #333;
+  border: 1px dashed var(--borderColor);
   border-left: 0;
   border-right: 0;
   font-size: clamp(0.7rem, 1vw, 0.9rem);
@@ -962,7 +1167,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   border: 0;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px dashed var(--borderColor);
 }
 
 .trips_table table td img {
@@ -1012,5 +1217,592 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   text-decoration: underline;
   -webkit-text-decoration-color: var(--primaryColor);
           text-decoration-color: var(--primaryColor);
+}
+
+.trips_details .flex_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+  -ms-flex-wrap: unset;
+      flex-wrap: unset;
+}
+
+.trips_details .column_right {
+  width: 20%;
+  padding: 0.1rem;
+}
+
+.trips_details .column_right h3 {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  margin-bottom: 2em;
+}
+
+.trips_details .column_right table {
+  min-width: 250px;
+}
+
+.trips_details .column_right table td {
+  font-size: 0.7rem;
+  border: 0;
+}
+
+.trips_details .column_right table td strong {
+  font-weight: 500;
+}
+
+.trips_details .column_right table td a {
+  font-size: 0.75rem;
+  color: #b8b8b8;
+}
+
+.trips_details .column_right .btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.trips_details .column_right .btn_wrapper a {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1em 0.1em;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  font-weight: 500;
+}
+
+.trips_details .column_right .btn_wrapper a:not(a:last-child) {
+  color: #fff;
+}
+
+.trips_details .column_right .btn_wrapper a.green {
+  background-color: var(--green);
+}
+
+.trips_details .column_right .btn_wrapper a.grey {
+  background-color: var(--primaryColor);
+}
+
+.trips_details .column_right .btn_wrapper a.grey_light {
+  background-color: var(--grey);
+}
+
+.trips_details .column_right .btn_wrapper a:last-child {
+  color: #d1d1d1;
+  background-color: #fff;
+  border: 2px solid #d1d1d1;
+}
+
+.trips_details .column_left {
+  width: 80%;
+  padding: 0.1rem 0.1rem 0.1rem 1rem;
+}
+
+.trips_details .column_left .success_msg {
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  padding: 0.9rem 0.5rem;
+  background-color: var(--light-grey);
+  color: var(--green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3rem;
+  width: 100%;
+  max-width: 80%;
+}
+
+.trips_details .column_left .success_msg p {
+  color: inherit;
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  padding-left: 2em;
+}
+
+.trips_details .column_left .success_msg span {
+  color: inherit;
+  display: block;
+  font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 0;
+}
+
+.trips_details .column_left .heading_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3rem;
+}
+
+.trips_details .column_left .heading_wrapper h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
+  color: var(--primaryColor);
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.trips_details .column_left .heading_wrapper h3 .badge {
+  background-color: var(--green);
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+}
+
+.trips_details .column_left .heading_wrapper .icon_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.trips_details .column_left .heading_wrapper .icon_wrapper .img_wrapper {
+  border: 2px solid var(--grey);
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.trips_details .column_left .heading_wrapper .icon_wrapper .img_wrapper img {
+  display: block;
+  margin: 3px auto 0;
+  max-width: 15px;
+}
+
+.trips_details .column_left .cancel_booking {
+  margin-left: 3rem;
+  background-color: var(--light-grey);
+  padding: 1em;
+  margin-bottom: 2.5rem;
+}
+
+.trips_details .column_left .cancel_booking h4 {
+  color: var(--txtColor);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.trips_details .column_left .cancel_booking textarea {
+  width: 100%;
+  border: 0;
+  font-size: 0.8rem;
+}
+
+.trips_details .column_left .cancel_booking .wrapper {
+  margin-top: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.trips_details .column_left .cancel_booking .wrapper p {
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #4F5962;
+}
+
+.trips_details .column_left .cancel_booking .wrapper p a {
+  color: var(--primaryColor);
+  font-size: inherit;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.trips_details .column_left .cancel_booking .wrapper input[type=button] {
+  background-color: var(--primaryColor);
+  color: #fff;
+  border: 0;
+  padding: 1em 3em;
+  font-size: clamp(0.6rem, 2vw, 0.7rem);
+  border-radius: 5px;
+}
+
+.booked_details table td {
+  border: 0;
+  border-top: 1px dashed var(--borderColor);
+}
+
+.booked_details table td h5, .booked_details .noti_sec .tab-content form table td h6, .noti_sec .tab-content form .booked_details table td h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.booked_details table td span {
+  font-size: 0.8rem;
+  color: var(--txtColor);
+}
+
+.booked_details table td span strong {
+  font-weight: 500;
+}
+
+.booked_details table td p {
+  font-size: 0.95rem;
+  color: var(--txtColor);
+}
+
+.booked_details table td p strong {
+  font-weight: 500;
+}
+
+.booked_details table td {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.booked_details table table tr td {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+.booked_details table table tr td font {
+  color: var(--txtColor);
+  font-size: 0.8rem;
+}
+
+.booked_details table table tr td font strong {
+  font-weight: 500;
+}
+
+.booked_details table table tr:not(tr:last-child) td {
+  border: 0;
+}
+
+.renter_invoice .logo_wrapper img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.renter_invoice .column_left {
+  margin: 0 5rem;
+}
+
+.grid_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.grid_flex .box {
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  padding: 2em 3em;
+  color: var(--primaryColor);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.grid_flex .box:hover {
+  -webkit-box-shadow: inset 0 0 0px 2px var(--primaryColor);
+          box-shadow: inset 0 0 0px 2px var(--primaryColor);
+}
+
+.grid_flex .box .img_wrapper img {
+  max-width: 35px;
+  margin-bottom: 1em;
+}
+
+.grid_flex .box h5, .grid_flex .box .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td .grid_flex .box h6 {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: inherit;
+  margin-bottom: 0.3em;
+}
+
+.grid_flex .box p {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: inherit;
+  line-height: 1.1;
+}
+
+.alert_msg {
+  background-color: var(--light-purple);
+  border: 1px solid var(--dark-purple);
+  border-radius: 4px;
+}
+
+.alert_msg p {
+  color: var(--dark-purple);
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
+  padding: 1em 0.5em;
+}
+
+.page_heading {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed var(--grey);
+  width: 100%;
+  max-width: 800px;
+}
+
+.page_heading h2 {
+  color: var(--primaryColor);
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  color: var(--primaryColor);
+  padding: 3rem 1rem 1rem;
+}
+
+.section_heading {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed var(--grey);
+  width: 100%;
+  max-width: 800px;
+}
+
+.section_heading h4 {
+  color: var(--primaryColor);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: var(--primaryColor);
+  padding: 2rem 1rem 1rem;
+}
+
+.renter_account .verify_account form {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.renter_account .verify_account form .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.renter_account .verify_account form .wrapper .global_input_wrapper {
+  width: 100%;
+}
+
+.renter_account .verify_account form .wrapper .global_input_wrapper input[type=email] {
+  width: 100%;
+}
+
+.renter_account .verify_account form .wrapper input[type=button] {
+  width: 100%;
+  max-width: 250px;
+}
+
+.renter_account .verify_account form .wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .img_wrapper {
+  width: 100%;
+  max-width: 250px;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .img_wrapper img {
+  max-width: 150px;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .cap {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .cap p {
+  font-size: clamp(0.75rem, 2vw, 0.85);
+  font-weight: 600;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .cap p span {
+  display: block;
+  font-weight: 400;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .cap .btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-top: 1em;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .cap .btn_wrapper a {
+  padding: 0.7em 2em;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:first-child .cap .btn_wrapper a label {
+  color: inherit;
+  cursor: pointer;
+}
+
+.renter_account .verify_account form .wrapper2 .wrap:last-child {
+  width: 100%;
+  max-width: 300px;
+}
+
+.global_form_wrapper {
+  padding: 1em 2em;
+}
+
+.global_input_wrapper label {
+  font-size: clamp(0.7rem, 2vw, 0.78rem);
+  margin-bottom: 0.5em;
+}
+
+.global_input_wrapper input[type=email] {
+  width: 100%;
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  padding: 0.4em 0.5em;
+  border: 1px solid;
+  border-color: var(--grey);
+  border-radius: 3px;
+  color: #333;
+}
+
+.form_btn {
+  font-size: clamp(0.7em, 2vw, 0.8rem);
+  padding: 0.5em 0.2em;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  border: 0;
+}
+
+.noti_sec {
+  padding: 1rem 0 0 6rem;
+}
+
+.noti_sec ul {
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.noti_sec ul .nav-link {
+  background-color: #fff;
+  color: var(--primaryColor);
+  font-weight: 600;
+  border-radius: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: 0.5em;
+}
+
+.noti_sec ul .nav-link.active {
+  color: var(--primaryColor);
+  background-color: #fff;
+  border-bottom: 3px solid var(--primaryColor);
+}
+
+.noti_sec .tab-content {
+  padding-top: 1.5rem;
+}
+
+.noti_sec .tab-content form table {
+  width: 100%;
+  min-width: 500px;
+}
+
+.noti_sec .tab-content form table td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.noti_sec .tab-content form table td h5, .noti_sec .tab-content form table td h6 {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+
+.noti_sec .tab-content form table td p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin-top: 0.3em;
+}
+
+.noti_sec .tab-content form table td .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

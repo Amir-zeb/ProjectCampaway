@@ -18,7 +18,7 @@
     color: $primary_color;          
 }
 .welcome_msg{
-    border-bottom: 1px solid #333;
+    border-bottom: 1px dashed $borderColor;
     h4{
         text-align: center;
         font-size: clamp(0.8rem,2vw,1rem);
