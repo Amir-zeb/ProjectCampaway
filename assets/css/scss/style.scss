@@ -1,5 +1,7 @@
 @import url('../../fonts/poppins-fonts.css?family=poppins:100,200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     position: relative;
@@ -13,36 +15,37 @@ h1,
 h2,
 h3,
 h4,
-h5
-,h6{
+h5,
+h6 {
     margin: 0;
     color: inherit;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         @extend a;
     }
 }
 
 ul,
-ol{
+ol {
     padding: 0;
     margin: 0;
 }
 
-table{
+table {
     margin: 0;
 }
 
-:root{
+:root {
     --primaryColor: #2C615F;
     --green: #8AC544;
-    --light-grey:#F8F8F8;
-    --grey:#D8D8D8;
+    --light-grey: #F8F8F8;
+    --grey: #D8D8D8;
     --txtColor: #4F5962;
     --borderColor: #AAAEB1;
     --light-purple: #F4C8C7;
@@ -60,35 +63,44 @@ $borderColor:var(--borderColor);
 $light_purple:var(--light-purple);
 $dark_purple:var(--dark-purple);
 
-.bg_green{
+.bg_green {
     background-color: $green;
 }
 
-.bg_grey{
+.bg_grey {
     background-color: $primary_color;
 }
 
-.txt_grey{
+.txt_grey {
     color: $primary_color;
 }
 
-.common_btn{
+.common_btn {
     padding: 0.7em 1.2em;
-    font-size: clamp(0.75rem,2vw,0.85rem);
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
     border: 1px solid $primary_color;
     border-radius: 5px;
     font-weight: 500;
     transition: 0.2s all ease-in-out;
 }
 
-.hover_dark:hover{
+.hover_dark:hover {
     background-color: $primary_color;
     color: #fff !important;
 }
 
-.hover_light:hover{
+.hover_light:hover {
     background-color: #fff;
     color: $primary_color !important;
 }
 
-@import 'mixins','breadcrumb','customInputs','header','chatbox','renterDashboard','renterTrips','renterNotifications';
+@import 'mixins',
+'breadcrumb',
+'customInputs',
+'header',
+'chatbox',
+'globelForm',
+'./renter/renterDashboard',
+'./renter/renterTrips',
+'./renter/renterNotifications',
+'./renter/renterProfile';

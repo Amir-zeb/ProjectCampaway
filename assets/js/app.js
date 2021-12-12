@@ -6,6 +6,15 @@ if (user_dropdown) {
     })
 }
 
+document.addEventListener('click', function(e){   
+    if (!document.querySelector('.user_dropdown').contains(e.target)){
+        // user_dropdown.addEventListener('click', () => {
+        //     user_dropdown_list.classList.toggle("show");
+        // })
+        user_dropdown_list.classList.remove("show");
+    }
+  });
+
 var close_media_sec = document.querySelector('.close_media_sec');
 var open_media_btn = document.querySelector('.open_media_btn');
 var media_sec = document.querySelector('.media_sec');
@@ -21,8 +30,8 @@ if (open_media_btn) {
 }
 
 var cancel_booking = document.querySelector('.cancel_booking');
-
-function CloseMsg() {
-    console.log("there");
-    cancel_booking.classList.remove("d-none");
+if(cancel_booking){
+    function CloseMsg() {
+        cancel_booking.classList.remove("d-none");
+    }
 }

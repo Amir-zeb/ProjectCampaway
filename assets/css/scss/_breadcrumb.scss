@@ -1,44 +1,54 @@
-.breadcrumb{
+.breadcrumb {
     border-bottom: 1px dashed $borderColor;
-    .container-fluid{
+    margin-bottom: 0 !important;
+
+    .container-fluid {
         padding-left: 4em;
         padding-right: 4em;
     }
-    h2{
-        font-size: clamp(1rem,2vw,1.3rem);
+
+    h2 {
+        font-size: clamp(1rem, 2vw, 1.3rem);
         padding: 2.5em 0;
         color: $primary_color;
     }
 }
 
-.breadcrumb_links{
+.breadcrumb_links {
     padding: 2.5em 0;
-    h2{
-        font-size: clamp(1rem,2vw,1.3rem);
+
+    h2 {
+        font-size: clamp(1rem, 2vw, 1.3rem);
         color: $primary_color;
     }
-    .links{
+
+    .links {
         margin-top: 0.5em;
-        a{
+
+        a {
             color: rgb(151, 151, 151);
-            font-size: clamp(0.7rem,2vw,0.9rem);
-            &.active{
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+
+            &.active {
                 color: $primary_color !important;
             }
         }
     }
-    .links2{
+
+    .links2 {
         margin-top: 0.5em;
         display: flex;
-        a{
+
+        a {
             color: $primary_color;
             text-decoration: underline;
-            font-size: clamp(0.7rem,2vw,0.9rem);
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
             text-underline-position: under;
             font-weight: 600;
         }
-        p{
-            font-size: clamp(0.7rem,2vw,0.9rem);
+
+        p {
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
         }
     }
 }
