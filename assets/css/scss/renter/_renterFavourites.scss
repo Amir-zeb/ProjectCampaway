@@ -1,0 +1,22 @@
+.fav_sec {
+    .btn_wrapper {
+        width: 100%;
+        display: flex;
+        column-gap: 15px;
+        justify-content: flex-end;
+
+        a {
+            width: 100%;
+            max-width: 150px;
+
+            &:not(.bg_green) {
+                background-color: $dark_grey;
+            }
+        }
+    }
+
+    .flex_wrapper {
+        @include Flex(row, flex-start, flex-start, 2%, 2rem, wrap);
+        margin-top: 4rem;
+    }
+}

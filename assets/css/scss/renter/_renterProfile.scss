@@ -2,7 +2,7 @@
     padding-top: 3rem;
 
     .profile_flex {
-        display: flex;
+        @include Flex(row, flex-start, flex-start, 5rem, 2rem, unset);
         width: 100%;
         column-gap: 5rem;
 
@@ -17,9 +17,14 @@
                 padding: 1rem 1rem 1.5rem;
                 border-bottom: 1px solid $grey;
 
+                a {
+                    width: 100%;
+                    max-width: 150px;
+                }
+
                 .img_wrapper {
                     text-align: center;
-                    margin-bottom: 0.5em;
+                    margin-bottom: 1rem;
 
                     label {
                         font-size: clamp(0.75rem, 2vw, 0.9rem);
@@ -30,8 +35,11 @@
                 }
 
                 .caps {
+                    margin-bottom: 0.8rem;
+
                     p {
                         margin-bottom: 0.5em;
+                        font-size: clamp(0.75rem, 2vw, 0.85rem);
                     }
                 }
             }
@@ -73,7 +81,65 @@
 
         .col_right {
             width: 100%;
-            border: 1px solid;
+        }
+
+        .profile_column {
+            .top_sec {
+                h2 {
+                    font-size: clamp(1rem, 2vw, 1.7rem);
+                    margin-bottom: 0.5em;
+                }
+
+                .icon_wrapper {
+                    display: flex;
+                    column-gap: 5px;
+
+                    .fa-star {
+                        color: $primary_color;
+                        font-size: clamp(0.75rem, 2vw, 0.9rem);
+                    }
+
+                    p {
+                        font-size: clamp(0.75rem, 2vw, 0.85rem);
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .bottom_sec {
+                margin-top: 3rem;
+
+                ul#profile-tab {
+                    width: 100%;
+                    column-gap: 45px;
+                    justify-content: center;
+
+                    .nav-link {
+                        color: $dark-grey;
+                        border-radius: 0;
+                        font-weight: 700;
+
+                        &.active {
+                            background-color: #fff;
+                            color: initial;
+                            border-bottom: 2px solid #333;
+                        }
+                    }
+                }
+
+
+                .tab-content#profile-tabContent {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+
+                    .flex_wrapper {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        row-gap: 25px;
+                    }
+                }
+            }
         }
     }
 }

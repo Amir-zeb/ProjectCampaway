@@ -1,0 +1,207 @@
+.global_cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    &.card_align_hr {
+        flex-direction: row;
+        column-gap: 15px;
+        max-width: 550px;
+    }
+
+    &.card_align_vr {
+        flex-direction: column;
+        max-width: 280px;
+
+        .card_body {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+
+    .card_header {
+        .img_wrapper {
+            img {
+                max-width: 280px;
+            }
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 0.65rem;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            filter: drop-shadow(0 0 10px #3333);
+            z-index: 2;
+        }
+
+        .hearts {
+            z-index: 2;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            filter: drop-shadow(0 0 10px #3333);
+
+            i {
+                color: $green;
+                font-size: 0.9rem;
+            }
+        }
+
+        .img_caps {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-left: 1em;
+            padding-right: 1.2em;
+
+            h4 {
+                color: #fff;
+                font-size: clamp(0.8rem, 2vw, 1.2rem);
+                font-weight: 600;
+
+                sub {
+                    color: inherit;
+                    font-size: 0.55rem;
+                    font-weight: 500;
+                }
+
+                sup {
+                    color: inherit;
+                    font-weight: 400;
+                    font-size: 0.65rem;
+                }
+            }
+
+            img {
+                max-width: 35px;
+            }
+        }
+    }
+
+    .card_body {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+
+        .ellipses_dropdown {
+
+            i {
+                font-size: 0.7rem;
+                cursor: pointer;
+                display: block;
+            }
+
+            .ellipses_droplist {
+                list-style: none;
+                background-color: $primary_color;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                min-width: 140px;
+                max-width: 140px;
+                z-index: 2;
+                display: none;
+
+                &.show {
+                    display: block !important;
+                }
+
+                li {
+                    a {
+                        color: #fff;
+                        padding: 0.5em 0.5em;
+                        font-size: 0.7rem;
+                        white-space: nowrap;
+                        display: block;
+                    }
+
+                    &:not(li:last-child) {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+
+        .card_heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            h4 {
+                font-size: clamp(0.65rem, 2vw, 0.85rem);
+                font-weight: 600;
+                height: max-content;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                width: 100%;
+                padding-right: 0.5em;
+            }
+        }
+
+        p {
+            font-size: clamp(0.75rem, 2vw, 0.8rem);
+        }
+
+        ul.dis {
+            list-style: none;
+            @include Flex(row, flex-start, flex-start, 1%, 1px, wrap);
+
+            li {
+                width: calc(99% / 2);
+
+                &:last-child {
+                    width: 100% !important;
+                }
+
+                .icon_wrapper {
+                    display: flex;
+                    column-gap: 5px;
+                    align-items: center;
+
+                    img {
+                        max-width: 20px;
+                    }
+
+                    span {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .card_footer {
+        .wrapper {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+
+            .img_wrapper {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 0.5rem;
+
+                img {
+                    max-width: 30px;
+                }
+
+                h5 {
+                    font-size: clamp(0.75rem, 2vw, 0.85rem);
+                }
+            }
+        }
+    }
+}

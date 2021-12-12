@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    color: #333;
+    color: #4F5962;
     box-sizing: border-box;
     font-family: "Quicksand";
 }
@@ -47,6 +47,8 @@ table {
     --light-grey: #F8F8F8;
     --grey: #D8D8D8;
     --txtColor: #4F5962;
+    --yellow: #FFCE31;
+    --dark-grey: #A7ACB0;
     --borderColor: #AAAEB1;
     --light-purple: #F4C8C7;
     --dark-purple: #942C3B;
@@ -62,6 +64,8 @@ $txt_color:var(--txtColor);
 $borderColor:var(--borderColor);
 $light_purple:var(--light-purple);
 $dark_purple:var(--dark-purple);
+$dark_grey:var(--dark-grey);
+$yellow:var(--yellow);
 
 .bg_green {
     background-color: $green;
@@ -82,6 +86,8 @@ $dark_purple:var(--dark-purple);
     border-radius: 5px;
     font-weight: 500;
     transition: 0.2s all ease-in-out;
+    display: block;
+    text-align: center;
 }
 
 .hover_dark:hover {
@@ -94,13 +100,38 @@ $dark_purple:var(--dark-purple);
     color: $primary_color !important;
 }
 
+.star_ratings {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    .stars_wrapper {
+        .fa-star {
+            color: $grey;
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
+
+            &.checked {
+                color: $yellow;
+            }
+        }
+    }
+
+    span {
+        color: $dark_grey;
+        font-weight: 600;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
+    }
+}
+
 @import 'mixins',
 'breadcrumb',
 'customInputs',
 'header',
 'chatbox',
 'globelForm',
+'globalCard',
 './renter/renterDashboard',
 './renter/renterTrips',
 './renter/renterNotifications',
-'./renter/renterProfile';
+'./renter/renterProfile',
+'./renter/renterFavourites';
