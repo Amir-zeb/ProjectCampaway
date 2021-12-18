@@ -140,3 +140,97 @@
         }
     }
 }
+
+
+/* The container */
+.custom_radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Hide the browser's default radio button */
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        display: none;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+        display: block !important;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #ccc;
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Style the indicator (dot/circle) */
+        &:after {
+            top: 4px;
+            left: 4px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: white;
+        }
+    }
+
+    /* On mouse-over, add a grey background color */
+    &:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    & input:checked~.checkmark {
+        background-color: $green;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    & input:checked~.checkmark:after {
+        display: block;
+    }
+
+}
+
+@media (max-width:992px) {
+    .custom_toggle {
+        width: 52px;
+        height: 30px;
+    }
+
+    .custom_toggle font {
+        font-size: 9px;
+    }
+
+    .custom_toggle input:checked+.slider::before,
+    .custom_toggle .global_input_wrapper textarea:checked+.slider::before,
+    .global_input_wrapper .custom_toggle textarea:checked+.slider::before {
+        transform: translateX(21px);
+    }
+
+    .custom_toggle .slider::before {
+        height: 22px;
+        width: 22px;
+    }
+}

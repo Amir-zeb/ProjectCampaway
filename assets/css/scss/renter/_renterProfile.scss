@@ -139,7 +139,115 @@
                         row-gap: 25px;
                     }
                 }
+
+                .reviews_wrapper {
+                    width: 100%;
+                    max-width: 600px;
+                }
             }
         }
+    }
+}
+
+.reviews_wrapper {
+    display: flex;
+    column-gap: 10px;
+
+    >.img_wrapper {
+        min-width: 50px;
+        text-align: center;
+
+        img {
+            max-width: 45px;
+        }
+    }
+
+    .review_header {
+        display: flex;
+        flex-direction: column;
+
+        .top_wrapper {
+            display: flex;
+            column-gap: 15px;
+            align-items: center;
+
+            h5 {
+                font-size: clamp(0.75rem, 2vw, 0.85rem);
+                font-weight: 600;
+            }
+
+            .fa-star {
+                font-size: 0.7rem;
+            }
+
+            .badge {
+                font-size: 0.55rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        .bottom_wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+
+            .wrap_icon {
+                img {
+                    max-width: 13px;
+                }
+
+                font {
+                    font-size: 0.68rem;
+                }
+            }
+        }
+    }
+
+    .review_body {
+        p {
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
+            padding-top: 0.5em;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .profile_sec .container {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .profile_sec .profile_flex {
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width:840px) {
+    .profile_sec .profile_flex {
+        flex-direction: column;
+    }
+
+    .profile_sec .profile_flex .col_left {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:390px) {
+    .profile_sec .profile_flex {
+        flex-direction: column;
+    }
+
+    .profile_sec .profile_flex .col_left {
+        margin: 0 auto;
+    }
+
+    .reviews_wrapper .review_header .top_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .reviews_wrapper .review_header .top_wrapper h5 {
+        width: 100%;
     }
 }

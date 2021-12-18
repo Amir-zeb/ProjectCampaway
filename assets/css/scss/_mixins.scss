@@ -1,8 +1,12 @@
-@mixin Fade($x){
+@mixin Fade($x) {
     transition: $x all ease-in-out;
 }
 
-@mixin Flex($direction,$justify,$align,$gapX,$gapY,$wrap){
+@mixin Smooth($x) {
+    transition: $x all ease-in-out;
+}
+
+@mixin Flex($direction, $justify, $align, $gapX, $gapY, $wrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Renter Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./renter-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="../host-panel/host-dashboard.html">
+                                        <div class="img_wrapper">
+                                            <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Switch To Host Dashboard</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/chat.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-trips.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/road-trip.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Trips</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-favourites.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/heart.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Favourites</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Become A Host</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-profile.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Profile</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Account</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Help</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="renter_account">
+        <section class="profile_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="profile_flex">
+                        <div class="col_left">
+                            <div class="side_info">
+                                <div class="top_sec">
+                                    <div class="img_wrapper">
+                                        <img src="../assets/images/icons/default-user.png" alt="" class="img-fluid">
+                                        <div>
+                                            <form action="">
+                                                <input type="file" name="" class="d-none" id="img_pick2">
+                                                <label for="img_pick2">Update Photo</label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="caps">
+                                        <p>Profile Status</p>
+                                        <p><strong>Identity Verification</strong></p>
+                                        <div class="icon_wrapper danger_icon">
+                                            <div class="icon_wrap">
+                                                <img src="../assets/images/icons/cross-red.png" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                            <font>Note Verified</font>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bg_green common_btn text-light border-0">Get Verified</a>
+                                </div>
+                                <div class="bottom_sec">
+                                    <p>Provided</p>
+                                    <div class="icon_wrapper">
+                                        <div class="icon_wrap">
+                                            <img src="../assets/images/icons/tick-green.png" alt="" class="img-wrapper">
+                                        </div>
+                                        <font>Email address</font>
+                                    </div>
+                                    <div class="icon_wrapper">
+                                        <div class="icon_wrap">
+                                            <img src="../assets/images/icons/tick-green.png" alt="" class="img-wrapper">
+                                        </div>
+                                        <font>Phone number</font>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="col_wrapper">
+                                <div class="page_heading">
+                                    <h2 class="pt-0">Account</h2>
+                                </div>
+                                <form action="" class="user_info_form global_form_wrapper">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">User Name</label><br>
+                                                <input type="text" name="" id="" value="Test">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Display name Publicily as</label><br>
+                                                <input type="email" name="" id="" value="Lea">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">First Name</label><br>
+                                                <input type="text" name="" id="" value="Lea">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Last Name</label><br>
+                                                <input type="text" name="" id="" value="Melon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Date of Birth</label><br>
+                                                <input type="text" name="" id="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Email Address</label><br>
+                                                <input type="Email" name="" id="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Phone Number</label><br>
+                                                <input type="text" name="" id="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Postal Address</label><br>
+                                                <input type="text" name="" id="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-6 col-sm-12">
+                                            <input type="button" class="bg_grey form_btn" value="Save">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="provide_id">
+                                    <div class="wrapper">
+                                        <div class="wrap">
+                                            <p>Government ID</p>
+                                            <span>Not Provided</span>
+                                        </div>
+                                        <div class="wrap">
+                                            <a href="" class="common_btn bg_green border-0 text-light">Get Verified</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="" class="emer_contact_form global_form_wrapper">
+                                    <div>
+                                        <h4 class="form_inner_hd">Emergency Contact</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Contact Name</label><br>
+                                                <input type="text" name="" id="" value="" placeholder="Enter name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Relationship</label><br>
+                                                <input type="email" name="" id="" value=""
+                                                    placeholder="Enter Relationship">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Email</label><br>
+                                                <input type="email" name="" id="" value="" placeholder="Enter Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="global_input_wrapper">
+                                                <label for="">Phone</label><br>
+                                                <input type="text" name="" id="" value="" placeholder="Phone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-6 col-sm-12">
+                                            <input type="button" class="bg_grey form_btn" value="Save">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

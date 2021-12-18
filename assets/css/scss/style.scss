@@ -123,6 +123,57 @@ $yellow:var(--yellow);
     }
 }
 
+.underline_a {
+    color: $primary_color;
+    text-decoration: underline;
+    font-size: clamp(0.75rem, 2vw, 0.85rem)
+}
+
+.page_heading {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed $borderColor;
+    width: 100%;
+    max-width: 800px;
+
+    h2 {
+        color: $primary_color;
+        font-size: clamp(1rem, 2vw, 1.45rem);
+        color: $primary_color;
+        padding: 3rem 1rem 1rem;
+        font-weight: 600;
+    }
+}
+
+.section_heading {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed $borderColor;
+    width: 100%;
+    max-width: 800px;
+
+    h4 {
+        color: $primary_color;
+        font-size: clamp(0.85rem, 2vw, 1rem);
+        color: $primary_color;
+        padding: 2rem 1rem 1rem;
+    }
+}
+
+.s_hd {
+    border-bottom: 1px dashed $borderColor;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    padding-bottom: 0.5em;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+
+    h4 {
+        font-size: inherit;
+        font-weight: 600;
+        color: $primary_color;
+        padding-left: 1em;
+    }
+}
+
 @import 'mixins',
 'breadcrumb',
 'customInputs',
@@ -132,6 +183,9 @@ $yellow:var(--yellow);
 'globalCard',
 './renter/renterDashboard',
 './renter/renterTrips',
+'./renter/renterAcc',
 './renter/renterNotifications',
 './renter/renterProfile',
-'./renter/renterFavourites';
+'./renter/renterFavourites',
+'./renter/renterPass',
+'./renter/renterPayment';

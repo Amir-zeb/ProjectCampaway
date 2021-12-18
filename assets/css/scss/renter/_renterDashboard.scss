@@ -1,32 +1,69 @@
-.renter_dashboard{
-    .upcommings{
-        .sec_hd{
+.renter_dashboard {
+    .upcommings {
+        .sec_hd {
             padding-top: 3em;
             padding-bottom: 3em;
         }
     }
-    .renter_chatarea{
-        .sec_hd{
+
+    .renter_chatarea {
+        .sec_hd {
             padding-top: 0.5em;
             padding-bottom: 0.5em;
         }
     }
 }
-.sec_hd{
-    font-size: clamp(1rem,2vw,1.2rem);
-    padding-left: 8rem;  
-    color: $primary_color;          
+
+.sec_hd {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding-left: 8rem;
+    color: $primary_color;
 }
-.welcome_msg{
-    border-bottom: 1px dashed $borderColor;
-    h4{
+
+.welcome_msg {
+    border-bottom: 2px dotted $borderColor;
+
+    h4 {
         text-align: center;
-        font-size: clamp(0.8rem,2vw,1rem);
+        font-size: clamp(0.8rem, 2vw, 1rem);
         padding: 1em 0;
     }
 }
-.upcoming_trips{
-    table{
+
+.upcoming_trips {
+    table {
         min-width: 600px;
+    }
+}
+
+.renter_chatarea {
+    .sec_hd {
+        border-bottom: 1px solid dotted $borderColor;
+    }
+
+    .chat_section {
+        height: 500px;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        border-top: 1px dotted $borderColor;
+    }
+
+    .chat_container .user_sec>div.wrap {
+        max-height: 500px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+
+    .chat_container .message_area {
+        height: 500px;
+        width: 100%;
+    }
+
+    .chat_container .message_area .massages_wrapper {
+        margin-top: 0;
+        padding-bottom: 35px;
+        max-height: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
     }
 }

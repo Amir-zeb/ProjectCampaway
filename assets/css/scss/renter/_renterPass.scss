@@ -1,0 +1,110 @@
+.pass_change_form {
+    margin-bottom: 3.5rem;
+
+    h4 {
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
+        margin-bottom: 0.5em;
+    }
+}
+
+.connect_acc {
+    width: 100%;
+    max-width: 700px;
+
+    a.underline_a {
+        text-align: left;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: clamp(1rem, 22vw, 1.2rem);
+        font-weight: 600;
+    }
+
+    .acc_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .wrap {
+            margin-bottom: 2rem;
+
+            h4 {
+                font-size: clamp(0.85rem, 2vw, 1rem);
+                font-weight: 600;
+
+                span {
+                    display: block;
+                    font-size: clamp(0.7rem, 2vw, 0.8rem);
+                    opacity: 0.8;
+                }
+            }
+
+            &:last-child {
+                width: 30%;
+            }
+        }
+    }
+}
+
+#confirm-pass {
+    border: 0;
+
+    .modal-dialog {
+        max-width: 700px;
+    }
+
+    .btn_close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        font-size: 1.5rem;
+        line-height: 0.5;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .modal-body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        h4 {
+            text-align: center;
+            font-size: clamp(0.95rem, 3vw, 1.3rem);
+            font-weight: 600;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            color: $primary_color;
+        }
+
+        p {
+            text-align: center;
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: $primary_color;
+        }
+
+        a.underline_a {
+            display: block;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2em;
+            font-size: 0.7rem;
+        }
+    }
+
+    .modal-header {
+        border: 0;
+    }
+
+    .btn_wrapper {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+
+        a.common_btn {
+            width: 100%;
+            max-width: 150px;
+        }
+    }
+}

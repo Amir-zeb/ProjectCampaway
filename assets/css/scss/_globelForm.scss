@@ -3,37 +3,73 @@
     &.form_padd {
         padding: 1em 2em;
     }
+
+    .form_inner_hd {
+        font-size: clamp(0.85rem, 2vw, 1rem);
+        margin-bottom: 0.5em;
+        font-weight: 600;
+    }
 }
 
 .global_input_wrapper {
+    margin-bottom: 1.5rem;
+
+    &.for_radio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #3333;
+        border-radius: 3px;
+        padding: 0.5em;
+
+        label {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+
     label {
-        font-size: clamp(0.7rem, 2vw, 0.78rem);
+        // font-size: clamp(0.7rem, 2vw, 0.78rem);
+        font-size: 0.78rem;
         margin-bottom: 0.5em;
         font-weight: 600;
     }
 
-    input[type=email] {
-        width: 100%;
-        font-size: clamp(0.7rem, 2vw, 0.85rem);
-        padding: 0.4em 0.5em;
-        border: 1px solid;
-        border-color: $grey;
-        border-radius: 3px;
-        color: #333;
+    input {
+
+        &:not(input[type='button']),
+        &:not(input[type='submit']),
+        &:not(input[type='reset']),
+        &:not(input[type='radio']) {
+            width: 100%;
+            // font-size: clamp(0.7rem, 2vw, 0.85rem);
+            font-size: 0.85rem;
+            padding: 0.4em 0.5em;
+            border: 1px solid;
+            border-color: $grey;
+            border-radius: 3px;
+            color: #333;
+        }
     }
 
-    input[type=text],
     textarea {
-        @extend input[type=email];
+        @extend input;
     }
 }
 
 .form_btn {
-    font-size: clamp(0.7em, 2vw, 0.8rem);
+    // font-size: clamp(0.7em, 2vw, 0.8rem);
+    font-size: 0.85rem;
     padding: 0.5em 0.2em;
     width: 100%;
     text-align: center;
     color: #fff;
     border-radius: 3px;
     border: 0;
+}
+
+@media (max-width:767px) {
+    .global_input_wrapper {
+        margin-bottom: 0.7rem;
+    }
 }

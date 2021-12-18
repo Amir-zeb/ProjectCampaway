@@ -1,0 +1,212 @@
+.renter_account {
+    .verify_account {
+        form {
+            padding-top: 2em;
+            padding-bottom: 5em;
+
+            .wrapper {
+                display: flex;
+                column-gap: 10px;
+                align-items: flex-end;
+
+                .global_input_wrapper {
+                    width: 100%;
+                    margin-bottom: 0;
+
+                    input[type=email] {
+                        width: 100%;
+                    }
+                }
+
+                input[type=button] {
+                    width: 100%;
+                    max-width: 250px;
+                }
+            }
+
+            .wrapper2 {
+                display: flex;
+                column-gap: 10px;
+                align-items: flex-start;
+
+                .wrap:first-child {
+                    display: flex;
+                    column-gap: 10px;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    .img_wrapper {
+                        width: 100%;
+                        max-width: 250px;
+
+                        img {
+                            max-width: 150px;
+                        }
+                    }
+
+                    .cap {
+                        padding-top: 0.5em;
+                        padding-bottom: 0.5em;
+
+                        p {
+                            font-size: clamp(0.75rem, 2vw, 0.85);
+                            font-weight: 600;
+
+                            span {
+                                display: block;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .btn_wrapper {
+                            display: flex;
+                            column-gap: 10px;
+                            margin-top: 1em;
+
+                            a {
+                                padding: 0.7em 2em;
+
+                                label {
+                                    color: inherit;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wrap:last-child {
+                    width: 100%;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+.grid_flex {
+    @include Flex(row, center, stretch, 1rem, 1rem, wrap);
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
+
+    .box {
+        border: 2px solid $primary_color;
+        border-radius: 10px;
+        padding: 2em 3em;
+        color: $primary_color;
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+        @include Fade(0.2s);
+
+        &:hover {
+            box-shadow: inset 0 0 0px 2px $primary_color;
+        }
+
+        .img_wrapper {
+            img {
+                max-width: 35px;
+                margin-bottom: 1em;
+            }
+        }
+
+        h5 {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            color: inherit;
+            margin-bottom: 0.3em;
+        }
+
+        p {
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            color: inherit;
+            line-height: 1.1;
+        }
+    }
+}
+
+
+@media (max-width:1080px) {
+    .grid_flex .box {
+        padding: 1em 1.5em;
+        max-width: calc(80% / 2);
+    }
+
+    .renter_account .container-fluid {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+
+    .renter_account .verify_account form {
+        padding-top: 1.5em;
+        padding-bottom: 2rem;
+    }
+
+    .renter_account .verify_account form .wrapper2 {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:last-child {
+        align-self: flex-end;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:first-child .img_wrapper {
+        max-width: 170px;
+    }
+}
+
+@media (max-width:560px) {
+    .grid_flex .box {
+        max-width: 100%;
+    }
+
+    .renter_account .verify_account form .wrapper {
+        flex-direction: column;
+    }
+
+    .renter_account .verify_account form .wrapper .global_input_wrapper {
+        margin-bottom: 1rem;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:first-child .img_wrapper img {
+        max-width: 95px;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:first-child .img_wrapper {
+        max-width: 105px;
+    }
+}
+
+@media (max-width:450px) {
+    .renter_account .verify_account form .wrapper2 .wrap:first-child {
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:first-child .img_wrapper {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:first-child .cap {
+        width: 100%;
+        text-align: center;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:first-child .cap .btn_wrapper {
+        justify-content: center;
+    }
+
+    .renter_account .verify_account form .wrapper2 .wrap:last-child {
+        align-self: center;
+    }
+
+    .renter_account .verify_account form .wrapper input[type="button"] {
+        margin: 0 auto;
+    }
+
+    .global_form_wrapper.form_padd {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

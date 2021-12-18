@@ -27,13 +27,13 @@
             table {
                 width: 100%;
                 min-width: 500px;
+                margin-bottom: 2rem;
 
                 td {
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
+                    padding: 1em 0.5em;
 
                     h5 {
-                        font-size: clamp(0.9rem, 2vw, 1rem);
+                        font-size: clamp(0.85rem, 1vw, 1rem);
                         color: $primary_color;
                         font-weight: 600;
                     }
@@ -55,5 +55,15 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width:992px) {
+    .noti_sec .tab-content {
+        padding-top: 0rem;
+    }
+
+    .noti_sec {
+        padding: 1rem 0;
     }
 }

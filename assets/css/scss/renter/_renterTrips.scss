@@ -1,7 +1,23 @@
+.renter_trips {
+    padding-bottom: 3rem;
+
+    .trips_table {
+        table {
+            min-width: 1000px;
+        }
+
+        th {
+            padding-top: 1.7em;
+            padding-bottom: 1.7em;
+        }
+    }
+}
+
 .trips_table {
     table {
         // border-bottom: 1px dashed $borderColor;
         min-width: 720px;
+        border: 0;
 
         th {
             border: 1px dashed $borderColor;
@@ -12,6 +28,10 @@
             text-align: center;
             color: #333;
             vertical-align: middle;
+
+            &.addr {
+                width: 10% !important;
+            }
         }
 
         td {
@@ -31,6 +51,7 @@
             p {
                 font-size: clamp(0.7rem, 1vw, 0.9rem);
                 color: $primary_color;
+                font-weight: 500;
 
                 strong {
                     color: inherit;
@@ -51,11 +72,12 @@
 
             a {
                 color: $primary_color;
+                font-weight: 500;
 
                 &:not(.view_all) {
                     border: 2px solid $primary_color;
-                    font-size: clamp(0.7rem, 1vw, 0.95rem);
-                    padding: 0.2em 0.5em;
+                    font-size: clamp(0.7rem, 1vw, 0.85rem);
+                    padding: 0.3em 0.7em;
                     border-radius: 5px;
                 }
 
@@ -78,7 +100,9 @@ $mLeft : 3rem;
 
     .column_right {
         width: 20%;
+        min-width: 220px;
         padding: 0.1rem;
+        padding-right: 1rem;
 
         h3 {
             font-size: clamp(0.9rem, 2vw, 1.2rem);
@@ -86,7 +110,7 @@ $mLeft : 3rem;
         }
 
         table {
-            min-width: 250px;
+            min-width: 200px;
 
             td {
                 font-size: 0.7rem;
@@ -99,6 +123,7 @@ $mLeft : 3rem;
                 a {
                     font-size: 0.75rem;
                     color: rgb(184, 184, 184);
+                    white-space: nowrap;
                 }
             }
         }
@@ -153,7 +178,7 @@ $mLeft : 3rem;
             color: $green;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             margin-left: $mLeft;
             width: 100%;
             max-width: 80%;
@@ -162,6 +187,7 @@ $mLeft : 3rem;
                 color: inherit;
                 font-size: clamp(0.7rem, 2vw, 0.8rem);
                 padding-left: 2em;
+                font-weight: 500;
             }
 
             span {
@@ -169,6 +195,7 @@ $mLeft : 3rem;
                 display: block;
                 font-size: clamp(1rem, 2vw, 2rem);
                 line-height: 0;
+                cursor: pointer;
             }
         }
 
@@ -216,7 +243,7 @@ $mLeft : 3rem;
 
         .cancel_booking {
             margin-left: $mLeft;
-            background-color: $light-grey;
+            background-color: $grey;
             padding: 1em;
             margin-bottom: 2.5rem;
 
@@ -340,45 +367,6 @@ $mLeft : 3rem;
     }
 }
 
-.grid_flex {
-    @include Flex(row, center, stretch, 1rem, 1rem, wrap);
-    margin-top: 1rem;
-
-    .box {
-        border: 2px solid $primary_color;
-        border-radius: 10px;
-        padding: 2em 3em;
-        color: $primary_color;
-        width: 100%;
-        max-width: 450px;
-        text-align: center;
-        @include Fade(0.2s);
-
-        &:hover {
-            box-shadow: inset 0 0 0px 2px $primary_color;
-        }
-
-        .img_wrapper {
-            img {
-                max-width: 35px;
-                margin-bottom: 1em;
-            }
-        }
-
-        h5 {
-            font-size: clamp(0.9rem, 2vw, 1.1rem);
-            color: inherit;
-            margin-bottom: 0.3em;
-        }
-
-        p {
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            color: inherit;
-            line-height: 1.1;
-        }
-    }
-}
-
 .alert_msg {
     background-color: $light_purple;
     border: 1px solid $dark_purple;
@@ -391,115 +379,56 @@ $mLeft : 3rem;
     }
 }
 
-.page_heading {
-    margin-bottom: 1rem;
-    border-bottom: 1px dashed $grey;
-    width: 100%;
-    max-width: 800px;
 
-    h2 {
-        color: $primary_color;
-        font-size: clamp(1rem, 2vw, 1.45rem);
-        color: $primary_color;
-        padding: 3rem 1rem 1rem;
+@media (max-width:1200px) {
+    .trips_table table td img {
+        max-width: 65px;
+    }
+
+    .trips_details .column_right .btn_wrapper a {
+        padding: 0.7em 0.5em;
+    }
+
+    .trips_details .column_right h3 {
+        margin-bottom: 1em;
     }
 }
 
-.section_heading {
-    margin-bottom: 1rem;
-    border-bottom: 1px dashed $grey;
-    width: 100%;
-    max-width: 800px;
+@media (max-width:850px) {
+    .trips_details .flex_wrapper {
+        flex-direction: column-reverse;
+    }
 
-    h4 {
-        color: $primary_color;
-        font-size: clamp(0.85rem, 2vw, 1rem);
-        color: $primary_color;
-        padding: 2rem 1rem 1rem;
+    .trips_details .column_right {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .trips_details .column_left {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2em;
+    }
+
+    .trips_details .column_left .success_msg,
+    .trips_details .column_left .heading_wrapper,
+    .trips_details .column_left .cancel_booking {
+        margin-left: 0;
+    }
+
+    .renter_invoice .column_left {
+        margin: 0;
     }
 }
 
-.renter_account {
-    .verify_account {
-        form {
-            padding-top: 2em;
-            padding-bottom: 5em;
+@media (max-width:475px) {
+    .trips_details .details_table {
+        min-width: 475px;
+    }
 
-            .wrapper {
-                display: flex;
-                column-gap: 10px;
-                align-items: flex-end;
-
-                .global_input_wrapper {
-                    width: 100%;
-
-                    input[type=email] {
-                        width: 100%;
-                    }
-                }
-
-                input[type=button] {
-                    width: 100%;
-                    max-width: 250px;
-                }
-            }
-
-            .wrapper2 {
-                display: flex;
-                column-gap: 10px;
-                align-items: flex-start;
-
-                .wrap:first-child {
-                    display: flex;
-                    column-gap: 10px;
-                    align-items: flex-start;
-                    width: 100%;
-
-                    .img_wrapper {
-                        width: 100%;
-                        max-width: 250px;
-
-                        img {
-                            max-width: 150px;
-                        }
-                    }
-
-                    .cap {
-                        padding-top: 0.5em;
-                        padding-bottom: 0.5em;
-
-                        p {
-                            font-size: clamp(0.75rem, 2vw, 0.85);
-                            font-weight: 600;
-
-                            span {
-                                display: block;
-                                font-weight: 400;
-                            }
-                        }
-
-                        .btn_wrapper {
-                            display: flex;
-                            column-gap: 10px;
-                            margin-top: 1em;
-
-                            a {
-                                padding: 0.7em 2em;
-
-                                label {
-                                    color: inherit;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .wrap:last-child {
-                    width: 100%;
-                    max-width: 300px;
-                }
-            }
-        }
+    .trips_details .column_left .success_msg {
+        max-width: 100%;
     }
 }
