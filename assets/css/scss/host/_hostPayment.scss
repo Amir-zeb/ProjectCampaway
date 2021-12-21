@@ -1,0 +1,24 @@
+#methods-tab {
+    column-gap: 25px;
+    border-bottom: 1px dashed $borderColor;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+
+    li {
+        button {
+            background-color: #fff;
+            color: $grey;
+            font-weight: 700;
+            border-radius: 0;
+            border-bottom: 0;
+            font-size: clamp(0.95rem, 2vw, 1.2rem);
+
+            &.active {
+                color: $primary_color;
+                border-bottom: 2px solid $primary_color;
+            }
+        }
+    }
+}

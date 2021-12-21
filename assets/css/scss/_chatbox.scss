@@ -170,6 +170,7 @@
         padding: 1em;
         height: calc(100vh - 66px);
         width: 100%;
+        overflow: hidden;
 
         .btn_wrapper {
             width: 100%;
@@ -179,7 +180,7 @@
 
             .wrap {
                 width: fit-content;
-                box-shadow: 0 0 10px #333;
+                box-shadow: 0 0 10px rgb(192, 192, 192);
                 background-color: #fff;
                 display: flex;
                 margin: 0 auto;
@@ -211,7 +212,7 @@
             overflow-y: scroll;
             margin-top: 60px;
             padding-top: 15px;
-            padding-bottom: 15px;
+            padding-bottom: 130px;
 
             .content_wrapper {
 
@@ -232,6 +233,7 @@
                 .recieve_msg_wrapper {
                     max-width: 450px;
                     margin-right: auto;
+                    margin-bottom: 1rem;
 
                     h4 {
                         font-size: clamp(0.7rem, 2vw, 0.8rem);
@@ -284,8 +286,9 @@
                 }
 
                 .sent_msg_wrapper {
-                    max-width: 50%;
+                    max-width: 450px;
                     margin-left: auto;
+                    margin-bottom: 1rem;
 
                     h4 {
                         font-size: clamp(0.7rem, 2vw, 0.8rem);
@@ -346,6 +349,7 @@
             width: 100%;
             left: 0;
             padding: 0.3em 1em;
+            background-color: #fff;
 
             .input_wrapper {
                 display: flex;
@@ -418,9 +422,14 @@
         max-height: calc(100vh - 66px);
         overflow-y: scroll;
         scrollbar-width: none;
+        @include Smooth(0.5s);
 
         &.close {
-            display: none;
+            // display: none;
+            width: 0;
+            min-width: 0;
+            max-width: 0;
+            opacity: 0;
         }
 
         &:before {
@@ -569,6 +578,12 @@
                         font-size: clamp(10px, 2vw, 13px);
                         color: #fff;
                     }
+
+                    .custom_radio input:checked~.checkmark,
+                    .custom_radio .global_input_wrapper textarea:checked~.checkmark,
+                    .global_input_wrapper .custom_radio textarea:checked~.checkmark {
+                        background-color: $primary_color;
+                    }
                 }
             }
 
@@ -592,5 +607,82 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width:1080px) {
+    .chat_container .media_sec {
+        position: absolute;
+        right: 0;
+        z-index: 99;
+        max-width: 300px;
+
+        &.clode {
+            right: -350px;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .chat_container .user_sec {
+        position: absolute;
+        left: 0;
+        z-index: 98;
+        @include Smooth(1s);
+
+        &.close {
+            left: -250px;
+
+            .chat_user_close {
+                &::before {
+                    transform: translate(-50%, -50%) rotate(720deg);
+                }
+            }
+        }
+
+        .chat_user_close {
+            position: absolute;
+            right: -25px;
+            top: 4px;
+            width: 25px;
+            height: 25px;
+            z-index: 2;
+            text-align: center;
+            background-color: $light-grey;
+            cursor: pointer;
+            overflow: hidden;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            &::before {
+                content: '+';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                color: $primary_color;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 1;
+                @include Smooth(1s);
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .chat_container .message_area .bottom_wrapper .input_wrapper .my_input .send_btn a img {
+        max-width: 11px;
+    }
+
+    .chat_container .message_area .bottom_wrapper .input_wrapper .my_input .send_btn a span {
+        font-size: 10px;
+    }
+
+    .chat_container .message_area .bottom_wrapper .input_wrapper .my_input .send_btn a {
+        padding: 0.4em 1em;
     }
 }

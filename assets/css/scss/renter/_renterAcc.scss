@@ -1,4 +1,6 @@
 .renter_account {
+    padding-bottom: 3rem;
+
     .verify_account {
         form {
             padding-top: 2em;
@@ -79,6 +81,31 @@
                     width: 100%;
                     max-width: 300px;
                 }
+            }
+        }
+    }
+
+    .provide_id {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+
+            p {
+                font-size: clamp(0.8rem, 2vw, 1.05rem);
+                font-weight: 600;
+            }
+
+            span {
+                font-size: clamp(0.75rem, 2vw, 0.8rem);
+            }
+
+            .common_btn {
+                padding-left: 2em;
+                padding-right: 2em;
             }
         }
     }

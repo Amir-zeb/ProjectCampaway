@@ -229,6 +229,111 @@
     }
 }
 
+.global_cardsV2 {
+    width: 100%;
+    max-width: 250px;
+
+    .img_wrapper {
+        img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    h4 {
+        position: absolute;
+        top: 10px;
+        padding: 0 0.5em;
+        color: #fff;
+        font-size: clamp(0.75rem, 2vw, 0.95rem);
+
+        span {
+            color: inherit;
+            display: block;
+        }
+    }
+
+    .bottom_wrapper {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 0.5em;
+
+        .wrap {
+            h5 {
+                color: #fff;
+                font-size: clamp(0.85rem, 2vw, 0.95rem);
+
+                sup {
+                    color: #fff;
+                    font-size: clamp(0.6rem, 2vw, 0.7rem);
+                }
+            }
+
+            span {
+                color: #fff;
+                display: block;
+                line-height: 1.2;
+                font-size: clamp(0.6rem, 2vw, 0.7rem);
+            }
+        }
+    }
+}
+
+.global_cardsV3 {
+    box-shadow: 0 10px 10px #3333;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid #fff;
+    @include Smooth(0.2s);
+
+    &:hover {
+        border: 1px solid #3333;
+    }
+
+    h3 {
+        font-size: clamp(0.95rem, 2vw, 2rem);
+        font-weight: 700;
+        color: $primary_color;
+        margin-bottom: 0.5em;
+    }
+
+    .wrapper {
+        display: flex;
+        column-gap: 15px;
+        margin-bottom: 0.5rem;
+
+        h4 {
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            color: $primary_color;
+            font-weight: 600;
+        }
+
+        .badge {
+            font-size: clamp(0.55rem, 2vw, 0.65rem);
+        }
+    }
+
+    .para {
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
+        line-height: 1.1;
+        margin-bottom: 1.5em;
+    }
+
+    .common_btn {
+        width: fit-content;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+}
+
 @media (max-width:575px) {
     .global_cards.card_align_hr {
         max-width: 277px;

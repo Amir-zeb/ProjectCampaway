@@ -6,6 +6,14 @@ if (user_dropdown) {
     })
 }
 
+var user_sec = document.querySelector('.chat_container .user_sec');
+var close_user = document.querySelector('.chat_user_close');
+if (close_user) {
+    close_user.addEventListener('click', () => {
+        user_sec.classList.toggle("close");
+    })
+}
+
 var ellipses_dropdown = document.querySelectorAll('.ellipses_dropdown');
 var ellipses_droplist = document.querySelectorAll('.ellipses_droplist');
 if (ellipses_dropdown) {

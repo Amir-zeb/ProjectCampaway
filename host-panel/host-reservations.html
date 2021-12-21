@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | Renter Dashboard</title>
+    <title>Reservations | Host Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid align-items-center">
-                <a class="navbar-brand" href="./renter-dashboard.html">
+                <a class="navbar-brand" href="./host-dashboard.html">
                     <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
                 </a>
                 <div class="wrapper">
@@ -63,47 +63,47 @@
                         <div class="user_dropdown_list">
                             <ul>
                                 <li>
-                                    <a href="../host-panel/host-dashboard.html">
+                                    <a href="../renter-panel/renter-dashboard.html">
                                         <div class="img_wrapper">
                                             <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Switch To Host Dashboard</h4>
+                                        <h4>Switch To Camper Dashboard</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./renter-messages.html">
+                                    <a href="./host-messages.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/chat.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Messages</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./renter-trips.html">
+                                    <a href="./host-reservations.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/road-trip.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Trips</h4>
+                                        <h4>Reservations</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./renter-favourites.html">
+                                    <a href="./host-wallet.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/heart.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Favourites</h4>
+                                        <h4>Wallet</h4>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Become A Host</h4>
+                                        <h4>My Listings</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./renter-profile.html">
+                                    <a href="./host-profile.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
                                         </div>
@@ -111,7 +111,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./renter-account.html">
+                                    <a href="./host-account.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
                                         </div>
@@ -147,10 +147,10 @@
                 <div class="row">
                     <div class="col-12">
                         <h2>
-                            Trips
+                            Reservations
                         </h2>
                         <div class="links">
-                            <a href="./renter-dashboard.html">Dashboard</a> &rsaquo; <a class="active">Trips</a>
+                            <a href="./host-dashboard.html">Dashboard</a> &rsaquo; <a class="active">Reservations</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>Thumbnail</th>
                             <th>Reservation ID</th>
                             <th>Listing Name</th>
                             <th>Site Name</th>
@@ -179,8 +179,11 @@
                     <tbody>
                         <tr>
                             <td>
-                                <div class="img_wrapper">
-                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                <div class="thumbnail_wrapper">
+                                    <div class="wrap mb-2">
+                                        <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <p>Joe Doe</p>
                                 </div>
                             </td>
                             <td>
@@ -230,15 +233,17 @@
                             </td>
                             <td>
                                 <div class="btn_wrapper">
-                                    <a href="#">Contact</a>
-                                    <a href="./renter-trips-details.html">Details</a>
+                                    <a href="./host-reservations-details.html">Details</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="img_wrapper">
-                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                <div class="thumbnail_wrapper">
+                                    <div class="wrap mb-2">
+                                        <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <p>Joe Doe</p>
                                 </div>
                             </td>
                             <td>
@@ -288,15 +293,17 @@
                             </td>
                             <td>
                                 <div class="btn_wrapper">
-                                    <a href="#">Contact</a>
-                                    <a href="./renter-trips-details.html">Details</a>
+                                    <a href="./host-reservations-details.html">Details</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="img_wrapper">
-                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                <div class="thumbnail_wrapper">
+                                    <div class="wrap mb-2">
+                                        <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <p>Joe Doe</p>
                                 </div>
                             </td>
                             <td>
@@ -346,15 +353,17 @@
                             </td>
                             <td>
                                 <div class="btn_wrapper">
-                                    <a href="#">Contact</a>
-                                    <a href="./renter-trips-details.html">Details</a>
+                                    <a href="./host-reservations-details.html">Details</a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="img_wrapper">
-                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                <div class="thumbnail_wrapper">
+                                    <div class="wrap mb-2">
+                                        <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <p>Joe Doe</p>
                                 </div>
                             </td>
                             <td>
@@ -404,17 +413,10 @@
                             </td>
                             <td>
                                 <div class="btn_wrapper">
-                                    <a href="#">Contact</a>
-                                    <a href="./renter-trips-details.html">Details</a>
+                                    <a href="./host-reservations-details.html">Details</a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- <tr>
-                            <td colspan="12"></td>
-                            <td>
-                                <a href="#" class="view_all">View all</a>
-                            </td>
-                        </tr> -->
                     </tbody>
                 </table>
             </div>

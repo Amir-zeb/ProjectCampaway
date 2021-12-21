@@ -1,0 +1,46 @@
+.host_grid {
+    border-bottom: 1px dashed $borderColor;
+
+    &.bd-t {
+        border-top: 1px dashed $borderColor;
+    }
+
+    .info_grid {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+
+        li {
+            width: calc(100%/3);
+            padding-top: 1em;
+            padding-bottom: 1em;
+            text-align: center;
+            border-right: 1px dashed $borderColor;
+
+            &:last-child {
+                border-right: 0;
+            }
+
+            p {
+                color: $primary_color;
+                font-weight: 700;
+                font-size: clamp(0.85rem, 2vw, 1rem);
+            }
+
+            h5 {
+                color: $primary_color;
+                font-weight: 600;
+                font-size: clamp(0.85rem, 2vw, 2rem);
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+
+            a {
+                color: $primary_color;
+                font-size: clamp(0.75rem, 2vw, 0.8rem);
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.welcome_msg {
+    border-bottom: 1px dashed $borderColor;
+
+    h4 {
+        text-align: center;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        padding: 2em 0;
+        font-weight: 600;
+    }
+}
+
+.common_btn {
+    padding: 0.7em 1.2em;
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+    border: 1px solid $primary_color;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    display: block;
+    text-align: center;
+}
+
+.hover_dark:hover {
+    background-color: $primary_color;
+    color: #fff !important;
+}
+
+.hover_light:hover {
+    background-color: #fff;
+    color: $primary_color !important;
+}
+
+.star_ratings {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    .stars_wrapper {
+        .fa-star {
+            color: $grey;
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
+
+            &.checked {
+                color: $yellow;
+            }
+        }
+    }
+
+    span {
+        color: $dark_grey;
+        font-weight: 600;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
+    }
+}
+
+.underline_a {
+    color: $primary_color;
+    text-decoration: underline;
+    font-size: clamp(0.75rem, 2vw, 0.85rem)
+}
+
+.page_heading {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed $borderColor;
+    width: 100%;
+    max-width: 800px;
+
+    h2 {
+        color: $primary_color;
+        font-size: clamp(1rem, 2vw, 1.45rem);
+        color: $primary_color;
+        padding: 3rem 1rem 1rem;
+        font-weight: 600;
+    }
+}
+
+.section_heading {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed $borderColor;
+    width: 100%;
+    max-width: 800px;
+
+    h4 {
+        color: $primary_color;
+        font-size: clamp(0.85rem, 2vw, 1rem);
+        color: $primary_color;
+        padding: 2rem 1rem 1rem;
+    }
+}
+
+.s_hd {
+    border-bottom: 1px dashed $borderColor;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    padding-bottom: 0.5em;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+
+    h4 {
+        font-size: inherit;
+        font-weight: 600;
+        color: $primary_color;
+        padding-left: 1em;
+    }
+}
+
+.sec_hd {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding-left: 8rem;
+    color: $primary_color;
+    font-weight: 600
+}
+
+.sort_by {
+    .inner_wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+
+        p {
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
+            color: $primary_color;
+        }
+
+        .dropdown {
+            button {
+                background-color: #fff;
+                border: 0;
+                font-size: clamp(0.75rem, 2vw, 0.85rem);
+                font-size: clamp(0.75rem, 2vw, 0.85rem);
+                color: $primary_color;
+            }
+
+            .dropdown-menu {
+                padding: 0;
+
+                li {
+                    a {
+                        color: $primary_color;
+                        font-size: clamp(0.75rem, 2vw, 0.85rem);
+
+                        &:hover {
+                            color: #fff;
+                            background-color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
