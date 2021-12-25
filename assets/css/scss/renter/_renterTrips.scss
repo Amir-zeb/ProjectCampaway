@@ -21,6 +21,7 @@
 
         th {
             border: 1px dashed $borderColor;
+            border-bottom: 0.01rem dashed $borderColor !important;
             border-left: 0;
             border-right: 0;
             font-size: clamp(0.7rem, 1vw, 0.9rem);
@@ -41,7 +42,7 @@
             border: 0;
             padding-top: 1.5em;
             padding-bottom: 1.5em;
-            border-bottom: 1px dashed $borderColor;
+            border-bottom: 0.01rem dashed $borderColor;
 
             img {
                 max-width: 85px;
@@ -296,7 +297,7 @@ $mLeft : 3rem;
     table {
         td {
             border: 0;
-            border-top: 1px dashed $borderColor;
+            border-top: 0.01rem dashed $borderColor;
 
             h5 {
                 font-size: 0.95rem;

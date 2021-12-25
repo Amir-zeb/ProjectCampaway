@@ -2,6 +2,10 @@
     max-height: calc(100vh - 66px);
     overflow-y: scroll;
     scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 .chat_container {
@@ -19,6 +23,10 @@
             max-height: calc(100vh - 66px);
             overflow-y: scroll;
             scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
         }
 
         .user_div {
@@ -213,6 +221,10 @@
             margin-top: 60px;
             padding-top: 15px;
             padding-bottom: 130px;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
 
             .content_wrapper {
 
@@ -423,6 +435,10 @@
         overflow-y: scroll;
         scrollbar-width: none;
         @include Smooth(0.5s);
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
 
         &.close {
             // display: none;

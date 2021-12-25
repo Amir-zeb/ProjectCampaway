@@ -1,7 +1,3 @@
-@mixin Fade($x) {
-    transition: $x all ease-in-out;
-}
-
 @mixin Smooth($x) {
     transition: $x all ease-in-out;
 }

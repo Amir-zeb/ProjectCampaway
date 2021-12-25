@@ -53,6 +53,18 @@ table {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ececec;
+}
+
 .bg_green {
   background-color: var(--green);
 }
@@ -171,7 +183,7 @@ table {
   height: 26px;
   width: 26px;
   left: 3px;
-  bottom: 3px;
+  bottom: 2px;
   background-color: var(--primaryColor);
   -webkit-transition: .4s;
   transition: .4s;
@@ -342,18 +354,72 @@ table {
   display: block;
 }
 
-.custom_select {
+select {
+  display: none;
   width: 100%;
-  font-size: 0.85rem;
-  padding: 0.55em 0.5em;
-  border: 1px solid var(--grey);
-  border-radius: 3px;
-  color: #333;
-  background-color: #fff;
+  min-width: unset !important;
+  /*hide original SELECT element: */
 }
 
-.custom_select option {
+.custom-select {
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+
+.custom-select .select-selected {
+  background-color: #fff;
   font-size: 0.85rem;
+  padding: 0.4em 0.5em;
+  color: #333;
+  border: 1px solid;
+  border-color: var(--grey);
+  border-radius: 3px;
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+}
+
+.custom-select .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #ccc transparent transparent transparent;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.custom-select .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #ccc transparent;
+  top: 7px;
+}
+
+.custom-select .select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid var(--borderColor);
+}
+
+.custom-select .select-items > div {
+  font-size: 0.85rem;
+  padding: 0.4em 0.5em;
+  color: #333;
+}
+
+.custom-select .select-hide {
+  display: none;
+}
+
+.custom-select .select-items div:hover,
+.custom-select .same-as-selected {
+  background-color: var(--primaryColor);
+  color: #fff !important;
 }
 
 .welcome_msg {
@@ -608,15 +674,20 @@ header nav .user_dropdown a h4 {
 header nav .user_dropdown .user_dropdown_list {
   position: absolute;
   background-color: var(--primaryColor);
-  top: 55px;
+  top: 20px;
   right: 0;
   min-width: 265px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   z-index: 9;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 header nav .user_dropdown .user_dropdown_list.show {
-  display: block;
+  visibility: visible;
+  top: 55px;
+  opacity: 1;
 }
 
 header nav .user_dropdown .user_dropdown_list ul {
@@ -699,6 +770,9 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   header nav .navbar-collapse .nav-item:not(.nav-item:last-child) {
     border-bottom: 1px solid #fff;
   }
+  header nav .navbar-collapse .nav-item:hover {
+    background-color: var(--green);
+  }
 }
 
 @media (max-width: 405px) {
@@ -724,6 +798,10 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   max-height: calc(100vh - 66px);
   overflow-y: scroll;
   scrollbar-width: none;
+}
+
+.chat_section::-webkit-scrollbar {
+  width: 0;
 }
 
 .chat_container {
@@ -765,6 +843,10 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   max-height: calc(100vh - 66px);
   overflow-y: scroll;
   scrollbar-width: none;
+}
+
+.chat_container .user_sec > div.wrap::-webkit-scrollbar {
+  width: 0;
 }
 
 .chat_container .user_sec .user_div {
@@ -997,6 +1079,10 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   margin-top: 60px;
   padding-top: 15px;
   padding-bottom: 130px;
+}
+
+.chat_container .message_area .massages_wrapper::-webkit-scrollbar {
+  width: 0;
 }
 
 .chat_container .message_area .massages_wrapper .content_wrapper .date_wrapper p {
@@ -1244,6 +1330,10 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   scrollbar-width: none;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
+}
+
+.chat_container .media_sec::-webkit-scrollbar {
+  width: 0;
 }
 
 .chat_container .media_sec.close {
@@ -1585,6 +1675,13 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   color: #333;
 }
 
+.global_input_wrapper input:focus-visible, .global_input_wrapper textarea:focus-visible {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
 .global_input_wrapper.floating_wrapper .floating_img img {
   position: absolute;
   left: 5px;
@@ -1628,12 +1725,14 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 }
 
 .global_cards.card_hover {
-  border-radius: 5px;
+  border-radius: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .global_cards.card_hover:hover {
-  -webkit-box-shadow: 0 0 10px var(--borderColor);
-          box-shadow: 0 0 10px var(--borderColor);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .global_cards.card_align_hr {
@@ -1692,6 +1791,14 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 .global_cards .card_header .hearts i {
   color: var(--green);
   font-size: 0.9rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.global_cards .card_header .hearts i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .global_cards .card_header .img_caps {
@@ -1753,14 +1860,20 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   position: absolute;
   top: 0;
   right: 10px;
-  min-width: 140px;
-  max-width: 140px;
-  z-index: 2;
-  display: none;
+  width: 0;
+  z-index: -999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .global_cards .card_body .ellipses_dropdown .ellipses_droplist.show {
-  display: block !important;
+  min-width: 140px;
+  max-width: 140px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
 }
 
 .global_cards .card_body .ellipses_dropdown .ellipses_droplist li a {
@@ -2038,7 +2151,6 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   height: 500px;
   overflow-y: hidden;
   scrollbar-width: none;
-  border-top: 1px dotted var(--borderColor);
 }
 
 .dashboard_chatarea .chat_container .user_sec > div.wrap {
@@ -2080,6 +2192,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 
 .trips_table table th {
   border: 1px dashed var(--borderColor);
+  border-bottom: 0.01rem dashed var(--borderColor) !important;
   border-left: 0;
   border-right: 0;
   font-size: clamp(0.7rem, 1vw, 0.9rem);
@@ -2102,7 +2215,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   border: 0;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 1px dashed var(--borderColor);
+  border-bottom: 0.01rem dashed var(--borderColor);
 }
 
 .trips_table table td img {
@@ -2405,7 +2518,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 
 .booked_details table td {
   border: 0;
-  border-top: 1px dashed var(--borderColor);
+  border-top: 0.01rem dashed var(--borderColor);
 }
 
 .booked_details table td h5, .booked_details .noti_sec .tab-content form table td h6, .noti_sec .tab-content form .booked_details table td h6 {

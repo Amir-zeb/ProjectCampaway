@@ -79,14 +79,18 @@ header {
             .user_dropdown_list {
                 position: absolute;
                 background-color: $primary_color;
-                top: 55px;
+                top: 20px;
                 right: 0;
                 min-width: 265px;
-                display: none;
+                visibility: hidden;
+                opacity: 0;
                 z-index: 9;
+                @include Smooth(0.2s);
 
                 &.show {
-                    display: block;
+                    visibility: visible;
+                    top: 55px;
+                    opacity: 1;
                 }
 
                 ul {
@@ -167,6 +171,10 @@ header {
 
                     &:not(.nav-item:last-child) {
                         border-bottom: 1px solid #fff;
+                    }
+
+                    &:hover {
+                        background-color: $green;
                     }
                 }
             }

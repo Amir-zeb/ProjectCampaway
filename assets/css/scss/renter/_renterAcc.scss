@@ -124,7 +124,7 @@
         width: 100%;
         max-width: 450px;
         text-align: center;
-        @include Fade(0.2s);
+        @include Smooth(0.2s);
 
         &:hover {
             box-shadow: inset 0 0 0px 2px $primary_color;
