@@ -213,24 +213,16 @@
 
 }
 
-@media (max-width:992px) {
-    .custom_toggle {
-        width: 52px;
-        height: 30px;
-    }
+.custom_select {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 0.55em 0.5em;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    color: #333;
+    background-color: #fff;
 
-    .custom_toggle font {
-        font-size: 9px;
-    }
-
-    .custom_toggle input:checked+.slider::before,
-    .custom_toggle .global_input_wrapper textarea:checked+.slider::before,
-    .global_input_wrapper .custom_toggle textarea:checked+.slider::before {
-        transform: translateX(21px);
-    }
-
-    .custom_toggle .slider::before {
-        height: 22px;
-        width: 22px;
+    option {
+        font-size: 0.85rem;
     }
 }

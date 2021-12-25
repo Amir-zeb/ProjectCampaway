@@ -1,0 +1,25 @@
+.admin_profile_form {
+    .flex_wrapper {
+        display: flex;
+        column-gap: 1rem;
+
+        .global_input_wrapper {
+            width: calc(100%/3);
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .admin_profile_form {
+        padding-top: 0 !important;
+        margin-top: 1rem !important;
+
+        .flex_wrapper {
+            flex-direction: column;
+
+            .global_input_wrapper {
+                width: 100%;
+            }
+        }
+    }
+}

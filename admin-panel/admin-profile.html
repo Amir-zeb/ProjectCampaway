@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Admin Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./admin-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="./admin-reservations.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Reservations</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-wallet.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Wallet</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-profile.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Content Management</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Help</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="renter_profile">
+        <section class="profile_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="profile_flex">
+                        <div class="col_left">
+                            <div class="side_info">
+                                <div class="top_sec">
+                                    <div class="img_wrapper">
+                                        <img src="../assets/images/icons/default-user.png" alt="" class="img-fluid">
+                                        <div>
+                                            <form action="">
+                                                <input type="file" name="" class="d-none" id="img_pick2">
+                                                <label for="img_pick2">Update Photo</label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="caps">
+                                        <p>Profile Status</p>
+                                        <p><strong>Identity Verification</strong></p>
+                                        <div class="icon_wrapper danger_icon">
+                                            <div class="icon_wrap">
+                                                <img src="../assets/images/icons/cross-red.png" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                            <font>Note Verified</font>
+                                        </div>
+                                    </div>
+                                    <a href="./renter-account-edit1.html"
+                                        class="bg_green common_btn text-light border-0">Get Verified</a>
+                                </div>
+                                <div class="bottom_sec">
+                                    <p>Provided</p>
+                                    <div class="icon_wrapper">
+                                        <div class="icon_wrap">
+                                            <img src="../assets/images/icons/tick-green.png" alt="" class="img-wrapper">
+                                        </div>
+                                        <font>Email address</font>
+                                    </div>
+                                    <div class="icon_wrapper">
+                                        <div class="icon_wrap">
+                                            <img src="../assets/images/icons/tick-green.png" alt="" class="img-wrapper">
+                                        </div>
+                                        <font>Phone number</font>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right profile_column">
+                            <div class="col_wrapper">
+                                <div class="top_sec">
+                                    <h2>Hi, I’m Lea Joe</h2>
+                                    <!-- <div class="icon_wrapper">
+                                        <i class="fa fa-star"></i>
+                                        <p>No Reviews</p>
+                                    </div> -->
+                                    <form action="" class="global_form_wrapper admin_profile_form mt-5 pt-3">
+                                        <div class="global_input_wrapper mb-3">
+                                            <label for="">
+                                                About
+                                            </label>
+                                            <textarea name="" id="" rows="3"></textarea>
+                                        </div>
+                                        <div class="global_input_wrapper">
+                                            <label for="">
+                                                Role
+                                            </label>
+                                            <input type="text" name="" id="">
+                                        </div>
+                                        <div class="flex_wrapper">
+                                            <div class="global_input_wrapper floating_wrapper">
+                                                <label for="">
+                                                    Phone
+                                                </label>
+                                                <div class="floating_img">
+                                                    <input type="text" name="" id="">
+                                                    <img src="../assets/images/icons/phone.png" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="global_input_wrapper floating_wrapper">
+                                                <label for="">
+                                                    Whatsapp
+                                                </label>
+                                                <div class="floating_img">
+                                                    <input type="text" name="" id="">
+                                                    <img src="../assets/images/icons/whatsapp.png" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="global_input_wrapper floating_wrapper">
+                                                <label for="">
+                                                    Email
+                                                </label>
+                                                <div class="floating_img">
+                                                    <input type="text" name="" id="">
+                                                    <img src="../assets/images/icons/envelope-dark.png" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global_input_wrapper">
+                                            <label for="">
+                                                Language Spoken
+                                            </label>
+                                            <input type="text" name="" id="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="bottom_sec">
+                                    <div class="tab-content" id="profile-tabContent">
+                                        <h4 class="sec_hd ps-0 pb-4">Articles Published</h4>
+                                        <div class="flex_wrapper">
+                                            <div class="global_cards card_align_hr">
+                                                <div class="card_header">
+                                                    <div class="img_wrapper">
+                                                        <img src="../assets/images/media/card-img1.png" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <span class="badge bg_green">Featured</span>
+                                                    <div class="img_caps">
+                                                        <h4>
+                                                            <sup>$</sup>250.00<sub>/Night</sub>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="card_body">
+                                                    <div class="card_heading">
+                                                        <h4>
+                                                            Coromandel Tree House *Coming Soon
+                                                        </h4>
+                                                    </div>
+                                                    <p>
+                                                        Hobsonville Point Road, Hobsonville, Upper
+                                                        Harbour, Auckland, 0618, New Zealand
+                                                    </p>
+                                                    <ul class="dis">
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/bed.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <span>3 Bedrooms</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/shower.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <span>1 Baths</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/user-solid.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                                <span>6 campers Cabin,Chalets & Huts</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="card_footer">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <div class="wrap_img">
+                                                                    <img src="../assets/images/users/Ellipse-35.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                                <h5>Hosted by Lea</h5>
+                                                            </div>
+                                                            <div class="ellipses_dropdown">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                <ul class="ellipses_droplist">
+                                                                    <li>
+                                                                        <a href="#">View Listing</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Remove from favourite</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="star_ratings">
+                                                            <div class="stars_wrapper">
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <span>Excellent</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="global_cards card_align_hr">
+                                                <div class="card_header">
+                                                    <div class="img_wrapper">
+                                                        <img src="../assets/images/media/card-img1.png" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <span class="badge bg_green">Featured</span>
+                                                    <div class="img_caps">
+                                                        <h4>
+                                                            <sup>$</sup>250.00<sub>/Night</sub>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="card_body">
+                                                    <div class="card_heading">
+                                                        <h4>
+                                                            Coromandel Tree House *Coming Soon
+                                                        </h4>
+                                                    </div>
+                                                    <p>
+                                                        Hobsonville Point Road, Hobsonville, Upper
+                                                        Harbour, Auckland, 0618, New Zealand
+                                                    </p>
+                                                    <ul class="dis">
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/bed.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <span>3 Bedrooms</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/shower.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <span>1 Baths</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/user-solid.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                                <span>6 campers Cabin,Chalets & Huts</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="card_footer">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <div class="wrap_img">
+                                                                    <img src="../assets/images/users/Ellipse-35.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                                <h5>Hosted by Lea</h5>
+                                                            </div>
+                                                            <div class="ellipses_dropdown">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                <ul class="ellipses_droplist">
+                                                                    <li>
+                                                                        <a href="#">View Listing</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Remove from favourite</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="star_ratings">
+                                                            <div class="stars_wrapper">
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <span>Excellent</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="global_cards card_align_hr">
+                                                <div class="card_header">
+                                                    <div class="img_wrapper">
+                                                        <img src="../assets/images/media/card-img1.png" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <span class="badge bg_green">Featured</span>
+                                                    <div class="img_caps">
+                                                        <h4>
+                                                            <sup>$</sup>250.00<sub>/Night</sub>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="card_body">
+                                                    <div class="card_heading">
+                                                        <h4>
+                                                            Coromandel Tree House *Coming Soon
+                                                        </h4>
+                                                    </div>
+                                                    <p>
+                                                        Hobsonville Point Road, Hobsonville, Upper
+                                                        Harbour, Auckland, 0618, New Zealand
+                                                    </p>
+                                                    <ul class="dis">
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/bed.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <span>3 Bedrooms</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/shower.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <span>1 Baths</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icon_wrapper">
+                                                                <div class="wrap_icon">
+                                                                    <img src="../assets/images/icons/user-solid.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                                <span>6 campers Cabin,Chalets & Huts</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="card_footer">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <div class="wrap_img">
+                                                                    <img src="../assets/images/users/Ellipse-35.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                                <h5>Hosted by Lea</h5>
+                                                            </div>
+                                                            <div class="ellipses_dropdown">
+                                                                <i class="fa fa-ellipsis-v"></i>
+                                                                <ul class="ellipses_droplist">
+                                                                    <li>
+                                                                        <a href="#">View Listing</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Remove from favourite</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="star_ratings">
+                                                            <div class="stars_wrapper">
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star checked"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                            <span>Excellent</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

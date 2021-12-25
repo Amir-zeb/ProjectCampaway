@@ -342,24 +342,18 @@ table {
   display: block;
 }
 
-@media (max-width: 992px) {
-  .custom_toggle {
-    width: 52px;
-    height: 30px;
-  }
-  .custom_toggle font {
-    font-size: 9px;
-  }
-  .custom_toggle input:checked + .slider::before, .custom_toggle .global_input_wrapper textarea:checked + .slider::before, .global_input_wrapper .custom_toggle textarea:checked + .slider::before,
-  .custom_toggle .global_input_wrapper textarea:checked + .slider::before,
-  .global_input_wrapper .custom_toggle textarea:checked + .slider::before {
-    -webkit-transform: translateX(21px);
-            transform: translateX(21px);
-  }
-  .custom_toggle .slider::before {
-    height: 22px;
-    width: 22px;
-  }
+.custom_select {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.55em 0.5em;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  color: #333;
+  background-color: #fff;
+}
+
+.custom_select option {
+  font-size: 0.85rem;
 }
 
 .welcome_msg {
@@ -1589,6 +1583,19 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   border-color: var(--grey);
   border-radius: 3px;
   color: #333;
+}
+
+.global_input_wrapper.floating_wrapper .floating_img img {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 18px;
+}
+
+.global_input_wrapper.floating_wrapper .floating_img input, .global_input_wrapper.floating_wrapper .floating_img textarea {
+  padding-left: 1.8rem;
 }
 
 .form_btn {
@@ -3604,5 +3611,33 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 #methods-tab li button.active {
   color: var(--primaryColor);
   border-bottom: 2px solid var(--primaryColor);
+}
+
+.admin_profile_form .flex_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.admin_profile_form .flex_wrapper .global_input_wrapper {
+  width: calc(100%/3);
+}
+
+@media (max-width: 767px) {
+  .admin_profile_form {
+    padding-top: 0 !important;
+    margin-top: 1rem !important;
+  }
+  .admin_profile_form .flex_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .admin_profile_form .flex_wrapper .global_input_wrapper {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
