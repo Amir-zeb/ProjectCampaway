@@ -213,14 +213,14 @@
 
 }
 
-select {
-    display: none;
-    width: 100%;
-    min-width: unset !important;
-    /*hide original SELECT element: */
-}
-
 .custom-select {
+    select {
+        display: none;
+        width: 100%;
+        min-width: unset !important;
+        /*hide original SELECT element: */
+    }
+
     .select-selected {
         background-color: #fff;
         font-size: 0.85rem;

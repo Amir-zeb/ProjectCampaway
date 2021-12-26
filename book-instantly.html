@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Booking | Campaway</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css?ver=0.1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./renter-panel/renter-dashboard.html">
+                    <img src="./assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="./assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="./assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="./host-panel/host-dashboard.html">
+                                        <div class="img_wrapper">
+                                            <img src="./assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Switch To Host Dashboard</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-panel/renter-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/chat.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-panel/renter-trips.html">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/road-trip.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Trips</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-panel/renter-favourites.html">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/heart.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Favourites</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Become A Host</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-panel/renter-profile.html">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Profile</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./renter-panel/renter-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Account</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/help.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Help</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="./assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="book_instant">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_heading">
+                        <h2>Book Instantly
+                            <span>
+                                This Hosts lets you book instantly
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="success_msg">
+                        <div class="icon_wrapper">
+                            <img src="./assets/images/icons/clock-blue.png" alt="" class="img-fluid">
+                        </div>
+                        <p>Well done! Payment received the reservation has been booked</p>
+                    </div>
+                    <div class="flex_wrapper">
+                        <div class="col_left">
+                            <div class="booking">
+                                <!-- class="active" -->
+                                <!-- use active class to open tab -->
+                                <!-- class="done" -->
+                                <!-- when task is complete on active tab give him done class so it will close and it will be able to edit -->
+                                <!-- class="disabled" -->
+                                <!-- use disable class to disable the tab -->
+                                <!-- Use these class as your need -->
+                                <div class="custom_tab first_tab active">
+                                    <div class="tab_header">
+                                        <div class="heading">
+                                            <h2>
+                                                <span>1</span>
+                                                Start Booking
+                                                <div class="icon_wrapper">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                        <a class="edit_form">Edit</a>
+                                    </div>
+                                    <div class="tab_content" data-type='first-tab'>
+                                        <form action="" class="global_form_wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">First Name</label><br>
+                                                        <input type="text" name="" id="" value="TEST">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Last Name</label><br>
+                                                        <input type="text" name="" id="" value="TEST">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Phone</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12">
+                                                    <input type="button" class="bg_grey form_btn text-light"
+                                                        data-bs-toggle="modal" value="Continue">
+                                                    <p class="bottom_line">By clicking Continue, you are
+                                                        agreeing to our Terms of
+                                                        Use and Privacy Policy</p>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="custom_tab second_tab active">
+                                    <div class="tab_header">
+                                        <div class="heading">
+                                            <h2>
+                                                <span>2</span>
+                                                Additional Services
+                                                <div class="icon_wrapper">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                        <a class="edit_form">Edit</a>
+                                    </div>
+                                    <div class="tab_content" data-type='second-tab'>
+                                        <form action="" class="global_form_wrapper">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-borderless">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left">
+                                                                        <p>Cleaning Fee</p>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <p><strong>$50</strong></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left">
+                                                                        <p data-bs-toggle="collapse"
+                                                                            data-bs-target="#mycollapse"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="mycollapse">
+                                                                            Cleaning Fee <i
+                                                                                class="fa fa-chevron-down"></i></p>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <p><strong>$50</strong></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="collapse" id="mycollapse">
+                                                                    <td colspan="2">
+                                                                        <div>
+                                                                            <table width='100%' class="inner_table">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left">
+                                                                                            <div class="wrap">
+                                                                                                <select name="" id="">
+                                                                                                    <option>1</option>
+                                                                                                    <option value="">2
+                                                                                                    </option>
+                                                                                                    <option value="">3
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                                <span>
+                                                                                                    ABC activities
+                                                                                                </span>
+                                                                                                <font>after price</font>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td align="right">
+                                                                                            <span><strong>$50</strong></span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left">
+                                                                                            <div class="wrap">
+                                                                                                <select name="" id="">
+                                                                                                    <option>1</option>
+                                                                                                    <option value="">2
+                                                                                                    </option>
+                                                                                                    <option value="">3
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                                <span>
+                                                                                                    ABC activities
+                                                                                                </span>
+                                                                                                <font>after price</font>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td align="right">
+                                                                                            <span><strong>$50</strong></span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left">
+                                                                                            <div class="wrap">
+                                                                                                <select name="" id="">
+                                                                                                    <option>1</option>
+                                                                                                    <option value="">2
+                                                                                                    </option>
+                                                                                                    <option value="">3
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                                <span>
+                                                                                                    ABC activities
+                                                                                                </span>
+                                                                                                <font>after price</font>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td align="right">
+                                                                                            <span><strong>$50</strong></span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left">
+                                                                                            <div class="wrap">
+                                                                                                <select name="" id="">
+                                                                                                    <option>1</option>
+                                                                                                    <option value="">2
+                                                                                                    </option>
+                                                                                                    <option value="">3
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                                <span>
+                                                                                                    ABC activities
+                                                                                                </span>
+                                                                                                <font>after price</font>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td align="right">
+                                                                                            <span><strong>$50</strong></span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left">
+                                                                        <p>Additional Campers</p>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <p><strong>$70</strong></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="button" value="Continue"
+                                                        class="form_btn bg_grey text-light">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="custom_tab third_tab active">
+                                    <div class="tab_header">
+                                        <div class="heading">
+                                            <h2>
+                                                <span>3</span>
+                                                Terms
+                                                <div class="icon_wrapper">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                        <a class="edit_form">Edit</a>
+                                    </div>
+                                    <div class="tab_content" data-type="third-tab">
+                                        <form action="">
+                                            <div class="row heading">
+                                                <div class="col-12">
+                                                    <h4>Cancellation Policy</h4>
+                                                    <span>24 hours</span>
+                                                    <h4>Terms</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive">
+                                                        <table width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" valign="middle">
+                                                                        <i class="fa fa-times"></i>
+                                                                        <span>Accommodation Included</span>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <span><strong>No</strong></span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="middle">
+                                                                        <i class="fa fa-check"></i>
+                                                                        <span>Accommodation Included</span>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <span><strong>Yes</strong></span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="middle">
+                                                                        <i class="fa fa-times"></i>
+                                                                        <span>Accommodation Included</span>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <span><strong>No</strong></span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="middle">
+                                                                        <i class="fa fa-check"></i>
+                                                                        <span>Accommodation Included</span>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <span><strong>Yes</strong></span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="agree">
+                                                        <label class="custom_checkbox">I have read and agree with all
+                                                            rental
+                                                            policies and terms.
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-12">
+                                                    <input type="button" class="form_btn bg_grey text-light"
+                                                        value="Continue">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="custom_tab fourth_tab active">
+                                    <div class="tab_header">
+                                        <div class="heading">
+                                            <h2>
+                                                <span>4</span>
+                                                Payment
+                                                <div class="icon_wrapper">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </h2>
+                                        </div>
+                                        <a class="edit_form">Edit</a>
+                                    </div>
+                                    <div class="tab_content">
+                                        <form action="" class="pay_method_form global_form_wrapper">
+                                            <p class="info_msg">Update your payment method using our secure payment
+                                                system</p>
+                                            <h4 class="form_inner_hd">Payee Information</h4>
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">First Name</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Last Name</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Street Address</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Apt. Suite</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">City</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Region</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper">
+                                                        <label for="">Postal Code</label><br>
+                                                        <input type="text" name="" id="" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 mt-3">
+                                                <h4 class="form_inner_hd">Select Payment Method</h4>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper for_radio">
+                                                        <label for="paypal" class="open_method"
+                                                            data-type="paypal">Paypal</label><br>
+                                                        <label class="custom_radio">
+                                                            <input type="radio" checked id="paypal"
+                                                                name="payment-method">
+                                                            <span class="checkmark open_method"
+                                                                data-type="paypal"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper for_radio">
+                                                        <label for="stripe" class="open_method"
+                                                            data-type="stripe">Stripe</label><br>
+                                                        <label class="custom_radio">
+                                                            <input type="radio" name="payment-method" id="stripe">
+                                                            <span class="checkmark open_method"
+                                                                data-type="stripe"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <div class="global_input_wrapper for_radio">
+                                                        <label for="wire-transfer" class="open_method"
+                                                            data-type="wire-transfer">Wire
+                                                            Transfer</label><br>
+                                                        <label class="custom_radio">
+                                                            <input type="radio" name="payment-method"
+                                                                id="wire-transfer">
+                                                            <span class="checkmark open_method"
+                                                                data-type="wire-transfer"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="paypal_en">
+                                                <div class="mt-3 mt-3">
+                                                    <h4 class="form_inner_hd">Paypal Account Information</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Enter your Paypal Email</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stripe_en d-none">
+                                                <div class="mt-3 mt-3">
+                                                    <h4 class="form_inner_hd">Stripe Account Information</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Resident Email</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wire_transfer_en d-none">
+                                                <div class="mt-3 mt-3">
+                                                    <h4 class="form_inner_hd">Paypal Account Information</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Beneficiary Account Information</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">SWIFT or IBN</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Bank Name</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Street Address</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Apt. Suite</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">City</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Region</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="global_input_wrapper">
+                                                            <label for="">Postal Code</label><br>
+                                                            <input type="text" name="" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="button" class="form_btn bg_grey text-light"
+                                                        value="Continue">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="top_wrapper">
+                                <div class="card_wrapper">
+                                    <div class="card_top">
+                                        <h4>Tongariro Hut *
+                                            <br>
+                                            Coming Soon
+                                        </h4>
+                                        <p>Cabins, Chalet & Huts</p>
+                                    </div>
+                                    <div class="card_bottom">
+                                        <div class="img_wrapper">
+                                            <img src="../assets/images/media/card-img1.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="inner_flex">
+                                <li>
+                                    <div class="wrap">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/icon-down.png" alt="" class="img-fluid">
+                                        </div>
+                                        <span>Arrive</span>
+                                    </div>
+                                    <p>11/11/2021</p>
+                                </li>
+                                <li>
+                                    <div class="wrap">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/icon-up.png" alt="" class="img-fluid">
+                                        </div>
+                                        <span>Depart</span>
+                                    </div>
+                                    <p>11/11/2021</p>
+                                </li>
+                                <li>
+                                    <div class="wrap">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/icon-user.png" alt="" class="img-fluid">
+                                        </div>
+                                        <span>Campers</span>
+                                    </div>
+                                    <p>2 Campers</p>
+                                </li>
+                            </ul>
+                            <div class="bottom_wrapper table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left">
+                                                <h5>Total</h5>
+                                            </td>
+                                            <td align="right">
+                                                <h5>Total</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">
+                                                <p>Includes taxes and fees</p>
+                                            </td>
+                                            <td align="right">
+                                                <a href="#">View Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">
+                                                <p>25 nights (width weekend)</p>
+                                            </td>
+                                            <td align="right">
+                                                <p>$6,450.00</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">
+                                                <p>Services fees</p>
+                                            </td>
+                                            <td align="right">
+                                                <p>$250.00</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">
+                                                <h5>Payment due</h5>
+                                            </td>
+                                            <td align="right">
+                                                <h5>$7000.00</h5>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="main_app_footer_container">
+        <div class="container">
+            <div class="row footer_top_wrap">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="main_app_footer_about_container">
+                        <img src="../assets/images/Campaway-Logo.png">
+                        <p>We are developing a network of unique nature-based campsites and accomodations around New
+                            Zealand. We connect landowners who want to make an additional income through land sharing,
+                            to travellers seeking a nature-based escape nearby.</p>
+                        <span><a href="#">Read More<img src="../assets/images/footer_right_arrow_right.png"></a></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="main_app_footer_explore_container footer_arrow_content_col">
+                        <h3>Explore</h3>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../about.php">About</a></span>
+                        </p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../become-host.php">Become a
+                                    Host</a></span></p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../camper-standards.php">Camper
+                                    Standards</a></span></p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../hosting-standards.php">Hosting
+                                    Standards</a></span></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="main_app_footer_company_details_container footer_arrow_content_col">
+                        <h3>Company</h3>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a
+                                    href="../sustainability.php">Sustainability</a></span></p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../covid-response.php">Our
+                                    Covid19
+                                    Response</a></span></p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../privacy-policy.php">Privacy
+                                    Policy </a></span></p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../terms-of-service.php">Terms of
+                                    Service </a></span></p>
+                        <p><img src="../assets/images/footer-arrow.png"><span><a href="../faq.php">FAQ</a></span></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="main_app_footer_contact_container footer_arrow_content_col">
+                        <h3>Contact Us</h3>
+                        <p><img src="../assets/images/footer-location-icon.png"><span>New Zealand</span></p>
+                        <p><img src="../assets/images/footer-phone-icon.png"><span>+64 22 584 4260</span></p>
+                        <p style="display: flex; align-items:center"><img
+                                src="../assets/images/footer-email-icon.png"><span>support@campaway.co.nz</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row footer_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <p>Campaway- All rights reserved - 2021 </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="footer_social_container">
+                                <div class="social_icons social_round">
+                                    <a class="btn-bg-facebook" target="_blank" href="#"><i
+                                            class="fab fa-facebook"></i></a>
+                                    <a class="btn-bg-instagram" target="_blank" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

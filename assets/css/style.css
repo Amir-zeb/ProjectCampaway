@@ -1,4 +1,3 @@
-@import url("../../fonts/poppins-fonts.css?family=poppins:100,200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -354,16 +353,16 @@ table {
   display: block;
 }
 
-select {
+.custom-select {
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+
+.custom-select select {
   display: none;
   width: 100%;
   min-width: unset !important;
   /*hide original SELECT element: */
-}
-
-.custom-select {
-  /* Style items (options): */
-  /* Hide the items when the select box is closed: */
 }
 
 .custom-select .select-selected {
@@ -776,7 +775,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
 }
 
 @media (max-width: 405px) {
-  .navbar-brand {
+  header .navbar-brand {
     display: block;
     width: 100%;
     text-align: center;
@@ -1703,6 +1702,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   color: #fff;
   border-radius: 3px;
   border: 0;
+  font-weight: 600;
 }
 
 @media (max-width: 767px) {
@@ -3485,6 +3485,419 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   margin-bottom: 2em;
 }
 
+.book_instant .section_heading {
+  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+}
+
+.book_instant .section_heading h2 {
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.book_instant .section_heading span {
+  display: block;
+  font-weight: 400;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: var(--primaryColor);
+}
+
+.book_instant .success_msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  background-color: #E2F0F5;
+  border: 2px solid #4FBCE7;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.book_instant .success_msg img {
+  max-width: 20px;
+}
+
+.book_instant .success_msg p {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: #4FBCE7;
+  font-weight: 600;
+}
+
+.book_instant .flex_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  row-gap: 1rem;
+  -ms-flex-wrap: unset;
+      flex-wrap: unset;
+  width: 100%;
+  padding: 1rem;
+}
+
+.book_instant .flex_wrapper .col_left {
+  width: 100%;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab.disabled {
+  opacity: 0.75;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab.active .tab_content {
+  display: block;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab.done .tab_header a {
+  display: block;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab.done .tab_header .heading h2 i {
+  display: block;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 0.5em;
+  border-bottom: 1px dashed var(--borderColor);
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_header a {
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_header .heading h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_header .heading h2 span {
+  display: block;
+  font-size: 0.85rem;
+  background-color: var(--green);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_header .heading h2 i {
+  color: var(--green);
+  display: none;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content {
+  padding: 1.5em 0.5em;
+  display: none;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content .form_btn {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  max-width: 450px;
+  margin: 0 auto !important;
+  display: block;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=first-tab] form .bottom_line {
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  color: var(--primaryColor);
+  text-align: center;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table {
+  min-width: 250px;
+  border-bottom: 1px dashed var(--borderColor);
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table td p {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table td p i {
+  font-size: 0.85rem;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table .inner_table {
+  border: 0;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table .inner_table tr td span {
+  font-size: 0.85rem;
+  margin-left: 0.5em;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table .inner_table tr td font {
+  font-size: 0.75rem;
+  margin-left: 0.5em;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=second-tab] form table .inner_table tr td select {
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid var(--borderColor);
+  font: 0.75rem;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] .heading h4 {
+  color: var(--primaryColor);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  margin-bottom: 1.5em;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] .heading span {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 2em;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form table {
+  min-width: 250px;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form table td {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--borderColor);
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form table td i {
+  font-size: 0.85rem;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form table td span {
+  font-size: 0.85rem;
+}
+
+.book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form .agree {
+  margin: 0.5rem;
+  background-color: var(--light-grey);
+  padding: 2rem 1rem;
+}
+
+.book_instant .flex_wrapper .col_right {
+  width: 100%;
+  max-width: 400px;
+}
+
+.book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper .card_top {
+  padding: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper .card_top h4 {
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  font-weight: 600;
+}
+
+.book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper .card_top p {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper img {
+  max-width: 180px;
+  -webkit-filter: drop-shadow(4px 4px 2px #bbbbbb);
+          filter: drop-shadow(4px 4px 2px #bbbbbb);
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  border: 1px dashed var(--borderColor);
+  border-radius: 5px;
+  background-color: var(--light-grey);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex li {
+  width: 100%;
+  max-width: calc(100%/2);
+  padding: 0.5rem;
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex li:last-child {
+  max-width: 100%;
+  border-top: 1px dashed var(--borderColor);
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex li:first-child {
+  border-right: 1px dashed var(--borderColor);
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex li .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex li .wrap span {
+  display: block;
+  font-size: 0.85rem;
+}
+
+.book_instant .flex_wrapper .col_right .inner_flex li p {
+  margin-top: 0.2em;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.book_instant .flex_wrapper .col_right .bottom_wrapper table td h5, .book_instant .flex_wrapper .col_right .bottom_wrapper .noti_sec .tab-content form table td h6, .noti_sec .tab-content form .book_instant .flex_wrapper .col_right .bottom_wrapper table td h6 {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 600;
+}
+
+.book_instant .flex_wrapper .col_right .bottom_wrapper table td p {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.book_instant .flex_wrapper .col_right .bottom_wrapper table td a {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: var(--dark-grey);
+}
+
+.book_instant .flex_wrapper .col_right .bottom_wrapper table tr:last-child td {
+  border-top: 1px dashed var(--borderColor);
+}
+
+@media (max-width: 1200px) {
+  .book_instant .flex_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .book_instant .flex_wrapper .col_right {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .book_instant .flex_wrapper {
+    padding: 1rem 0;
+  }
+  .book_instant .success_msg {
+    padding: 1rem 1rem;
+  }
+  .book_instant .flex_wrapper .col_right .top_wrapper {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper img {
+    max-width: 100%;
+  }
+  .book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 1rem;
+  }
+  .book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper .card_top h4 {
+    margin-bottom: 0.5em;
+  }
+  .book_instant .flex_wrapper .col_right .bottom_wrapper table {
+    min-width: 350px;
+  }
+  .book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form .agree {
+    padding: 1rem 0.5rem;
+  }
+}
+
 .host_grid {
   border-bottom: 1px dashed var(--borderColor);
 }
@@ -3702,7 +4115,7 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   max-width: 100px;
 }
 
-#methods-tab {
+.pay_method_sec #methods-tab {
   -webkit-column-gap: 25px;
           column-gap: 25px;
   border-bottom: 1px dashed var(--borderColor);
@@ -3712,7 +4125,11 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   max-width: 800px;
 }
 
-#methods-tab li button {
+.pay_method_sec #methods-tab li {
+  margin-left: 0.5em;
+}
+
+.pay_method_sec #methods-tab li button {
   background-color: #fff;
   color: var(--grey);
   font-weight: 700;
@@ -3721,9 +4138,30 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   font-size: clamp(0.95rem, 2vw, 1.2rem);
 }
 
-#methods-tab li button.active {
+.pay_method_sec #methods-tab li button.active {
   color: var(--primaryColor);
   border-bottom: 2px solid var(--primaryColor);
+}
+
+.pay_method_sec .tab-content {
+  margin-left: 0;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 380px) {
+  .pay_method_sec #methods-tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pay_method_sec #methods-tab li button {
+    width: 100%;
+  }
 }
 
 .admin_profile_form .flex_wrapper {
@@ -3751,6 +4189,4505 @@ header nav .user_dropdown .user_dropdown_list ul li a h4 {
   }
   .admin_profile_form .flex_wrapper .global_input_wrapper {
     width: 100%;
+  }
+}
+
+/* GENERAL CSS */
+.main_app_header_banner_content_container_400vh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 316px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_app_header_banner_content_container_400vh h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.main_app_header_banner_content_container_400vh p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main_app_header_banner_content_container_400vh.banner_left_content {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hero_banner_left_content_container {
+  width: 500px;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 125px;
+  padding-top: 230px;
+}
+
+.banner_left_content .hero_banner_left_content_container h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-bottom: 0px !important;
+}
+
+.banner_left_content .hero_banner_left_content_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding-left: 65px;
+}
+
+.card {
+  border: none !important;
+}
+
+/* MAIN SLIDER CSS */
+.main_app_slider_container .col-md-12 {
+  padding: 0px 0px;
+}
+
+.main_app_slider_container .carousel-control-next-icon,
+.main_app_slider_container .carousel-control-prev-icon {
+  background-image: none !important;
+  padding: 18px !important;
+  width: unset;
+  height: unset;
+  background: #2C615F;
+  border-radius: 5px;
+}
+
+.main_app_slider_container .carousel-control-prev {
+  left: 0px !important;
+}
+
+.main_app_slider_container .carousel-control-next {
+  right: 5px !important;
+}
+
+.main_app_slider_container .carousel-item img {
+  width: 100% !important;
+}
+
+/* SLIDER CSS */
+.carousel.slide a {
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+.carousel.slide .carousel_direction_btn_container a span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #2C615F;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #2C615F;
+}
+
+.grid_region_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel_direction_btn_container {
+  margin: 80px 0px 30px 0px !important;
+  text-align: right;
+}
+
+/* .carousel-control-prev,
+.carousel-control-next {
+    height: 20px;
+    top: 12px !important;
+}
+
+.carousel-control-prev {
+    left: unset !important;
+    right: 70px;
+}
+
+
+.carousel-control-next {
+    right: -25px !important;
+} */
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* GENERAL PROFILE BREADCUMB */
+.breadcumb_profile_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 85px 0px 65px 0px;
+  border-bottom: 1px dashed #AAAE;
+}
+
+.breadcumb_user_content {
+  margin-left: 41px;
+}
+
+.breadcumb_user_content .breadcumb_user_content {
+  margin-left: 41px;
+}
+
+.breadcumb_user_content .breadcumb_user_icon {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.breadcumb_profile_container .breadcumb_user_content h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: #2C615F;
+}
+
+.breadcumb_profile_container .breadcumb_user_content span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 10px;
+  color: #4F5962;
+}
+
+.breadcumb_profile_content {
+  margin: 43px 30px;
+}
+
+.breadcumb_profile_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.breadcumb_profile_detail_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.breadcumb_profile_detail_container .breadcumb_language,
+.breadcumb_profile_detail_container .breadcumb_status,
+.breadcumb_profile_detail_container .breadcumb_ratings {
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.breadcumb_profile_detail_container .breadcumb_language h6,
+.breadcumb_profile_detail_container .breadcumb_status h6,
+.breadcumb_profile_detail_container .breadcumb_ratings h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4F5962;
+}
+
+.breadcumb_profile_detail_container .breadcumb_language span,
+.breadcumb_profile_detail_container .breadcumb_ratings span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #AAAEB1;
+}
+
+.breadcumb_profile_detail_container .breadcumb_status span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #A7D377;
+}
+
+.checked {
+  color: #FFCE31;
+}
+
+.card_featured_stripe {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: #FFFFFF !important;
+  padding: 4.5px 25px !important;
+  position: absolute !important;
+  top: 22px !important;
+  left: 22px !important;
+  width: unset !important;
+  background: #8AC544 !important;
+  border-radius: 5px;
+}
+
+.card_bottom_header {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 0px 25px;
+}
+
+.card_bottom_header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_app_listings_content_container .card_bottom_header_content {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.card_bottom_header_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+}
+
+/* .card_bottom_header_content span {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 10px;
+    color: #FFFFFF;
+} */
+.card_bottom_socail_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_bottom_header_content .card_bottom_socail_container small {
+  margin: 0px 10px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.custom_image_grid.img_hover_zoom .card_bottom_header img {
+  -webkit-transition: unset !important;
+  transition: unset !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0px !important;
+}
+
+.custom_image_grid.img_hover_zoom:hover .card_bottom_header img {
+  -webkit-transform: unset !important;
+          transform: unset !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.card_bottom_header_content h5, .card_bottom_header_content .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td .card_bottom_header_content h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px !important;
+}
+
+.card_bottom_header_content h5 .currency, .card_bottom_header_content .noti_sec .tab-content form table td h6 .currency, .noti_sec .tab-content form table td .card_bottom_header_content h6 .currency {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: #FFFFFF !important;
+  margin-top: -8px !important;
+}
+
+.card_bottom_header_content h5 .price, .card_bottom_header_content .noti_sec .tab-content form table td h6 .price, .noti_sec .tab-content form table td .card_bottom_header_content h6 .price {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 28px !important;
+  line-height: 35px !important;
+  color: #FFFFFF !important;
+}
+
+.card_bottom_header_content h5 .day_count, .card_bottom_header_content .noti_sec .tab-content form table td h6 .day_count, .noti_sec .tab-content form table td .card_bottom_header_content h6 .day_count {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: #FFFFFF !important;
+  margin-top: 10px !important;
+}
+
+/* GENRAL NAV-TAB */
+.breadcumb_nav_tabpanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 96px 0px 60px 0px;
+}
+
+.breadcumb_nav_tabpanel .nav {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100% !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 20px;
+}
+
+.breadcumb_nav_tabpanel ul li a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 20px;
+  color: rgba(79, 89, 98, 0.5);
+}
+
+.breadcumb_nav_tabpanel ul li a.active {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 2px solid #2C615F;
+  color: #4F5962;
+}
+
+.tab-content {
+  margin-left: 120px;
+  margin-bottom: 118px;
+}
+
+/* COLLAPSE PANEL LEFT */
+.main_app_terms_service_container [data-toggle="collapse"] .fa:before {
+  content: "";
+  background-image: url("../images/toggle-minus.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.main_app_terms_service_container [data-toggle="collapse"].collapsed .fa:before {
+  content: "";
+  background-image: url("../images/toggle-plus.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+/* COLLAPSE PANEL RIGHT */
+.faq_left_icon [data-toggle="collapse"] .fa:before {
+  content: "";
+  background-image: url("../images/collapse-arrow-up.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 25px !important;
+  left: unset;
+  cursor: pointer;
+}
+
+.faq_left_icon [data-toggle="collapse"].collapsed .fa:before {
+  content: "";
+  background-image: url("../images/collapse-arrow-down.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 25px !important;
+  cursor: pointer;
+}
+
+.card .collapse_header,
+.card .collapse_body {
+  background-color: #F8F8F8 !important;
+}
+
+.card .collapse_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 12px;
+  color: #4F5962;
+}
+
+.card .collapse_btn .fa {
+  margin-right: 10px;
+}
+
+.card .collapse_body p,
+.card .collapse_body ol li {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  color: #4F5962;
+}
+
+/* MOBILE RESPONSIVE NAVBAR */
+.header_mobile_navbar_container .main_app_navbar_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_mobile_navbar_container {
+  background-color: #FEFFFF;
+}
+
+.header_mobile_navbar_container .fa.fa-user-circle-o,
+.header_mobile_navbar_container .fa.fa-bars {
+  color: #2C615F;
+}
+
+.header_mobile_navbar_container .navbar {
+  left: 0px;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.header_mobile_navbar_container .main_app_navbar_content .fa.fa-bars:before {
+  content: "\f0c9";
+  background-image: none;
+}
+
+.header_mobile_navbar_container .main_app_navbar_content .fa-user-circle-o::before {
+  content: "\f2be";
+  background-image: none;
+}
+
+.header_mobile_navbar_container .navbar-toggler:focus,
+.header_mobile_navbar_container .navbar-toggler:hover {
+  outline: none !important;
+}
+
+.header_mobile_navbar_container .collapse.navbar-collapse .navbar-nav {
+  width: 90%;
+  background-color: #fff;
+  padding: 0px;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999;
+  margin-right: auto !important;
+}
+
+.header_mobile_navbar_container .collapse.navbar-collapse li a {
+  font-size: 14px !important;
+  padding: 15px 20px !important;
+  color: #4f5962 !important;
+  font-weight: 700 !important;
+}
+
+.header_mobile_navbar_container .collapse.navbar-collapse li a:hover {
+  color: #2C615F !important;
+}
+
+.header_mobile_navbar_container .collapse.navbar-collapse li a:before {
+  content: unset !important;
+}
+
+.header_mobile_navbar_container .collapse.navbar-collapse li a:hover::before {
+  width: 100% !important;
+}
+
+.header_mobile_navbar_container .collapse.navbar-collapse li a:before {
+  width: 0;
+  height: 3px;
+  content: "";
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-transition: 0.2s width;
+  transition: 0.2s width;
+  top: -15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.stickyHeader .collapse.navbar-collapse li a:before {
+  background-color: #2C615F !important;
+}
+
+/* HEADER CSS */
+.main_app_navbar_container.main_app_hero_banner {
+  background-image: url(../images/hero-banner.png);
+  height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_navbar_container .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main_app_navbar_container .navbar-nav {
+  margin-right: 0;
+}
+
+.main_app_navbar_container .navbar-nav li {
+  padding: 0 20px;
+}
+
+.main_app_navbar_container .navbar-nav li a {
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.main_app_navbar_container .navbar-nav .btn.become_host_header_btn {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff !important;
+  background-color: #2C615F;
+}
+
+.main_app_navbar_container .navbar-nav .btn.become_host_header_btn:hover,
+.main_app_navbar_container .navbar-nav .btn.become_host_header_btn:active,
+.main_app_navbar_container .navbar-nav .btn.become_host_header_btn:focus {
+  color: #2C615F !important;
+  background-color: #fff !important;
+}
+
+/* .stickyHeader {
+    position: fixed !important;
+    background: #fff;
+    transition: top 0.4s ease-in-out;
+    width: 100%;
+    z-index: 999;
+} */
+.stickyHeader li a {
+  color: #000 !important;
+}
+
+.sticky_logo {
+  display: none;
+  width: 209px;
+}
+
+.main_app_header_banner_content_container {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* NAVBAR BACKGROUND */
+.main_app_navbar_container .breadcumbs_navbar_bg {
+  background-color: #2C615F;
+}
+
+.breadcumbs_navbar_bg.stickyHeader li a {
+  color: #fff !important;
+}
+
+.main_app_navbar_container .breadcumbs_navbar_bg .btn {
+  background-color: #fff !important;
+  color: #2C615F !important;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #2C615F;
+}
+
+/* HOME CSS */
+.main_app_home_header_banner_content_container_500vh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 500px;
+}
+
+.main_app_home_header_banner_content_container_500vh h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.main_app_home_header_banner_content_container_500vh p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.grid_image_container .col-lg-3,
+.grid_image_container .col-lg-6 {
+  padding: 0px 10px 10px !important;
+}
+
+.grid_region_heading h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #515966;
+  margin: 70px 0px 30px 0px !important;
+}
+
+.custom_image_grid.img_hover_zoom {
+  position: relative;
+}
+
+.hover-effect:hover img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hover-effect:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.custom_image_grid.img_hover_zoom h4 {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.custom_image_grid.img_hover_zoom {
+  height: 256px;
+  /* [1.1] Set it as per your need */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
+  border-radius: 4px;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.custom_image_grid.img_hover_zoom img {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  width: 100%;
+  height: 256px;
+  border-radius: 4px;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.custom_image_grid.img_hover_zoom:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  width: 100%;
+  height: 256px;
+  border-radius: 4px;
+}
+
+.grid_top_spacing {
+  margin-top: 30px;
+}
+
+.campaway_host_details_content_col h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #515966;
+  margin-bottom: 30px;
+}
+
+.campaway_host_details_content_col p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
+  color: #4F5962;
+  margin-bottom: 30px !important;
+}
+
+.campaway_host_details_content_col .campaway_host_details_learn_more {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6C696B;
+  background: #eeeeee;
+  padding: 14px 20px;
+  margin-top: 45px !important;
+  margin-bottom: 30px !important;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.campaway_host_details_content_col .campaway_host_details_learn_more:hover,
+.campaway_host_details_content_col .campaway_host_details_learn_more:focus,
+.campaway_host_details_content_col .campaway_host_details_learn_more:active {
+  color: #fff !important;
+  background-color: #2C615F;
+}
+
+.home_hosting_cards {
+  background: #2C615F;
+  border-radius: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 90px;
+  margin-top: 120px;
+}
+
+.home_hosting_cards h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 27px 0px 17px 0px;
+}
+
+.home_hosting_cards p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0px 50px;
+}
+
+.home_hosting_cards a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6C696B !important;
+  border-radius: 5px;
+  background: #eeeeee;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 0 auto 27px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+}
+
+.home_hosting_cards a:hover {
+  color: #2C615F !important;
+  background-color: #fff;
+  text-decoration: none !important;
+}
+
+.home_campaway_host_container {
+  margin-top: 150px;
+}
+
+.home_carousel {
+  margin: 90px 0px 0px 0px;
+}
+
+.home_carousel .col-lg-4 {
+  padding: 0px 5px !important;
+}
+
+.home_carousel .card-body.journal_card_container {
+  padding: 0px 15px;
+}
+
+.home_carousel .card-body h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  color: #697279;
+  margin: 20px 0px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.home_carousel .card-body p {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  letter-spacing: -0.005em !important;
+  color: #4F5962 !important;
+  text-indent: 0px !important;
+}
+
+.home_carousel .card-body span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  color: #4F5962;
+}
+
+.home_carousel .card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_carousel .card_header img {
+  height: 12px;
+  cursor: pointer;
+}
+
+.card_header_setting_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 150px;
+  position: absolute;
+  right: 12px;
+  margin-top: -16px;
+  background: #2C615F;
+  border-radius: 5px;
+  display: none;
+}
+
+.card_header_setting_actions a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  color: #FFFFFF !important;
+  padding: 7px 17px;
+}
+
+.card_header_setting_actions a:hover,
+.card_header_setting_actions a:active {
+  color: #fff !important;
+}
+
+.card_header_setting_actions a:nth-child(2) {
+  border-top: 1px solid #fff;
+}
+
+.card_setting_icon_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* CONTACT CSS */
+.main_app_navbar_container.contact_us_hero_banner {
+  background-image: url(../images/contact-us-banner.png);
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.breadcumb_nav {
+  margin: 75px 0px 0px 0px;
+}
+
+.breadcumb_nav .breadcumb_heading_one {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #AAAEB1;
+  margin-right: 15px;
+}
+
+.breadcumb_nav .breadcumb_heading_two {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2C615F;
+  margin-left: 15px;
+}
+
+.breadcumb_nav h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 30px;
+  color: #2C615F;
+}
+
+.breadcumb_nav p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact_us_form_container {
+  padding: 75px 60px;
+  margin-bottom: 105px;
+}
+
+.contact_us_form_container form {
+  width: 100%;
+}
+
+.contact_us_form_container .form-group label {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4F5962;
+}
+
+.contact_us_form_container .form-group input, .contact_us_form_container .form-group .global_input_wrapper textarea, .global_input_wrapper .contact_us_form_container .form-group textarea,
+.contact_us_form_container .form-group textarea {
+  border: 1px solid #B5B8BB !important;
+  border-radius: 5px !important;
+}
+
+.contact_us_check_box_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_us_check_box_container .form_check_host label,
+.contact_us_check_box_container .form_check_camper label {
+  padding: 0px 5px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4F5962;
+}
+
+.contact_us_check_box_container .form_check_host,
+.contact_us_check_box_container .form_check_camper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_us_check_box_container .form_check_camper {
+  margin-left: 5px;
+}
+
+.btn.contact_us_submit_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700 !important;
+  border: 1px solid #2C615F;
+  font-size: 17px;
+  line-height: 21px;
+  background: #2C615F;
+  border-radius: 5px;
+  padding: 18px 0px !important;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.contact_us_submit_btn:hover,
+.contact_us_submit_btn:active,
+.contact_us_submit_btn:focus {
+  color: #2C615F !important;
+  background-color: #fff !important;
+}
+
+/* STANDARD CAMPER */
+.main_app_navbar_container.camper_standards_hero_banner {
+  background-image: url(../images/camper-standards-hero-banner.png);
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_center_content {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.grid_center_heading_left_content_row .grid_center_content h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 22px !important;
+  color: #4F5962;
+}
+
+.grid_center_heading_left_content_row .grid_center_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-bottom: 42px;
+  color: #4F5962;
+}
+
+.grid_center_content p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1px solid #4F5962;
+}
+
+.grid_left_content h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #4F5962;
+  text-align: left !important;
+}
+
+.grid_left_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+  text-align: justify;
+  color: #4F5962;
+  margin-bottom: 30px;
+}
+
+.grid_center_heading_left_content_row.p-80 {
+  padding-bottom: 80px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+/* HOSTING STANDARD */
+.main_app_navbar_container.hosting_standards_hero_banner {
+  background-image: url(../images/hosting-standards-hero-banner.png);
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_navbar_container.hosting_standards_hero_banner .main_app_header_banner_content_container_400vh p {
+  width: 60%;
+}
+
+/* COVID RESPONSE CSS */
+.main_app_navbar_container.covid_response_hero_banner {
+  background-image: url(../images/covid-reponse-hero-banner.png);
+  height: 800px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.covid_response_hero_banner .hosting_standards_btn {
+  font-family: Quicksand;
+  font-weight: 700 !important;
+  width: 100%;
+  background-color: #8AC544;
+  font-style: normal;
+  border: 1px solid #2C615F;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 10.5px 0px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.main_app_covid_reponse_content_container .breadcumb_nav h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #2C615F;
+  margin-top: 15px;
+  margin-bottom: 46px;
+}
+
+.main_app_covid_reponse_content_container .breadcumb_nav p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #4F5962;
+}
+
+.main_app_covid_reponse_content_container .covid_travel_message_container {
+  margin-bottom: 200px;
+  margin-left: 26px;
+}
+
+.main_app_covid_reponse_content_container .covid_travel_message_container h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.main_app_covid_reponse_content_container .covid_travel_message_container p {
+  margin: 25px 0px 10px 14px;
+}
+
+.main_app_covid_reponse_content_container .covid_travel_message_container ul {
+  margin-left: 15px;
+  padding-right: 40px;
+}
+
+.main_app_covid_reponse_content_container .covid_travel_message_container p,
+.main_app_covid_reponse_content_container .covid_travel_message_container ul li {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: justify;
+  color: #4F5962;
+}
+
+/* PRIVACY POLICY CSS */
+.main_app_privacy_policy_container .privacy_content_col {
+  margin: 125px 0px 90px 23px;
+}
+
+.main_app_privacy_policy_container .privacy_content_col p {
+  margin-bottom: 17px;
+}
+
+.main_app_privacy_policy_container .privacy_content_col p,
+.main_app_privacy_policy_container .privacy_content_col li,
+.main_app_privacy_policy_container .privacy_content_col a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #4F5962;
+  text-decoration: none !important;
+}
+
+.main_app_privacy_policy_container .privacy_content_col .policy_content_span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+}
+
+.main_app_privacy_policy_container .privacy_content_col h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 24px 0px;
+  color: #4F5962;
+}
+
+/* TERMS OF SERVICE CSS */
+.main_app_navbar_container.terms_service_hero_banner {
+  background-image: url(../images/terms-serivces-hero-banner.png);
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.terms_service_hero_banner .main_app_header_banner_content_container_400vh.term_service_container p {
+  width: 60% !important;
+  padding: 0px 20px !important;
+}
+
+.main_app_terms_service_container .terms_service_content_col h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  color: #4F5962;
+}
+
+.main_app_terms_service_container .terms_service_content_col p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: #4F5962;
+}
+
+.main_app_terms_service_container .mt-40 {
+  margin: 25px 0px 25px 23px;
+}
+
+.main_app_terms_service_container {
+  margin-bottom: 120px;
+}
+
+.main_app_terms_service_container .card-header,
+.main_app_terms_service_container .card-body {
+  border: 1px solid #AAAEB1 !important;
+}
+
+/* FAQS CSS */
+.main_app_navbar_container.faqs_hero_banner {
+  background-image: url(../images/terms-serivces-hero-banner.png);
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_faq_container .card.faq_left_icon {
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main_app_faq_container .card.faq_left_icon .card-header {
+  /* background: rgba(0, 0, 0, .03) !important; */
+  background-color: unset !important;
+  border-bottom: unset !important;
+}
+
+.main_app_faq_container .faq_content_col h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #4F5962;
+}
+
+.main_app_faq_container .faq_left_icon .card-body p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  margin-left: 15px;
+  color: #4F5962;
+}
+
+.main_app_faq_container .faq_content_col.mt-50 {
+  margin: 54px 0px 48px 25px;
+}
+
+.main_app_faq_container .faq_content_col.mb-40 {
+  margin-bottom: 90px;
+  margin-left: 25px;
+}
+
+/* COVID POLICY */
+.main_app_navbar_container.covid_policy_hero_banner {
+  background-image: url(../images/terms-serivces-hero-banner.png);
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_covid_policy_content_container .covid_policy_banner_container {
+  background-image: url("../images/covid-policy-banner.png");
+  height: 390px;
+  background-repeat: no-repeat;
+}
+
+.main_app_covid_policy_content_container .ml-40 {
+  margin-left: 40px;
+}
+
+.main_app_covid_policy_content_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 50px;
+  color: #4F5962;
+}
+
+.main_app_covid_policy_content_container p,
+.main_app_covid_policy_content_container ul li {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: justify;
+  color: #4F5962;
+}
+
+.main_app_covid_policy_content_container .mb-100 {
+  margin-bottom: 150px !important;
+}
+
+.main_app_covid_policy_content_container .covid_policy_banner_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.main_app_covid_policy_content_container .covid_poster_container {
+  background-color: #fff;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 36px 0px;
+  padding-top: 10px;
+}
+
+.main_app_covid_policy_content_container .covid_poster_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 26px 0px 26px 0px;
+  color: #4F5962;
+}
+
+.main_app_covid_policy_content_container .covid_poster_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #4F5962;
+  width: 80%;
+}
+
+/* JOURNAL CSS */
+.main_app_navbar_container.journal_hero_banner {
+  background-image: url("../images/journal-hero-banner.png");
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-body.journal_card_container {
+  padding: 8px;
+}
+
+.main_app_journal_content_container .mt-40 {
+  margin-top: 35px;
+  margin-bottom: 63px;
+}
+
+.main_app_journal_content_container .card {
+  border: unset;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main_app_journal_content_container .journal_card_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  margin: 16px 0px;
+  color: #4F5962;
+}
+
+.main_app_journal_content_container .journal_card_container span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  vertical-align: bottom;
+  color: #4F5962;
+}
+
+.main_app_journal_content_container .journal_card_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 131.5%;
+  letter-spacing: -0.005em;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #4F5962;
+}
+
+.journal_card_container .card_social_content {
+  margin-left: 20px;
+}
+
+/* CATEGORY CSS */
+.empty_content_container {
+  width: 100%;
+  border-top: 1px dashed #AAAEB1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 45px;
+}
+
+.main_app_category_content_container .breadcumb_nav.mt-30 {
+  margin: 30px 0px 0px 0px;
+}
+
+.main_app_category_section_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 10px 0px 0px 0px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.main_app_category_section_header span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: justify;
+  color: #4F5962;
+}
+
+.breadcumb_dropdown a {
+  text-decoration: none !important;
+  color: #AAAEB1 !important;
+}
+
+.breadcumb_dropdown p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px;
+  margin: 0px;
+  width: 200px;
+  color: #4F5962;
+}
+
+.breadcumb_dropdown p:hover,
+.breadcumb_dropdown p:focus {
+  background: #2C615F !important;
+  color: #FFFFFF !important;
+}
+
+.main_app_category_content_container .card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+  padding-bottom: 15px;
+}
+
+.card-body.category_card_container {
+  padding: 8px 0px 10px 25px;
+}
+
+.main_app_category_content_container .category_card_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  margin-bottom: 8px;
+  color: #4F5962;
+}
+
+.main_app_category_content_container .category_card_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  margin-bottom: 6px;
+  width: 60%;
+  color: #4F5962;
+}
+
+.main_app_category_content_container .category_card_container span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 124.5%;
+  letter-spacing: -0.005em;
+  color: #4F5962;
+}
+
+.card_user_social_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.card_user_social_content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_app_category_content_container .card-img-top {
+  width: unset;
+}
+
+.main_app_category_content_container .mt-40 {
+  margin-left: 30px;
+  margin-bottom: 90px;
+}
+
+/* SEARCHING CSS */
+.main_app_navbar_container.searching_hero_banner {
+  background-image: url("../images/searching-hero-banner.jpg");
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_searching_content_container .empty_content_container {
+  margin-top: 25px;
+}
+
+.main_app_searching_content_container .mt-40 {
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-bottom: 90px;
+}
+
+.main_app_searching_content_container .card-body {
+  margin-bottom: 25px;
+  margin-left: 28px;
+}
+
+.main_app_searching_content_container .card-body h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #697279;
+}
+
+.main_app_searching_content_container .card-body p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: -0.005em;
+  margin-bottom: 15px;
+  color: #4F5962;
+}
+
+.main_app_searching_content_container .card-body span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 124.5%;
+  letter-spacing: -0.005em;
+  color: #4F5962;
+}
+
+/* SUSTAINABILITY CSS */
+.main_app_sustain_content_container .main_app_sustain_poster_container {
+  padding: 10px;
+}
+
+.main_app_sustain_content_container .mb-80 {
+  margin-left: 30px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.main_app_sustain_content_container .main_app_sustain_poster_container img:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.main_app_sustain_content_container .main_app_sustain_poster_content {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.main_app_sustain_content_container .main_app_sustain_poster_content h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.main_app_sustain_content_container .main_app_sustain_poster_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: justify;
+  color: #4F5962;
+}
+
+.main_app_sustain_content_container .main_app_sustain_poster_content p:first-of-type {
+  margin: 25px 0px !important;
+}
+
+/* CAMPER ONE CSS */
+/* side bar css */
+.main_app_sidebar_content_container.col-md-3 {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  max-width: 25% !important;
+  height: 1933px;
+  border: 1px solid #AAAEB1;
+  background-color: #fff;
+}
+
+.camper_one_sidebar_content .sidebar_img_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_app_sidebar_content_container .camper_one_sidebar_content h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  color: #2C615F;
+}
+
+.main_app_sidebar_content_container .camper_one_sidebar_content .btn.camper_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  width: 100%;
+  padding: 20px 0px;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background: #2C615F;
+  color: #FFFFFF;
+}
+
+.main_app_sidebar_content_container .camper_one_sidebar_content .btn.close_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  width: 100%;
+  padding: 20px 0px;
+  background: #FFFFFF;
+  border: 1px solid #AAAEB1;
+  border-radius: 5px;
+  color: #AAAEB1;
+}
+
+.main_app_sidebar_content_container .camper_one_sidebar_content i {
+  position: absolute;
+  bottom: 12px;
+  right: 30px;
+}
+
+/* CAMPER TWO CSS */
+.main_app_navbar_container.camper_two_hero_banner {
+  background-image: url("../images/camper-hero-banner.png");
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_camper_content_container .main_app_camper_poster_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.main_app_camper_content_container .main_app_camper_poster_container a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main_app_camper_content_container .mt-130 {
+  margin-top: 80px;
+  margin-bottom: 130px;
+}
+
+.main_camper_two_datasheet_container {
+  width: 100%;
+}
+
+.main_camper_two_datasheet_container .datasheet_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+}
+
+.main_camper_two_datasheet_container .datasheet_content h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: end;
+  width: 20%;
+  padding: 10px 0px;
+  margin-left: 15px;
+  color: #4F5962;
+}
+
+.main_camper_two_datasheet_container .datasheet_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  width: 30%;
+  padding: 10px 0px 0px 0px;
+  margin-left: 20px;
+  color: #4F5962;
+}
+
+.main_camper_two_datasheet_container .datasheet_content .fa.fa-close {
+  color: red;
+}
+
+.main_camper_two_datasheet_container .datasheet_content .fa.fa-check {
+  color: green;
+}
+
+.main_camper_two_datasheet_container .datasheet_content.bg {
+  background-color: #E5E5E5;
+}
+
+/* LISTINGS CSS */
+.main_app_navbar_container.listing_hero_banner {
+  background-image: url("../images/listings-hero-banner.png");
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+.listing_user_profile_fullWidth_container {
+    padding: 0px 260px !important;
+} */
+.main_app_listings_content_container .card {
+  float: left;
+  width: 50%;
+  padding: 5px 5px;
+}
+
+.main_app_listings_content_container .mt-40 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.listing_silder_col {
+  padding-bottom: 120px;
+}
+
+#listing .card_bottom_header,
+#siderbar_camper_listing .card_bottom_header {
+  position: absolute;
+  bottom: 40px !important;
+  width: auto !important;
+  padding: 0px 25px;
+}
+
+/* BECOME HOST CSS */
+.become_hosting__hero_banner {
+  background-image: url("../images/Become-a-Host-Hero-Banner.png");
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_header_banner_content_container_570vh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 570px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_app_header_banner_content_container_570vh h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 125px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 16px solid #FFFFFF;
+  padding: 30px 100px;
+}
+
+.become_hosting_content_row {
+  padding: 90px 0px;
+}
+
+.become_hosting_content_row h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+  color: #4F5962;
+  margin-bottom: 60px;
+}
+
+.become_hosting_content_row .break_line {
+  width: 40%;
+}
+
+.become_hosting_content_row p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  color: #4F5962;
+  padding-left: 45px;
+}
+
+.become_hosting_content_row .col-lg-6 img {
+  padding: 0px 0px 0px 50px;
+}
+
+.main_app_Become_host_container .card {
+  width: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_app_Become_host_container .mt-40 {
+  margin-top: 80px;
+}
+
+.main_app_Become_host_container .mt-85 {
+  margin-top: 85px;
+  margin-bottom: 45px;
+}
+
+.main_app_Become_host_container .ml-40 {
+  margin-left: 10px;
+}
+
+.main_app_Become_host_container .become_card_body {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.main_app_Become_host_container .mt-45 {
+  margin-top: 45px !important;
+}
+
+.main_app_Become_host_container .btn.hosting_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  width: 30%;
+  margin-top: 25px;
+  padding: 14px 0px;
+  color: #6C696B;
+}
+
+.main_app_Become_host_container .become_card_body h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #4F5962;
+}
+
+.main_app_Become_host_container .become_card_body p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+  color: #4F5962;
+}
+
+.main_app_Become_host_container .become_host_btn_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.main_app_Become_host_container .become_host_btn_container .btn.host_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 20px;
+  width: 60%;
+  color: #FFFFFF;
+  background-color: #8AC544;
+  border-radius: 5px;
+}
+
+/* ABOUT US CSS */
+.main_app_navbar_container.about_us_hero_banner {
+  background-image: url("../images/about-us-hero-banner.png");
+  height: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_app_about_us_content_container h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2C615F;
+}
+
+.main_app_about_us_content_container h5, .main_app_about_us_content_container .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td .main_app_about_us_content_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.main_app_about_us_content_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.main_app_about_us_content_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 37px;
+  color: #4F5962;
+}
+
+.main_app_about_us_content_container .about_us_banner_container {
+  background-image: url("../images/about-us-hero-banner.png");
+  background-repeat: no-repeat;
+  padding: 40px 60px;
+  background-size: cover;
+}
+
+.about_us_banner_container .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_app_about_us_content_container .about_poster_col {
+  background-color: #fff;
+  padding: 40px 15px;
+  margin: 20px 0px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about_card_row .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  padding: 0px 10px;
+}
+
+.about_card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_app_about_us_content_container .about_card_container .card-body h6 {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.main_app_about_us_content_container .about_card_container .card-body p {
+  line-height: 30px;
+}
+
+.main_app_about_us_content_container a.about_bottom_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 30px;
+  padding: 14px 5px;
+  color: #6C696B;
+  background: #EEEEEE;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.main_app_about_us_content_container a.about_bottom_btn:hover,
+.main_app_about_us_content_container a.about_bottom_btn:focus,
+.main_app_about_us_content_container a.about_bottom_btn:active {
+  color: #fff !important;
+  background-color: #2C615F;
+}
+
+.mt-90 {
+  margin-top: 98px;
+  margin-bottom: 70px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+  margin-bottom: 54px;
+}
+
+.mt-60 {
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.mt-37 {
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+/* ABOUT USS FORM CSS */
+.form_grid {
+  border: 1px solid #AAAEB1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 16px 12px !important;
+}
+
+.search_grid_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 22px 0px;
+  border-top: 1px dashed #AAAEB1;
+}
+
+.search_grid_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.search_grid_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.search_grid_container .search_grid_input_container label {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px 10px;
+  margin-left: 12px;
+  color: #4F5962;
+}
+
+.btn_grid_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.reset_btn {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  line-height: 21px !important;
+  padding: 5px 60px !important;
+  margin-bottom: 10px !important;
+  border: 1px solid #4F5962 !important;
+  border-radius: 5px !important;
+  color: #4F5962 !important;
+}
+
+.reset_btn:hover,
+.reset_btn:focus,
+.reset_btn:active {
+  color: #2C615F !important;
+  background-color: #fff !important;
+  border: 1px solid #2C615F;
+}
+
+.filter_btn {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  line-height: 21px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 5px 35px !important;
+  margin-bottom: 10px !important;
+  background: #2C615F !important;
+  border-radius: 5px !important;
+  color: #FFFFFF !important;
+}
+
+.filter_btn:hover,
+.filter_btn:focus,
+.filter_btn:active {
+  color: #2C615F !important;
+  background-color: #fff !important;
+  border: 1px solid #2C615F;
+}
+
+.search_grid_input_container input[type=checkbox], .search_grid_input_container .global_input_wrapper textarea[type=checkbox], .global_input_wrapper .search_grid_input_container textarea[type=checkbox] {
+  /* Double-sized Checkboxes */
+  /* IE */
+  /* FF */
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  /* Opera */
+  transform: scale(1.5);
+  border: 1px solid #AAAEB1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  margin-left: 12px;
+}
+
+.search_grid_input_container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../images/dropdown-arrow-icon.png");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 4rem;
+  padding: 0px 10px !important;
+}
+
+.search_grid_container .form-group {
+  width: 40%;
+  margin-right: 23px;
+}
+
+/* SINGLE LISTING CSS */
+.main_app_single_listing_content_container .container-fluid {
+  padding: 0px 100px !important;
+}
+
+.listing_bread_cumb_content_container {
+  width: 50%;
+  margin-left: 25px;
+  background: ligthgreen;
+  background: lightgreen;
+  padding: 20px 15px 20px;
+  border-radius: 5px;
+}
+
+.listing_bread_cumb_content_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #F9F9F9;
+}
+
+.main_app_single_listing_content_container .grid_card_col {
+  margin-top: 50px;
+}
+
+.main_app_single_listing_content_container .breadcumb_nav .breadcumb_user_icon img {
+  width: 16px !important;
+}
+
+.main_app_single_listing_content_container .grid_card_content {
+  border-left: none !important;
+  text-align: center;
+  padding: 34px 20px;
+  border-top: 1px dashed #AAAEB1 !important;
+  border-right: 1px dashed #AAAEB1 !important;
+}
+
+.main_app_single_listing_content_container .listing_about_content h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  color: #4F5962;
+}
+
+.main_app_single_listing_content_container .listing_about_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 18px;
+  color: #4F5962;
+}
+
+.main_app_single_listing_content_container .card .card-body h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #4F5962;
+}
+
+.main_app_single_listing_content_container .card .card-body p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  text-indent: -30px;
+  margin-bottom: 20px;
+  color: #4F5962;
+}
+
+.main_app_single_listing_content_container .card .card-body p span {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.main_app_single_listing_content_container .single_listing_detail_container h5, .main_app_single_listing_content_container .single_listing_detail_container .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td .main_app_single_listing_content_container .single_listing_detail_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #4F5962;
+}
+
+.main_app_single_listing_content_container .breadcumb_user_icon span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 6px;
+  color: #4F5962;
+}
+
+.main_app_single_listing_content_container .breadcumb_profile_container {
+  border-bottom: none !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.breadcumb_profile_detail_container .btn.Veiw_Profile_btn {
+  display: block;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #AAAEB1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  color: #AAAEB1;
+}
+
+.breadcumb_profile_detail_container .btn.Veiw_Profile_btn:hover,
+.breadcumb_profile_detail_container .btn.Veiw_Profile_btn:focus {
+  color: #2C615F;
+  border: 1px solid #2C615F;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.main_app_single_listing_content_container .card_body_content_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.main_app_single_listing_content_container .single_listing_map_banner_container {
+  background-image: url(../images/single-listing-map-poster.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.main_app_single_listing_content_container .main_app_single_listing_middle_navbar {
+  position: absolute;
+  background: rgba(44, 97, 95, 0.75);
+  top: 0px;
+  left: -80px;
+  right: 0px;
+  width: 167%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_app_single_listing_content_container .main_app_single_listing_middle_navbar ul li a {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 17px !important;
+  line-height: 21px !important;
+  color: #FFFFFF !important;
+}
+
+.main_app_single_listing_content_container .listing_about_content .listing_review_container {
+  background-color: #E2F0F5;
+  padding: 20px;
+  border: 1px solid #4FBCE7;
+  border-radius: 5px;
+}
+
+.main_app_single_listing_content_container .listing_about_content .listing_review_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 25px;
+  width: 100%;
+  color: #4F5962;
+  margin-bottom: 0px !important;
+}
+
+.main_app_single_listing_content_container .text_left h6 {
+  text-align: left !important;
+  margin-bottom: 8px !important;
+}
+
+.main_app_single_listing_content_container .text_left p {
+  text-indent: unset !important;
+}
+
+.main_app_single_listing_content_container .mb-120 {
+  margin-bottom: 118px;
+}
+
+/* .man_app_sngle_lstng_sdebar_contaner {
+    position: fixed;
+} */
+.man_app_sdebar_content_contaner {
+  padding: 24px 0px 24px 32px;
+  background: #2C615F;
+}
+
+.man_app_sdebar_content_contaner h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.man_app_sdebar_content_contaner sub {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.man_app_sdebar_content_contaner sup {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.sngle_lstng_sde_form_contaner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px;
+}
+
+.sngle_lstng_sde_form_contaner .sidebar_date_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sngle_lstng_sde_form_contaner .btn.sde_btn {
+  display: block !important;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 18px 0px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #2C615F;
+}
+
+.man_app_sngle_lstng_sdebar_contaner .sngle_lstng_sde_form_contaner p {
+  text-align: center;
+}
+
+.man_app_sngle_lstng_sdebar_contaner .sngle_lstng_sde_form_contaner .sde_span_content {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 5px;
+  color: #AAAEB1;
+}
+
+.sidebar_social_icon {
+  background-color: #F2F3F4;
+  margin-top: 48px;
+  padding: 28px 30px;
+  text-align: center;
+}
+
+.sidebar_social_icon i {
+  margin: 0px 10px;
+}
+
+.sidebar_social_icon i img {
+  margin: 5px 0px;
+}
+
+/* RESET PASSWORD CSS */
+.main_app_reset_password_container .main_app_reset_password_col {
+  margin: 45px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_app_reset_password_container .reset_content_col {
+  background: #2C615F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 525px;
+  margin-top: 18px;
+  margin-bottom: 45px;
+}
+
+.main_app_reset_password_container .reset_content_col .reset_password_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 40px;
+}
+
+.main_app_reset_password_container .reset_password_content h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  padding: 0px 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.main_app_reset_password_container .reset_password_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0px 10px;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.reset_password_body_right_content {
+  text-align: end;
+}
+
+.main_app_reset_password_container .reset_password_content .btn.reset_password_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 20px 16px;
+  border-radius: 5px;
+  padding: 16px 16px;
+  width: 85%;
+  background: #FFFFFF;
+  color: #2C615F;
+}
+
+.main_app_reset_password_container .main_app_reset_password_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 35px 20px;
+}
+
+.main_app_reset_password_container .main_app_reset_password_footer i {
+  margin: 0px 25px;
+}
+
+.main_app_reset_password_container h4 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #4F5962;
+}
+
+/* CONFROM EMAiL CSS */
+.main_app_confrom_email_container .main_app_confrom_email_hero_banner {
+  background-image: url("../images/confrom-email-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 450px;
+}
+
+.main_app_confrom_email_content {
+  margin-top: 16px;
+}
+
+.main_app_confrom_email_container h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: #4F5962;
+}
+
+.main_app_confrom_email_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+}
+
+.main_app_reset_password_body_contaner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 26px;
+  padding: 15px 15px;
+  border-bottom: 1px solid #4F5962;
+}
+
+.main_app_reset_password_body_contaner h5, .main_app_reset_password_body_contaner .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td .main_app_reset_password_body_contaner h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 10px;
+  color: #2C615F;
+}
+
+.main_app_reset_password_body_contaner p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  color: #4F5962;
+}
+
+.main_app_reset_password_body_contaner .mt-45 {
+  margin: 45px 0px !important;
+}
+
+.main_app_reset_password_body_contaner .mt-45 a {
+  font-family: Quicksand !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 25px !important;
+  -webkit-text-decoration-line: underline !important;
+          text-decoration-line: underline !important;
+  color: #2C6136 !important;
+}
+
+.main_app_reset_password_body_contaner .body_location_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.main_app_reset_password_body_contaner .body_location_container h6 {
+  margin-left: 15px;
+}
+
+.main_app_reset_password_body_contaner .btn.ltinerary_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin: 30px 0px;
+  padding: 20px 15px;
+  width: 100%;
+  background: #2C615F;
+  border: 1px solid #2C615F;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.main_app_reset_password_body_contaner .btn.reservaton_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin: 30px 0px;
+  padding: 20px 15px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #2C615F;
+  border-radius: 5px;
+  color: #2C615F;
+}
+
+/* WELLCOME CSS */
+.main_app_welcome_header_banner {
+  /* height: 614px;*/
+  background: #2C615F;
+}
+
+.main_app_welcome_header_banner_content {
+  text-align: center;
+}
+
+.main_app_welcome_header_banner_content img {
+  margin: 45px 0px 0px 0px;
+}
+
+.main_app_welcome_header_banner h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 125px;
+  /* identical to box height */
+  color: #fff !important;
+  margin: 60px 0px 35px 0px;
+  padding: 30px 0px 0px 0px;
+}
+
+.main_app_welcome_header_banner h2:before {
+  content: "";
+  width: 70%;
+  border-top: 1px solid #fff;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  top: 210px;
+}
+
+.main_app_welcome_header_banner p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #FEFFFF;
+  padding-bottom: 140px;
+}
+
+.main_app_welcome_success_content h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 62px;
+  color: #4F5962;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.main_app_welcome_success_content_row {
+  padding: 0px 90px 90px 90px;
+  margin: 140px 0px 0px 0px;
+  border-bottom: 1px solid #4F5962;
+}
+
+.main_app_welcome_success_content_row .main_app_welcome_success_content_box {
+  padding: 20px 30px;
+}
+
+.main_app_welcome_success_content_row img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.main_app_welcome_success_content_box h4 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  color: #4F5962;
+  margin-bottom: 25px;
+}
+
+.main_app_welcome_success_content_box p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F5962;
+  margin-bottom: 25px;
+}
+
+.welcome_profile_upload_photo {
+  position: relative;
+  overflow: hidden;
+  background: #2C615F;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 22px;
+  padding: 17.5px 0px;
+  cursor: pointer;
+}
+
+.welcome_profile_upload_photo input, .welcome_profile_upload_photo .global_input_wrapper textarea, .global_input_wrapper .welcome_profile_upload_photo textarea {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.welcome_success_button_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a.welcome_success_button {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #2C615F;
+  padding: 14px 20px;
+  text-align: center;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+
+a.welcome_success_button:hover,
+a.welcome_success_button:focus {
+  text-decoration: none;
+}
+
+.main_app_welcome_success_footer {
+  text-align: center;
+  padding: 90px 0px;
+}
+
+.main_app_welcome_success_footer img {
+  margin: 0px 30px;
+}
+
+.main_app_welcome_success_footer_content p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  color: #4F5962;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+/* RENTER DASHBOARD */
+.main_app_renter_dashboard_container .breadcumb_profile_container {
+  border-bottom: none;
+}
+
+.main_app_renter_dashboard_container .renter_line_through {
+  border: 1px dashed #AAAEB1;
+  width: 98%;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_greeting_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 45px 20px;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_greeting_container h5, .main_app_renter_dashboard_container .main_app_renter_greeting_container .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td .main_app_renter_dashboard_container .main_app_renter_greeting_container h6,
+.main_app_renter_dashboard_container .main_app_renter_greeting_container span,
+.main_app_renter_dashboard_container .main_app_renter_trips_container h5,
+.main_app_renter_dashboard_container .main_app_renter_trips_container .noti_sec .tab-content form table td h6,
+.noti_sec .tab-content form table td .main_app_renter_dashboard_container .main_app_renter_trips_container h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2C615F;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_trips_container {
+  margin: 80px 55px;
+  margin-left: 180px;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_content_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_content_col .mx-30 {
+  margin: 30px 30px;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_content_col p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4F5962;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_detail_content_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_detail_content_col .mx-15 {
+  margin: 50px 5px;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_detail_content_col span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2C615F;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_detail_content_col .btn.renter_booking_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #8AC544;
+  border-radius: 5px;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_detail_content_col .btn.renter_detail_btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  border: 2px solid #2C615F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #2C615F;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_veiw_container {
+  text-align: end;
+  margin-right: 30px;
+  margin-bottom: 22px;
+}
+
+.main_app_renter_dashboard_container .main_app_renter_veiw_container a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #2C615F;
+}
+
+/* FOOTER CSS */
+.main_app_footer_container {
+  background-color: #2C615F;
+  padding: 86px 0px 0px 0px;
+}
+
+.main_app_footer_container .footer_top_wrap {
+  padding-bottom: 125px;
+}
+
+.main_app_footer_about_container p {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.main_app_footer_about_container span a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.main_app_footer_about_container span img {
+  margin-left: -5px;
+}
+
+.main_app_footer_explore_container {
+  padding: 0px 0px 0px 55px;
+}
+
+.main_app_footer_container h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 20px 0px 0px 0px;
+  color: #fff;
+}
+
+.main_app_footer_container .main_app_footer_explore_container h3 {
+  margin-bottom: 25px;
+}
+
+.footer_arrow_content_col span,
+.footer_arrow_content_col span a {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 0px 0px 0px 5px;
+  text-decoration: none !important;
+}
+
+.main_app_footer_container .main_app_footer_company_details_container h3 {
+  margin-bottom: 25px;
+}
+
+.main_app_footer_container .main_app_footer_contact_container h3 {
+  margin-bottom: 35px;
+}
+
+.main_app_footer_container .main_app_footer_contact_container p {
+  border-bottom: 1px dashed #FFFFFF;
+  padding-bottom: 12px;
+}
+
+.main_app_footer_contact_container p span {
+  padding-left: 10px;
+}
+
+.footer_bottom {
+  border-top: 3px solid #FFFFFF;
+  padding: 27px 0px 12px 0px;
+}
+
+.footer_bottom p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.footer_bottom .footer_social_container {
+  float: right;
+  margin-top: -15px;
+}
+
+.footer_bottom .footer_social_container i {
+  color: #fff !important;
+  padding: 10px 14px;
+}
+
+.footer_bottom .footer_social_container i:nth-child(2) {
+  margin-right: 0px;
+}
+
+.btn-bg-facebook,
+.btn-bg-instagram {
+  position: relative;
+}
+
+.social_icons i {
+  z-index: 1;
+  position: relative;
+}
+
+.social_icons a {
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  display: table-cell;
+}
+
+.btn-bg-facebook:hover:before,
+.btn-bg-facebook:focus:before,
+.btn-bg-facebook:active:before,
+.btn-bg-instagram:hover:before,
+.btn-bg-instagram:focus:before,
+.btn-bg-instagram:active:before {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-bg-facebook:before,
+.btn-bg-instagram:before {
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+}
+
+.social_round a:before {
+  border-radius: 50%;
+}
+
+.btn-bg-facebook:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #506dab;
+  left: 49%;
+  top: 49%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-bg-instagram:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #3f729b;
+  left: 49%;
+  top: 49%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* MODAL CSS */
+.modal-open .modal {
+  overflow: hidden !important;
+}
+
+#loginModal .modal-dialog,
+#registerModal .modal-dialog,
+#resendCodeModal .modal-dialog,
+#registerdetailsModal .modal-dialog,
+#uploadsAvatarModal .modal-dialog,
+#successModal .modal-dialog {
+  width: 850px !important;
+  max-width: 850px !important;
+  margin: 3.75rem auto !important;
+}
+
+#loginModal .modal-header,
+#registerModal .modal-header,
+#resendCodeModal .modal-header,
+#registerdetailsModal .modal-header,
+#uploadsAvatarModal .modal-header,
+#successModal .modal-header {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  z-index: 999;
+}
+
+#loginModal .close:active,
+#loginModal .close:focus,
+#registerModal .close:active,
+#registerModal .close:focus,
+#resendCodeModal .close:active,
+#resendCodeModal .close:focus,
+#registerdetailsModal .close:active,
+#registerdetailsModal .close:focus,
+#uploadsAvatarModal .close:active,
+#uploadsAvatarModal .close:focus,
+#successModal .close:active,
+#successModal .close:focus {
+  outline: none !important;
+}
+
+#loginModal .modal-body,
+#registerModal .modal-body,
+#resendCodeModal .modal-body,
+#registerdetailsModal .modal-body,
+#uploadsAvatarModal .modal-body,
+#successModal .modal-body {
+  padding: 0px 0px;
+}
+
+#registerModal .modal-body,
+#resendCodeModal .modal-body,
+#resendCodeModal .modal_img_col,
+#registerdetailsModal .modal_img_col,
+#uploadsAvatarModal .modal_img_col,
+#successModal .modal_img_col {
+  height: 723px !important;
+}
+
+#loginModal .modal_img_col,
+#registerModal .modal_img_col,
+#resendCodeModal .modal_img_col,
+#registerdetailsModal .modal_img_col,
+#uploadsAvatarModal .modal_img_col,
+#successModal .modal_img_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loginModal .modal_img_col h3,
+#registerModal .modal_img_col h3,
+#resendCodeModal .modal_img_col h3,
+#registerdetailsModal .modal_img_col h3,
+#uploadsAvatarModal .modal_img_col h3,
+#successModal .modal_img_col h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px !important;
+  line-height: 50px;
+  color: #FFFFFF;
+  padding: 0px 25px !important;
+}
+
+.modal_img_col h3 {
+  font-size: 34px !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+#loginModal .form_modal_col,
+#registerModal .form_modal_col,
+#resendCodeModal .form_modal_col,
+#registerdetailsModal .form_modal_col,
+#uploadsAvatarModal .form_modal_col,
+#successModal .form_modal_col {
+  padding: 0px 30px;
+}
+
+.form_modal_col i.form-group select {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4F5962;
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #AAAEB1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#loginModal .form_modal_col h4,
+#registerModal .form_modal_col h4,
+#resendCodeModal .form_modal_col h4,
+#registerdetailsModal .form_modal_col h4,
+#uploadsAvatarModal .form_modal_col h4,
+#successModal .form_modal_col h4 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4F5962;
+  margin: 26px 0px 44px 0px !important;
+}
+
+.social_btns_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social_btns_col a {
+  width: 100%;
+  background: #fff;
+  padding: 14px 0px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none !important;
+}
+
+.social_icons_col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.social_icons_text_col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+}
+
+.social_btns_col .facebook_btn {
+  border: 1px solid #516eac;
+  margin-bottom: 10px;
+}
+
+.social_btns_col .facebook_btn img,
+.social_btns_col .google_btn img {
+  margin-left: 26px;
+}
+
+.social_btns_col .facebook_btn span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #516EAC;
+}
+
+.social_btns_col .google_btn {
+  background-color: #efefef !important;
+}
+
+.social_btns_col .google_btn span {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4F5962;
+}
+
+#loginModal .text_center,
+#registerModal .text_center,
+#registerdetailsModal .text_center {
+  text-align: center !important;
+}
+
+#registerModal .text_center a,
+#registerdetailsModal .text_center a {
+  font-weight: 700 !important;
+  color: #2c615f;
+  text-decoration: none !important;
+}
+
+#registerModal span.seprator {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px !important;
+}
+
+#registerModal span.seprator:before {
+  content: "";
+  position: absolute;
+  border: 1px dashed #AAAEB1;
+  width: 38%;
+  left: 30px;
+  margin-top: 8px;
+}
+
+#registerModal span.seprator:after {
+  content: "";
+  position: absolute;
+  border: 1px dashed #AAAEB1;
+  width: 38%;
+  right: 30px;
+  margin-top: 8px;
+}
+
+#loginModal .form-group,
+#registerdetailsModal .form-group {
+  margin-bottom: 0px !important;
+}
+
+#loginModal .form-control,
+#registerModal .form-control,
+#registerdetailsModal .form-control {
+  border-radius: 5px;
+  padding: 13px 15px;
+}
+
+#loginModal .form-control,
+#registerModal .form-control,
+#registerdetailsModal .form-control {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4F5962;
+  outline: none !important;
+}
+
+#loginModal .checkbox_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loginModal .login_check_box_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+#registerModal .register_check_box_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register_check_box_container {
+  margin-top: 30px;
+}
+
+#loginModal .login_check_box_container label,
+#registerModal .register_check_box_container label {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+  margin-left: 5px;
+  margin-top: 9px;
+  display: -webkit-inline-box;
+}
+
+#registerModal .register_check_box_container label a {
+  font-weight: 700 !important;
+  color: #2c615f !important;
+  text-decoration: underline !important;
+}
+
+.btn.form_sucess_btn {
+  background: #2C615F;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 22px;
+  padding: 17.5px 0px;
+}
+
+#loginModal p,
+#registerModal p,
+#registerdetailsModal p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+  text-align: center;
+  /* margin-top: 27px;*/
+  margin: 27px 0px;
+}
+
+#registerModal p,
+#registerdetailsModal p {
+  text-align: left !important;
+}
+
+#loginModal p a {
+  color: #4F5962 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  margin-left: 5px;
+}
+
+#loginModal input:focus, #loginModal .global_input_wrapper textarea:focus, .global_input_wrapper #loginModal textarea:focus {
+  outline: none !important;
+}
+
+#registerModal .google_btn {
+  margin-bottom: 40px !important;
+}
+
+#resendCodeModal .resend_code_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#resendCodeModal h5, #resendCodeModal .noti_sec .tab-content form table td h6, .noti_sec .tab-content form table td #resendCodeModal h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+  margin-bottom: 40px !important;
+}
+
+#resendCodeModal .resend_code_container .resend_col_2 {
+  padding: 0px 5px !important;
+  width: 20% !important;
+}
+
+#resendCodeModal .resend_code_container .resend_col_2 input, #resendCodeModal .resend_code_container .resend_col_2 .global_input_wrapper textarea, .global_input_wrapper #resendCodeModal .resend_code_container .resend_col_2 textarea {
+  width: 100% !important;
+  border: 1px solid #AAAEB1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  height: 50px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+  text-align: center;
+}
+
+#resendCodeModal .resend_code_container .resend_col_2 input:active, #resendCodeModal .resend_code_container .resend_col_2 .global_input_wrapper textarea:active, .global_input_wrapper #resendCodeModal .resend_code_container .resend_col_2 textarea:active,
+#resendCodeModal .resend_code_container .resend_col_2 input:focus,
+#resendCodeModal .resend_code_container .resend_col_2 .global_input_wrapper textarea:focus,
+.global_input_wrapper #resendCodeModal .resend_code_container .resend_col_2 textarea:focus {
+  border: 2px solid #2C615F;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#resendCodeModal input::-webkit-outer-spin-button, #resendCodeModal .global_input_wrapper textarea::-webkit-outer-spin-button, .global_input_wrapper #resendCodeModal textarea::-webkit-outer-spin-button,
+#resendCodeModal input::-webkit-inner-spin-button,
+#resendCodeModal .global_input_wrapper textarea::-webkit-inner-spin-button,
+.global_input_wrapper #resendCodeModal textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#resendCodeModal input[type=number], #resendCodeModal .global_input_wrapper textarea[type=number], .global_input_wrapper #resendCodeModal textarea[type=number] {
+  -moz-appearance: textfield;
+}
+
+#resendCodeModal p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F5962;
+  margin-top: 40px !important;
+}
+
+#resendCodeModal p a {
+  color: #2c615f !important;
+  font-weight: 700 !important;
+  text-decoration: underline;
+}
+
+.modal_btns_container .btn.form_sucess_btn {
+  margin-bottom: 10px;
+}
+
+.modal_form_back_btn {
+  background: #efefef;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4F5962;
+  padding: 17.5px 0px;
+}
+
+#registerdetailsModal p {
+  font-size: 13px !important;
+  margin: 12px 0px !important;
+}
+
+.uploads_avatar_modal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.uploads_avatar_modal_container img {
+  width: 50% !important;
+  margin: 0 auto;
+}
+
+.file_btn {
+  position: relative;
+  overflow: hidden;
+  background: #2C615F;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 22px;
+  padding: 17.5px 0px;
+  cursor: pointer;
+}
+
+.file_btn input, .file_btn .global_input_wrapper textarea, .global_input_wrapper .file_btn textarea {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+/* SUCCESS MODAL */
+#successModal .col-md-6.form_modal_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success_modal_container {
+  /*display: flex;*/
+  text-align: center;
+}
+
+.success_modal_container h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 56px;
+  text-align: center;
+  color: #4F5962;
+  margin: 40px 0px;
+}
+
+.success_modal_container p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #4F5962;
+  margin: 25px 0px;
+}
+
+.success_modal_container .success_modal_btn {
+  position: relative;
+  overflow: hidden;
+  background: #2C615F;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 22px;
+  padding: 17.5px 0px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #2C615F;
+}
+
+/* TABLET MEDIA QUREY */
+@media (max-width: 1350px) {
+  .listing_bread_cumb_content_container {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* CATEGORY */
+  .main_app_category_content_container .category_card_container p {
+    width: 100%;
+  }
+  /* BECOME HOST */
+  .main_app_Become_host_container .ml-40 {
+    margin-left: 10px;
+  }
+  /* CAMPER ONE SDEBAR */
+  .main_app_sidebar_content_container.col-md-3 {
+    position: unset !important;
+    height: unset !important;
+    max-width: 100% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* WELLCOME */
+  .main_app_welcome_success_content_row {
+    margin: 60px 0px 0px 0px;
+    padding: 0px 20px 90px 20px;
+  }
+  /* FOOTER */
+  .main_app_footer_contact_container {
+    padding-left: 55px;
+  }
+  /* GENRAL TAB-CONTENT  */
+  .tab-content {
+    margin-left: 0px;
+  }
+  /*MODAL */
+  #loginModal .modal-dialog {
+    width: 88% !important;
+    max-width: 88% !important;
+  }
+  #loginModal .container {
+    max-width: 100% !important;
+  }
+}
+
+/* MOBILE MEDIA QUREY */
+/* NAVBAR */
+@media (max-width: 1060px) {
+  .main_app_navbar_container .navbar-nav li {
+    padding: 0 15px !important;
+  }
+  .main_app_single_listing_content_container .main_app_single_listing_middle_navbar {
+    width: 176%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_app_navbar_container .navbar-expand-lg.navbar {
+    display: none;
+  }
+  .main_app_single_listing_content_container .main_app_single_listing_middle_navbar {
+    width: 120%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .main_app_navbar_container .header_mobile_navbar_container {
+    display: none;
+  }
+}
+
+@media (max-width: 790px) {
+  .grid_region_heading {
+    display: block;
+  }
+  .carousel_direction_btn_container {
+    margin-top: 50px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* GENERAL CSS */
+  .collapse_content_btn {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F5962;
+  }
+  .pt-50 {
+    padding-top: 0px !important;
+  }
+  .breadcumb_heading_one,
+  .breadcumb_heading_two {
+    font-size: 16px !important;
+  }
+  .breadcumb_user_content {
+    margin-left: 21px;
+  }
+  .breadcumb_profile_content {
+    margin-left: 0px;
+  }
+  .breadcumb_profile_detail_container {
+    padding: 0px;
+  }
+  .tab-content {
+    margin-left: 0px;
+  }
+  /* ABOUT */
+  .form-group {
+    width: 100% !important;
+  }
+  /* CONTACT */
+  .contact_us_form_container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  /* COVID RESPONSE */
+  .main_app_navbar_container .covid_response_hero_banner {
+    height: 665px !important;
+  }
+  .hero_banner_left_content_container {
+    padding: 150px 30px !important;
+    width: auto;
+    margin: 0;
+  }
+  .main_app_covid_reponse_content_container .covid_travel_message_container {
+    margin-left: 0px;
+  }
+  /* PRIVACY POLICY */
+  .main_app_navbar_container.hosting_standards_hero_banner .main_app_header_banner_content_container_400vh p,
+  .main_app_navbar_container.hosting_standards_hero_banner .main_app_header_banner_content_container_400vh p {
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+  .main_app_privacy_policy_container .privacy_content_col {
+    margin-left: 0px !important;
+  }
+  /* TERMS SERVICE */
+  .main_app_terms_service_container .mt-40 {
+    margin-left: 0px !important;
+  }
+  .terms_service_hero_banner .main_app_header_banner_content_container_400vh.term_service_container p {
+    width: 100% !important;
+  }
+  /* FAQs */
+  .main_app_faq_container .faq_content_col.mb-40,
+  .main_app_faq_container .faq_content_col.mt-50 {
+    margin-left: 0px !important;
+  }
+  .card .collapse_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* COVID POLICY */
+  .main_app_covid_policy_content_container .covid_poster_container {
+    width: 100%;
+  }
+  .main_app_covid_policy_content_container .covid_travel_message_container,
+  .main_app_covid_policy_content_container .covid_travel_message_container h3,
+  .main_app_covid_policy_content_container .covid_travel_message_container p,
+  .main_app_covid_policy_content_container .covid_travel_message_container ul {
+    margin-left: 0px !important;
+  }
+  /* CATEGORY */
+  .main_app_category_content_container .card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .main_app_category_content_container .category_card_container p {
+    width: 100%;
+  }
+  .main_app_category_content_container .mt-40 {
+    margin-left: 0px;
+  }
+  .card-body.category_card_container {
+    padding-left: 10px;
+  }
+  .main_app_category_content_container .card-img-top {
+    width: 100%;
+  }
+  /* SEARCHING */
+  .main_app_searching_content_container .mt-40,
+  .main_app_searching_content_container .card-body {
+    margin-left: 0px;
+  }
+  /* SUSTAINABILITY */
+  .main_app_sustain_content_container .mb-80 {
+    margin-left: 0px;
+  }
+  /* CAMPER ONE SiDEBAR */
+  .main_app_sidebar_content_container.col-md-3 {
+    position: unset !important;
+    height: unset !important;
+    max-width: 100% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* CAMPER TWO */
+  .main_camper_two_datasheet_container .datasheet_content h6,
+  .main_camper_two_datasheet_container .datasheet_content p {
+    font-size: unset;
+  }
+  .main_camper_two_datasheet_container .datasheet_content h6 {
+    margin-left: 5px;
+  }
+  .main_camper_two_datasheet_container .datasheet_content p {
+    margin-left: 16px;
+    width: 33%;
+  }
+  /* BECOME HOST */
+  .main_app_Become_host_container .btn.hosting_btn {
+    width: 80%;
+  }
+  /* BECOME A HOST */
+  .main_app_header_banner_content_container_570vh h2 {
+    padding: 30px 10px !important;
+  }
+  .main_app_Become_host_container .become_host_btn_container .btn.host_btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main_app_Become_host_container .ml-40 {
+    margin-left: 5px;
+  }
+  /* SINGLE LISTING */
+  .main_app_slider_container .carousel-item img {
+    height: 350px !important;
+  }
+  .main_app_single_listing_content_container .container-fluid {
+    padding: 0px 20px !important;
+  }
+  .main_app_slider_container .carousel-control-next-icon,
+  .main_app_slider_container .carousel-control-prev-icon {
+    padding: 10px !important;
+  }
+  .listing_bread_cumb_content_container {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main_app_single_listing_content_container .main_app_single_listing_middle_navbar {
+    width: 100%;
+    left: 0px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  /* CONFROM PASSWORD */
+  .main_app_reset_password_container .reset_content_col {
+    width: 100%;
+  }
+  /* RESET PASSWORD */
+  .main_app_reset_password_container .main_app_reset_password_footer i {
+    margin: 0px 16px;
+  }
+  .main_app_reset_password_body_contaner .mt-30 {
+    margin-top: 35px !important;
+  }
+  .reset_password_body_right_content {
+    text-align: left;
+  }
+  /* WELLCOME */
+  .main_app_welcome_header_banner_content img {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .main_app_welcome_header_banner h2 {
+    font-size: 54px !important;
+    line-height: 60px !important;
+  }
+  .main_app_welcome_header_banner h2:before {
+    top: 170px;
+  }
+  .main_app_welcome_header_banner p {
+    padding: 0px 15px 140px 15px;
+  }
+  .main_app_welcome_success_content h3 {
+    font-size: 36px;
+    line-height: 44px;
+    padding: 0px 15px;
+  }
+  .main_app_welcome_success_content_row {
+    margin: 60px 0px 0px 0px;
+    padding: 0px 20px 90px 20px;
+  }
+  .main_app_welcome_success_content_row .main_app_welcome_success_content_box {
+    padding: 0px 0px;
+  }
+  .main_app_welcome_success_footer img {
+    margin: 0px 15px;
+  }
+  .main_app_welcome_success_content_box h4 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-top: 40px;
+  }
+  a.welcome_success_button {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0px 0px;
+  }
+  .main_app_welcome_success_footer_content p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .mg_bottom_10 {
+    margin-bottom: 10px !important;
+  }
+  /* RENTER DASHBOARD */
+  .main_app_renter_dashboard_container .main_app_renter_trips_container {
+    margin-left: 10px !important;
+  }
+  /* FOOTER */
+  .main_app_footer_explore_container {
+    padding: 0px 0px 0px 0px;
+  }
+  .footer_bottom p {
+    text-align: center;
+  }
+  .footer_bottom .footer_social_container {
+    float: unset !important;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social_icons.social_round {
+    margin: 12px 0px 0px 0px !important;
+  }
+  .footer_bottom {
+    padding: 27px 0px 12px 0px !important;
+  }
+}
+
+/* EXTRA SMALL SCREEN */
+@media (max-width: 600px) {
+  /* CAMPER ONE */
+  .camper_one_sidebar_content .sidebar_img_container {
+    display: block;
+    text-align: center;
+  }
+  /* LISTING */
+  .main_app_listings_content_container .card_bottom_header {
+    bottom: 15px !important;
+    padding: 0px 12px !important;
+  }
+  .main_app_listings_content_container .card_bottom_header_content h5 .price, .main_app_listings_content_container .card_bottom_header_content .noti_sec .tab-content form table td h6 .price, .noti_sec .tab-content form table td .main_app_listings_content_container .card_bottom_header_content h6 .price {
+    font-size: 18px !important;
+  }
+  .main_app_listings_content_container .card_bottom_socail_container small {
+    margin: 0px 5px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

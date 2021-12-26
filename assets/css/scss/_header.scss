@@ -183,7 +183,7 @@ header {
 }
 
 @media (max-width:405px) {
-    .navbar-brand {
+    header .navbar-brand {
         display: block;
         width: 100%;
         text-align: center;

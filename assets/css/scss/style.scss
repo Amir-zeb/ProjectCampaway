@@ -1,4 +1,3 @@
-@import url('../../fonts/poppins-fonts.css?family=poppins:100,200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -107,7 +106,9 @@ $yellow:var(--yellow);
 './renter/renterFavourites',
 './renter/renterPass',
 './renter/renterPayment',
+'./renter/bookInstant',
 './host/hostDashboard',
 './host/hostWallet',
 './host/hostPayment',
-'./admin/admin';
+'./admin/admin',
+'./website/website';

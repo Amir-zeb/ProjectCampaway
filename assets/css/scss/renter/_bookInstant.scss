@@ -1,0 +1,384 @@
+.book_instant {
+    .section_heading {
+        padding-bottom: 1.5rem;
+        padding-top: 3rem;
+
+        h2 {
+            font-size: clamp(1rem, 2vw, 1.8rem);
+            font-weight: 600;
+            color: $primary_color;
+        }
+
+        span {
+            display: block;
+            font-weight: 400;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            color: $primary_color;
+        }
+    }
+
+    .success_msg {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        background-color: #E2F0F5;
+        border: 2px solid #4FBCE7;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+
+        img {
+            max-width: 20px;
+        }
+
+        p {
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            color: #4FBCE7;
+            font-weight: 600;
+        }
+    }
+
+    .flex_wrapper {
+        @include Flex(row, flex-start, flex-start, 2.5rem, 1rem, unset);
+        width: 100%;
+        padding: 1rem;
+
+        .col_left {
+            width: 100%;
+
+            .booking {
+                .custom_tab {
+                    display: flex;
+                    flex-direction: column;
+
+                    &.disabled {
+                        opacity: 0.75;
+                    }
+
+                    &.active {
+                        .tab_content {
+                            display: block;
+                        }
+                    }
+
+                    &.done {
+                        .tab_header {
+                            a {
+                                display: block;
+                            }
+
+                            .heading {
+                                h2 {
+                                    i {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tab_header {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 1.5em 0.5em;
+                        border-bottom: 1px dashed $borderColor;
+
+                        a {
+                            font-weight: 600;
+                            font-size: 0.85rem;
+                            display: none;
+                        }
+
+                        .heading {
+                            h2 {
+                                display: flex;
+                                align-items: center;
+                                column-gap: 0.5rem;
+                                color: $primary_color;
+                                font-weight: 600;
+                                font-size: 0.95rem;
+
+                                span {
+                                    display: block;
+                                    font-size: 0.85rem;
+                                    background-color: $green;
+                                    width: 25px;
+                                    height: 25px;
+                                    line-height: 25px;
+                                    border-radius: 100%;
+                                    color: #fff;
+                                    text-align: center;
+                                }
+
+                                i {
+                                    color: $green;
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .tab_content {
+                        padding: 1.5em 0.5em;
+                        display: none;
+
+                        .form_btn {
+                            padding-top: 0.7em;
+                            padding-bottom: 0.7em;
+                            max-width: 450px;
+                            margin: 0 auto !important;
+                            display: block;
+                        }
+
+                        &[data-type=first-tab] {
+                            form {
+                                .bottom_line {
+                                    font-size: clamp(0.75rem, 2vw, 0.85rem);
+                                    color: $primary_color;
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        &[data-type=second-tab] {
+                            form {
+                                table {
+                                    min-width: 250px;
+                                    border-bottom: 1px dashed $borderColor;
+
+                                    td {
+                                        p {
+                                            font-size: 0.95rem;
+                                            font-weight: 500;
+
+                                            i {
+                                                font-size: 0.85rem;
+                                            }
+                                        }
+                                    }
+
+                                    .inner_table {
+                                        border: 0;
+
+                                        tr {
+                                            td {
+                                                span {
+                                                    font-size: 0.85rem;
+                                                    margin-left: 0.5em;
+                                                }
+
+                                                font {
+                                                    font-size: 0.75rem;
+                                                    margin-left: 0.5em;
+                                                }
+
+                                                select {
+                                                    background-color: #fff;
+                                                    border-radius: 0;
+                                                    border: 1px solid $borderColor;
+                                                    font: 0.75rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &[data-type=third-tab] {
+                            .heading {
+                                h4 {
+                                    color: $primary_color;
+                                    font-size: clamp(0.95rem, 2vw, 1.1rem);
+                                    margin-bottom: 1.5em;
+                                }
+
+                                span {
+                                    display: block;
+                                    font-size: 0.75rem;
+                                    margin-bottom: 2em;
+                                }
+                            }
+
+                            form {
+                                table {
+                                    min-width: 250px;
+
+                                    td {
+                                        padding: 0.5rem 0;
+                                        border-bottom: 1px dashed $borderColor;
+
+                                        i {
+                                            font-size: 0.85rem;
+                                        }
+
+                                        span {
+                                            font-size: 0.85rem;
+                                        }
+                                    }
+                                }
+
+                                .agree {
+                                    margin: 0.5rem;
+                                    background-color: $light-grey;
+                                    padding: 2rem 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .col_right {
+            width: 100%;
+            max-width: 400px;
+
+            .top_wrapper {
+                .card_wrapper {
+                    display: flex;
+                    column-gap: 1rem;
+                    align-items: stretch;
+                    justify-content: space-between;
+
+                    .card_top {
+                        padding: 0.5rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        h4 {
+                            font-size: clamp(0.95rem, 2vw, 1.2rem);
+                            font-weight: 600;
+                        }
+
+                        p {
+                            font-size: clamp(0.85rem, 2vw, 0.95rem);
+                        }
+                    }
+
+                    img {
+                        max-width: 180px;
+                        filter: drop-shadow(4px 4px 2px rgb(187, 187, 187));
+                    }
+                }
+            }
+
+            .inner_flex {
+                @include Flex(row, flex-start, flex-start, 0, 0, wrap);
+                list-style: none;
+                border: 1px dashed $borderColor;
+                border-radius: 5px;
+                background-color: $light-grey;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+
+                li {
+                    width: 100%;
+                    max-width: calc(100%/2);
+                    padding: 0.5rem;
+
+                    &:last-child {
+                        max-width: 100%;
+                        border-top: 1px dashed $borderColor;
+                    }
+
+                    &:first-child {
+                        border-right: 1px dashed $borderColor;
+                    }
+
+                    .wrap {
+                        display: flex;
+                        column-gap: 0.5rem;
+                        align-items: center;
+
+                        span {
+                            display: block;
+                            font-size: 0.85rem;
+                        }
+                    }
+
+                    p {
+                        margin-top: 0.2em;
+                        font-size: clamp(0.85rem, 2vw, 0.95rem);
+                    }
+                }
+            }
+
+            .bottom_wrapper {
+                table {
+                    td {
+                        h5 {
+                            font-size: clamp(0.85rem, 2vw, 0.95rem);
+                            font-weight: 600;
+                        }
+
+                        p {
+                            font-size: clamp(0.85rem, 2vw, 0.95rem);
+                        }
+
+                        a {
+                            font-size: clamp(0.85rem, 2vw, 0.95rem);
+                            color: $dark_grey;
+                        }
+                    }
+
+                    tr {
+                        &:last-child {
+                            td {
+                                border-top: 1px dashed $borderColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .book_instant .flex_wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .book_instant .flex_wrapper .col_right {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .book_instant .flex_wrapper {
+        padding: 1rem 0;
+    }
+
+    .book_instant .success_msg {
+        padding: 1rem 1rem;
+    }
+
+    .book_instant .flex_wrapper .col_right .top_wrapper {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper img {
+        max-width: 100%;
+    }
+
+    .book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper {
+        flex-direction: column-reverse;
+        row-gap: 1rem;
+    }
+
+    .book_instant .flex_wrapper .col_right .top_wrapper .card_wrapper .card_top h4 {
+        margin-bottom: 0.5em;
+    }
+
+    .book_instant .flex_wrapper .col_right .bottom_wrapper table {
+        min-width: 350px;
+    }
+
+    .book_instant .flex_wrapper .col_left .booking .custom_tab .tab_content[data-type=third-tab] form .agree {
+        padding: 1rem 0.5rem;
+    }
+}
