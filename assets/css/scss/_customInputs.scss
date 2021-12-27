@@ -279,3 +279,15 @@
         color: #fff !important;
     }
 }
+
+.search_input {
+
+    input {
+        font-size: 0.85rem;
+        padding: 0.5em 1em;
+
+        &::placeholder {
+            opacity: 0.7;
+        }
+    }
+}
