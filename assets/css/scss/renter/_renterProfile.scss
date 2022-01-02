@@ -108,6 +108,7 @@
 
             .bottom_sec {
                 margin-top: 3rem;
+                overflow: hidden;
 
                 ul#profile-tab {
                     width: 100%;
@@ -121,8 +122,8 @@
 
                         &.active {
                             background-color: #fff;
-                            color: initial;
-                            border-bottom: 2px solid #333;
+                            color: $primary_color;
+                            border-bottom: 3px solid $primary_color;
                         }
                     }
                 }
@@ -137,6 +138,7 @@
                         width: 100%;
                         flex-direction: column;
                         row-gap: 25px;
+                        padding-left: 1rem;
                     }
                 }
 
@@ -146,6 +148,19 @@
                 }
             }
         }
+    }
+}
+
+.alert_msg {
+    background-color: $light_purple;
+    border: 1px solid $dark_purple;
+    border-radius: 4px;
+
+    p {
+        color: $dark_purple;
+        font-size: clamp(0.75rem, 2vw, 0.9rem);
+        padding: 1em 0.5em;
+        font-weight: 600;
     }
 }
 

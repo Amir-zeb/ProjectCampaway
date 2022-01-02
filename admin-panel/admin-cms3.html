@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Password | Host Dashboard</title>
+    <title>CMS | Admin Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -13,13 +13,22 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://cdn.tiny.cloud/1/pzre4pa8rkk3569bd7f85jouowubd28yuumzxn45k67ccu70/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    </script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid align-items-center">
-                <a class="navbar-brand" href="./host-dashboard.html">
+                <a class="navbar-brand" href="./admin-dashboard.html">
                     <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
                 </a>
                 <div class="wrapper">
@@ -63,27 +72,27 @@
                         <div class="user_dropdown_list">
                             <ul>
                                 <li>
-                                    <a href="../renter-panel/renter-dashboard.html">
-                                        <div class="img_wrapper">
-                                            <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Switch To Camper Dashboard</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-messages.html">
-                                        <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Messages</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-reservations.html">
+                                    <a href="./admin-reservations.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Reservations</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -95,11 +104,11 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-listing.html">
+                                    <a href="./admin-messages.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>My Listings</h4>
+                                        <h4>Messages</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -107,15 +116,7 @@
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Profile</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-account.html">
-                                        <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Account</h4>
+                                        <h4>Content Management</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -141,102 +142,109 @@
             </div>
         </nav>
     </header>
-    <main class="renter_account">
-        <section class="pass_change_sec">
+    <main class="renter_dashboard host_dashboard">
+        <div class="breadcrumb_links border-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col_wrapper">
-                        <div class="page_heading">
-                            <h2>Account</h2>
-                        </div>
-                        <form action="" class="pass_change_form">
-                            <h4 class="form_inner_hd">
-                                Change Password
-                            </h4>
-                            <div class="row">
-                                <div class="col-12">
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper">
-                                        <label for="">New Password</label><br>
-                                        <input type="password" name="" id="" value="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper">
-                                        <label for="">Confirm Password</label><br>
-                                        <input type="password" name="" id="" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 offset-md-4 col-sm-12">
-                                    <input type="button" class="bg_grey form_btn" value="Save">
-                                </div>
-                            </div>
-                        </form>
-                        <div class="s_hd">
-                            <h4>Social Accounts</h4>
-                        </div>
-                        <div class="connect_acc">
-                            <div class="acc_wrapper">
-                                <div class="wrap">
-                                    <h4>
-                                        Facebook
-                                        <span>Connected</span>
-                                    </h4>
-                                </div>
-                                <div class="wrap">
-                                    <a href="" class="underline_a">Disconnect</a>
-                                </div>
-                            </div>
-                            <div class="acc_wrapper">
-                                <div class="wrap">
-                                    <h4>
-                                        Google
-                                        <span>Not Connected</span>
-                                    </h4>
-                                </div>
-                                <div class="wrap">
-                                    <a href="" class="underline_a">Connect</a>
-                                </div>
-                            </div>
-                            <h3>Account</h3>
-                            <a data-bs-toggle="modal" data-bs-target="#confirm-pass" class="underline_a">Deactivate your
-                                account</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Modal -->
-        <div class="modal fade" id="confirm-pass" tabindex="-1" aria-labelledby="confirm-passLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <span class="btn_close" data-bs-dismiss="modal">&times;</span>
-                    <div class="modal-body">
-                        <h4>
-                            Are You Sure You Want To Deactivate Your Account?
-                        </h4>
-                        <p>
-                            This will erase all your data. Do you wish to continue?
-                        </p>
-                        <a href="" class="underline_a">Visit our FAQ</a>
-                        <div class="btn_wrapper">
-                            <a href="" class="common_btn bg_grey text-light">Yes</a>
-                            <a href="" class="common_btn txt_grey">No</a>
+                    <div class="col-12">
+                        <h2>
+                            Content Management
+                        </h2>
+                        <div class="links">
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-cms2.html">Content
+                                Management</a> &rsaquo;
+                            <a class="active">Banner Image</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <section class="admin_banner_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="inner_wrapper">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="Images-tab" data-bs-toggle="pill"
+                                        data-bs-target="#Images" type="button" role="tab" aria-controls="Images"
+                                        aria-selected="true">Images</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Text-tab" data-bs-toggle="pill" data-bs-target="#Text"
+                                        type="button" role="tab" aria-controls="Text"
+                                        aria-selected="false">Text</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="Images" role="tabpanel"
+                                    aria-labelledby="Images-tab">
+                                    <form action="">
+                                        <div class="img_selection">
+                                            <div class="img_wrapper">
+                                                <img src="" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="wrapper">
+                                                <span>&plus;</span>
+                                                <p>Add Picture or Video</p>
+                                            </div>
+                                            <input type="file" name="" hidden id="for-img">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="Text" role="tabpanel" aria-labelledby="Text-tab">
+                                    <form method="post">
+                                        <textarea id="mytextarea" name="mytextarea">
+                                        Hello, World!
+                                      </textarea>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="common_btn text-light bg_grey">Save</a>
+                                <a href="#" class="common_btn">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <script>
+        var img_selection = document.querySelector('.img_selection');
+        var img_tag = document.querySelector('.img_selection img');
+        var input_for_img = document.querySelector('#for-img');
+        var file;
+
+        img_selection.addEventListener('click', () => {
+            input_for_img.click();
+        })
+
+        input_for_img.addEventListener('change', () => {
+            file = input_for_img.files[0];
+            renderupload();
+        })
+
+        const renderupload = () => {
+            let fileType = file.type;
+
+            let validExtensions = ['image/jpeg', 'image/jpg', 'image/png'];
+            if (validExtensions.includes(fileType)) {
+                let fileReader = new FileReader();
+                fileReader.onload = () => {
+                    let fileURL = fileReader.result;
+                    img_tag.src = fileURL;
+                }
+                fileReader.readAsDataURL(file);
+            } else {
+                alert('Choose File Type jpeg, jpg, png');
+            }
+        }
+    </script>
+
 </body>
 
 </html>

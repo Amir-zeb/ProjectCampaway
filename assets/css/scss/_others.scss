@@ -5,7 +5,7 @@
         text-align: center;
         font-size: clamp(0.8rem, 2vw, 1rem);
         padding: 2em 0;
-        font-weight: 600;
+        font-weight: 700;
     }
 }
 
@@ -85,6 +85,7 @@
         font-size: clamp(0.85rem, 2vw, 1rem);
         color: $primary_color;
         padding: 2rem 1rem 1rem;
+        font-weight: 600;
     }
 }
 
@@ -109,6 +110,19 @@
     padding-left: 8rem;
     color: $primary_color;
     font-weight: 600
+}
+
+
+@media (max-width:1080px) {
+    .sec_hd {
+        padding-left: 4rem;
+    }
+}
+
+@media (max-width:575px) {
+    .sec_hd {
+        padding-left: 1rem;
+    }
 }
 
 .sort_by {
@@ -145,6 +159,94 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+
+
+.drag_area {
+    border: 2px dashed $dark_grey;
+    width: 100%;
+    max-width: 100%;
+    background-color: $light-grey;
+    padding: 3rem 1rem;
+
+    &.active {
+        border-style: solid;
+    }
+
+    .zone1 {
+        .img_wrapper {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border: 2px dashed $dark_grey;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 auto 2rem;
+            box-shadow: -8px 8px 0px 0px var(--dark-grey);
+        }
+
+        .para {
+            width: 100%;
+            max-width: 500px;
+            font-weight: 600;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            text-align: center;
+            margin: 0 auto;
+
+            span {
+                display: block;
+                color: $dark_grey;
+                font-weight: 500;
+                font-size: clamp(0.85rem, 2vw, 0.95rem);
+                margin-top: 0.5em;
+            }
+
+        }
+
+        a.common_btn {
+            background-color: #fff;
+            max-width: 200px;
+            margin: 0.5rem auto 0;
+            color: $primary_color;
+            font-weight: 600;
+
+            i {
+                color: inherit;
+            }
+        }
+    }
+
+    .zone2 {
+        .img_wrapper {
+            img {
+                display: block;
+                width: 100%;
+                max-width: 200px;
+                margin: 0 auto 1rem;
+            }
+        }
+
+        .file_name {
+            text-align: center;
+            color: $dark_grey;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .global_input_wrapper {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            column-gap: 0.5rem;
+            margin: 0 auto;
+
+            .form_btn {
+                max-width: 100px;
             }
         }
     }

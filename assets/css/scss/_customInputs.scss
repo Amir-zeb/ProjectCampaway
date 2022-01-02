@@ -141,6 +141,20 @@
     }
 }
 
+.custom_checkbox.small {
+    .checkmark {
+        height: 17px;
+        width: 17px;
+        border-radius: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::after {
+            top: 1px;
+            left: 4px;
+        }
+    }
+}
 
 /* The container */
 .custom_radio {
@@ -249,7 +263,6 @@
             top: 7px;
         }
     }
-
 
     /* Style items (options): */
     .select-items {

@@ -1,3 +1,4 @@
+// user dropdown in nav
 var user_dropdown = document.querySelector('.user_dropdown');
 var user_dropdown_list = document.querySelector('.user_dropdown_list');
 if (user_dropdown) {
@@ -6,6 +7,7 @@ if (user_dropdown) {
     })
 }
 
+// friend list toggle in chat screen
 var user_sec = document.querySelector('.chat_container .user_sec');
 var close_user = document.querySelector('.chat_user_close');
 if (close_user) {
@@ -14,6 +16,7 @@ if (close_user) {
     })
 }
 
+// Listing card dropdown
 var ellipses_dropdown = document.querySelectorAll('.ellipses_dropdown');
 var ellipses_droplist = document.querySelectorAll('.ellipses_droplist');
 if (ellipses_dropdown) {
@@ -40,6 +43,7 @@ document.addEventListener('click', function(e){
     // }    
   });
 
+// Media section toggle in chat screen
 var close_media_sec = document.querySelector('.close_media_sec');
 var open_media_btn = document.querySelector('.open_media_btn');
 var media_sec = document.querySelector('.media_sec');
@@ -54,6 +58,7 @@ if (open_media_btn) {
     })
 }
 
+// cancel booking in resvation screen
 var cancel_booking = document.querySelector('.cancel_booking');
 if(cancel_booking){
     function CloseMsg() {
@@ -61,27 +66,34 @@ if(cancel_booking){
     }
 }
 
+
+// Payment method radio select events
 var open_method=document.querySelectorAll('.open_method');
-var paypal_en=document.querySelector('.paypal_en');
-var stripe_en=document.querySelector('.stripe_en');
-var wire_transfer_en=document.querySelector('.wire_transfer_en');
+var paypal_en=document.querySelectorAll('.paypal_en');
+var stripe_en=document.querySelectorAll('.stripe_en');
+var wire_transfer_en=document.querySelectorAll('.wire_transfer_en');
+
+console.log(paypal_en[0]);
 
 if(open_method){
+    console.log(open_method);
     for (let i = 0; i < open_method.length; i++) {
         open_method[i].addEventListener('click',()=>{
             let type=open_method[i].getAttribute("data-type");
+            let typeNum=Number(open_method[i].getAttribute("data-number"));
+            console.log('>>',typeNum);
             if(type=='paypal'){
-                paypal_en.classList.remove('d-none');
-                stripe_en.classList.add('d-none');
-                wire_transfer_en.classList.add('d-none');
+                paypal_en[typeNum].classList.remove('d-none');
+                stripe_en[typeNum].classList.add('d-none');
+                wire_transfer_en[typeNum].classList.add('d-none');
             }else if(type=='stripe'){
-                stripe_en.classList.remove('d-none');
-                paypal_en.classList.add('d-none');
-                wire_transfer_en.classList.add('d-none');
+                stripe_en[typeNum].classList.remove('d-none');
+                paypal_en[typeNum].classList.add('d-none');
+                wire_transfer_en[typeNum].classList.add('d-none');
             }else if(type=='wire-transfer'){
-                wire_transfer_en.classList.remove('d-none');
-                stripe_en.classList.add('d-none');
-                paypal_en.classList.add('d-none');
+                wire_transfer_en[typeNum].classList.remove('d-none');
+                stripe_en[typeNum].classList.add('d-none');
+                paypal_en[typeNum].classList.add('d-none');                    
             }
         })
     }
@@ -172,3 +184,62 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+// Custom Drag And Drop Area
+var dropArea = document.querySelector('.drag_area');
+var zoneA = document.querySelector('.zone1');
+var zoneB = document.querySelector('.zone2');
+var imgTag = document.querySelector('.img_container');
+var fileName = document.querySelector('.file_name');
+var imgInput = document.querySelector('.img_input');
+var imgPicker = document.querySelector('.img_picker');
+
+var file;
+
+if(dropArea){
+
+    imgPicker.addEventListener('click',()=>{
+        imgInput.click();
+    })
+
+    imgInput.addEventListener('change',()=>{
+        file=imgInput.files[0];
+        upload();
+    })
+
+    dropArea.addEventListener('dragover', (event) => {
+        console.log('file is over Area');
+        event.preventDefault();
+        dropArea.classList.add('active');
+    })
+    dropArea.addEventListener('dragleave', () => {
+        console.log('file is leave Area');
+        dropArea.classList.remove('active');
+    })
+    dropArea.addEventListener('drop', (event) => {
+        event.preventDefault();
+        file = event.dataTransfer.files[0];
+        upload();
+    })
+}
+
+const upload=()=>{
+    let fileType = file.type;
+    
+    let validExtensions = ['image/jpeg', 'image/jpg', 'image/png'];
+    if (validExtensions.includes(fileType)) {
+        let fileReader = new FileReader();
+        fileReader.onload = () => {
+            let fileURL = fileReader.result;
+            zoneA.classList.add('d-none');
+            zoneB.classList.remove('d-none');
+            fileName.innerHTML = file.name;
+            imgTag.src = fileURL;
+        }
+        fileReader.readAsDataURL(file);
+    } else {
+        alert('Choose File Type jpeg, jpg, png');
+        dropArea.classList.remove('active');
+    }
+}

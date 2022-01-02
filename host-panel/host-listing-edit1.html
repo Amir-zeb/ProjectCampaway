@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/calender/mini-event-calendar.css">
 </head>
 
 <body>
@@ -95,7 +97,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./host-listing.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
                                         </div>
@@ -243,133 +245,1203 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="Experience" role="tabpanel"
                                     aria-labelledby="Experience-tab">
-                                    <section class="add_listings pt-5">
-                                        <form action="" class="global_form_wrapper">
+                                    <section class="add_listings py-5">
+                                        <div class="container">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <p class="form_para">What type of terrain / experience
-                                                        does your property offer?</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="forest">Forest</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" checked id="forest" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <p class="form_para">What type of terrain / experience
+                                                                    does your property offer?</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="forest">Forest</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" checked id="forest"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="mountains">Mountains</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="mountains"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="rolling-hills">Rolling Hills</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="rolling-hills"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="beach">Beach</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="beach"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="farm">Farm</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="farm" name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="lake">Lake</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="lake" name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="river">River</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="river"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="hot-spring">Hot spring</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="hot-spring"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="swimming-hole">Swimming hole</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="swimming-hole"
+                                                                            name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="cave">Cave</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="cave" name="experience">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="mountains">Mountains</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="mountains" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="rolling-hills">Rolling Hills</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="rolling-hills" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="beach">Beach</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="beach" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="farm">Farm</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="farm" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="lake">Lake</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="lake" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="river">River</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="river" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="hot-spring">Hot spring</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="hot-spring" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="swimming-hole">Swimming hole</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="swimming-hole" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <div class="global_input_wrapper for_radio">
-                                                        <label for="cave">Cave</label><br>
-                                                        <label class="custom_radio">
-                                                            <input type="radio" id="cave" name="experience">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div class="bottom_btn_wrapper">
-                                            <div class="wrap first_child">
-                                            </div>
-                                            <div class="wrap last_child">
-                                                <a href="#" class="common_btn bg_grey text-light">Continue</a>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
                                 <div class="tab-pane fade" id="Details" role="tabpanel" aria-labelledby="Details-tab">
-                                    ...</div>
-                                <div class="tab-pane fade" id="Sites" role="tabpanel" aria-labelledby="Sites-tab">...
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">First Name</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the listing title">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Description</label><br>
+                                                                    <textarea name="" id="" cols="30" rows="10"
+                                                                        placeholder="Text"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Type of listings*</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Enter the listing title1
+                                                                            </option>
+                                                                            <option value="">Enter the listing title2
+                                                                            </option>
+                                                                            <option value="">Enter the listing title3
+                                                                            </option>
+                                                                            <option value="">Enter the listing title4
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Number of sites</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the Number of sites">
+                                                                    <p class="form_para">*You'll be able to add the
+                                                                        details for each site in the
+                                                                        next step</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Drag and drop the pin on map to find
+                                                                        exact location</label><br>
+                                                                    <iframe
+                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38507582.712823614!2d-126.9557971705769!3d42.02494350778707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1640599371229!5m2!1sen!2s"
+                                                                        width="600" height="450" style="border:0;"
+                                                                        allowfullscreen="" loading="lazy"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Find the address on the
+                                                                        map</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Latitude">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="" class="hide_sm">&nbsp;</label>
+                                                                    <span class="hide_sm"><br /></span>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Longititude">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="" class="hide_sm">&nbsp;</label>
+                                                                    <span class="hide_sm"><br /></span>
+                                                                    <input type="button" name="" id=""
+                                                                        class="bg_grey text-light" value="Find Address">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="tab-pane fade" id="Sites" role="tabpanel" aria-labelledby="Sites-tab">
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Site Name*</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the listing title">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Capacity*</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the listing title">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Accessibility*</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Accessibility</option>
+                                                                            <option value="">Short walk</option>
+                                                                            <option value="">Hike - In</option>
+                                                                            <option value="">By Boat</option>
+                                                                            <option value="">By horse</option>
+                                                                            <option value="">Wheelchair Accessible
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Wheelchair Accessible*</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Wheelchair Accessible
+                                                                            </option>
+                                                                            <option value="">Yes</option>
+                                                                            <option value="">No</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper first">
+                                                        <div class="wrap last_child">
+                                                            <a href="#" class="common_btn bg_grey text-light">- Remove
+                                                                this site</a>
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#" class="common_btn bg_grey text-light">+ Add
+                                                                another site</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                                 <div class="tab-pane fade" id="Facilities" role="tabpanel"
-                                    aria-labelledby="Facilities-tab">...</div>
+                                    aria-labelledby="Facilities-tab">
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Bins Available</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Showering Facilities</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Wheelchair Accessible</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Potable Water</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Kitchen</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Picnic Table</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Wifi</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Laundry</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Toilet Type</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">Enter the listing title
+                                                                            </option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <p class="form_para">Facilities</p>
+                                                                <div class="row">
+                                                                    <div class="col-md-4 col-sm-12 mt-2">
+                                                                        <label class="custom_checkbox small">
+                                                                            Accommodation Included
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-12 mt-2">
+                                                                        <label class="custom_checkbox small">
+                                                                            Bring your own campervan
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-12 mt-2">
+                                                                        <label class="custom_checkbox small">
+                                                                            Bring your own tent
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-12 mt-2">
+                                                                        <label class="custom_checkbox small">
+                                                                            Bring your own tent or campervan
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h4 class="sec_hd ps-0 pb-3 pt-3">
+                                                            Services
+                                                        </h4>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Activity / Service name</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the listing title">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Activity / Service price</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the listing title">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">After / Service
+                                                                        description</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">After Price Lable</option>
+                                                                            <option value="">Per Guest</option>
+                                                                            <option value="">Per Hour</option>
+                                                                            <option value="">Per Night</option>
+                                                                            <option value="">Per Stay</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Activity / Service
+                                                                        description</label><br>
+                                                                    <textarea name="" id="" cols="30" rows="3"
+                                                                        placeholder="Enter the listing type"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper first">
+                                                        <div class="wrap last_child">
+                                                            <a href="#" class="common_btn bg_grey text-light">- Remove
+                                                                this Activity/Service</a>
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#" class="common_btn bg_grey text-light">+ Add
+                                                                another Activity/Service</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
                                 <div class="tab-pane fade" id="Pricing" role="tabpanel" aria-labelledby="Pricing-tab">
-                                    ...
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Nightly*</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Weekends</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Select the days to apply weekend
+                                                                        pricing</label><br>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="">&nbsp;</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                            <option value="">Test1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h4 class="sec_hd ps-0 pb-3 pt-3">
+                                                            Additional Cost
+                                                        </h4>
+                                                        <div class="row">
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Allow additional campers</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Cost</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">No of Guests</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Cleaning fee</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper mb-0">
+                                                                    <label for="" class="hide_sm">&nbsp;</label>
+                                                                    <span class="hide_sm"><br /></span>
+                                                                </div>
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="daily">Daily</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="daily"
+                                                                            name="cleaning-fee">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper mb-0">
+                                                                    <label class="hide_sm">&nbsp;</label>
+                                                                    <span class="hide_sm"><br /></span>
+                                                                </div>
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="per-stay">Per Stay</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="per-stay"
+                                                                            name="cleaning-fee">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Security deposit</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Tax %</label><br>
+                                                                    <input type="text" name="" id="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                                <div class="tab-pane fade" id="Gear" role="tabpanel" aria-labelledby="Gear-tab">...
+                                <div class="tab-pane fade" id="Gear" role="tabpanel" aria-labelledby="Gear-tab">
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h4 class="form_inner_hd">
+                                                                    Suggested Gear List
+                                                                </h4>
+                                                                <p class="form_para fw-light">
+                                                                    Let guests know what gear they need to bring to keep
+                                                                    safe and comfortable on
+                                                                    your property.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Add Gear">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="" class="sr-only"></label>
+                                                                    <input type="button" value="Add to Gear list"
+                                                                        class="form_btn bg_grey text-light">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row pb-5">
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Clothing
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Cooker & Fuel
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Cooker Utensils
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Emergency Communication Device (Beacon)
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Equipment
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    First Aid Kit
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Headtorch
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Map & Compass
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Puffer Jacket
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Puffer Jacket
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Rubbish Bag
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Sleeping Bag
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Sleeping Mat
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Sleeping Mat
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Sun Protection
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Tent
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Toilet Paper
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Toiletries
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Walking Poles
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Warm Hat & Gloves
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Warm Layers
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Warm Layers
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-2">
+                                                                <label class="custom_checkbox small">
+                                                                    Clothing
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                                <div class="tab-pane fade" id="Terms" role="tabpanel" aria-labelledby="Terms-tab">...
+                                <div class="tab-pane fade" id="Terms" role="tabpanel" aria-labelledby="Terms-tab">
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Cancellation Policy*</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter your cancellation">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Check-in After</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the time after which guests can check-in">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Check-out Before</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the time after which guests much check-out">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12 align-self-center">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Campfire allowed?</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="campfire-allowed-yes">Yes</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="campfire-allowed-yes"
+                                                                            name="campfire-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="campfire-allowed-no">No</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="campfire-allowed-no"
+                                                                            name="campfire-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12 align-self-center">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Smoking allowed?</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="smoking-allowed-yes">Yes</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="smoking-allowed-yes"
+                                                                            name="smoking-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="smoking-allowed-no">No</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="smoking-allowed-no"
+                                                                            name="smoking-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12 align-self-center">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Pets allowed?</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="pets-allowed-yes">Yes</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="pets-allowed-yes"
+                                                                            name="pets-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="pets-allowed-no">No</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="pets-allowed-no"
+                                                                            name="pets-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12 align-self-center">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Party allowed?</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="party-allowed-yes">Yes</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="party-allowed-yes"
+                                                                            name="party-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="party-allowed-no">No</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="party-allowed-no"
+                                                                            name="party-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12 align-self-center">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Children allowed?</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="children-allowed-yes">Yes</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="children-allowed-yes"
+                                                                            name="children-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="global_input_wrapper for_radio">
+                                                                    <label for="children-allowed-no">No</label><br>
+                                                                    <label class="custom_radio">
+                                                                        <input type="radio" id="children-allowed-no"
+                                                                            name="children-allowed">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Additional rules information
+                                                                        (Optional)</label><br>
+                                                                    <textarea name="" id="" cols="30" rows="3"
+                                                                        placeholder="Enter additional rules "></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                                <div class="tab-pane fade" id="Media" role="tabpanel" aria-labelledby="Media-tab">...
+                                <div class="tab-pane fade" id="Media" role="tabpanel" aria-labelledby="Media-tab">
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <form action="" class="global_form_wrapper">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="drag_area">
+                                                                    <div class="zone1">
+                                                                        <div class="img_wrapper">
+                                                                            <img src="../assets/images/icons/img-icon.png"
+                                                                                class="img-fluid" alt="">
+                                                                        </div>
+                                                                        <p class="para">Drag and drop the images to
+                                                                            customize the gallery order.
+                                                                            Click on the star icon to set the featured
+                                                                            image
+                                                                            <span>(Minimum size 1440 x 900 px)</span>
+                                                                        </p>
+                                                                        <input type="file" hidden class="img_input">
+                                                                        <a class="img_picker common_btn"><i
+                                                                                class="fas fa-cloud-upload-alt"></i>
+                                                                            Select and upload</a>
+                                                                    </div>
+                                                                    <div class="zone2 d-none">
+                                                                        <div class="img_wrapper">
+                                                                            <img src="../assets/images/media/card-img1.png"
+                                                                                alt="" class="img-fluid img_container">
+                                                                        </div>
+                                                                        <p class="file_name">card-img1</p>
+                                                                        <div class="global_input_wrapper">
+                                                                            <input type="text" name="" id=""><input
+                                                                                type="button"
+                                                                                class="form_btn text-light bg_green"
+                                                                                value="upload">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="card_flex">
+                                                        <div class="card_wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="../assets/images/media/card-img1.png" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <a href="#">
+                                                                Make Thumbnail
+                                                                <i class="fa fa-trash-alt"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="../assets/images/media/card-img1.png" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <a href="#">
+                                                                Make Thumbnail
+                                                                <i class="fa fa-trash-alt"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="../assets/images/media/card-img1.png" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <a href="#">
+                                                                Make Thumbnail
+                                                                <i class="fa fa-trash-alt"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                                 <div class="tab-pane fade" id="Calender" role="tabpanel" aria-labelledby="Calender-tab">
-                                    ...</div>
+                                    <section class="add_listings py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="sync_calender">
+                                                        <a href="#" class="common_btn text-light bg_green border-0">
+                                                            Sync Existing Calender
+                                                        </a>
+                                                    </div>
+                                                    <p class="desc">Click on a date to make in unavailable. Then click
+                                                        on it again to make
+                                                        available</p>
+                                                    <div id="calender_wrapper">
+                                                        <div>
+                                                            <div id="calendar"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_btn_wrapper">
+                                                        <div class="wrap first_child">
+                                                        </div>
+                                                        <div class="wrap last_child">
+                                                            <a href="#"
+                                                                class="common_btn bg_grey text-light">Continue</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -378,8 +1450,48 @@
         </section>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/calender/mini-event-calendar.min.js"></script>
+
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <!-- if you want to use events use #calTFooter class in calender css file to display block event contianer -->
+    <script>
+        var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+        var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+
+        // All dates should be provided in timestamps
+        var sampleEvents = [
+            {
+                title: "Soulful sundays bay area",
+                date: sameDaylastWeek, // Same day as today, last week
+                link: "#"
+            },
+            {
+                title: "London Comicon",
+                date: new Date().getTime(), // Today
+                link: "https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch"
+            },
+            {
+                title: "Youth Athletic Camp",
+                date: someDaynextMonth, // Some day as today, next month
+                link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
+            }
+        ];
+
+        $(document).ready(function () {
+            $("#calendar").MEC({
+                events: sampleEvents
+            });
+
+            // Make calendar start on monday
+            $("#calendar2").MEC({
+                from_monday: true,
+                events: sampleEvents
+            });
+        });
+    </script>
 </body>
 
 </html>

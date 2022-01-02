@@ -13,6 +13,9 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/calender/mini-event-calendar.css">
+
 </head>
 
 <body>
@@ -157,120 +160,34 @@
                 </div>
             </div>
         </div>
-        <section class="add_listings">
+        <section class="add_listings pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="py-5">
                             <h4 class="sec_hd ps-0">
-                                My Massages
+                                Sync Calendar
                             </h4>
                         </div>
-                        <form action="" class="global_form_wrapper">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="form_para">What type of terrain / experience does your property offer?</p>
-                                </div>
+                        <div class="sync_calender">
+                            <a href="#" class="common_btn text-light bg_green border-0">
+                                Sync Existing Calender
+                            </a>
+                        </div>
+                        <p class="desc">Click on a date to make in unavailable. Then click on it again to make
+                            available</p>
+                        <div id="calender_wrapper">
+                            <div>
+                                <div id="calendar"></div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="forest">Forest</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" checked id="forest" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="mountains">Mountains</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="mountains" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="rolling-hills">Rolling Hills</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="rolling-hills" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="beach">Beach</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="beach" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="farm">Farm</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="farm" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="lake">Lake</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="lake" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="river">River</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="river" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="hot-spring">Hot spring</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="hot-spring" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="swimming-hole">Swimming hole</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="swimming-hole" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="cave">Cave</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="cave" name="experience">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                         <div class="bottom_btn_wrapper">
                             <div class="wrap first_child">
+                                <a href="./host-listing-add8.html" class="common_btn light_btn">Back</a>
                                 <a href="#" class="common_btn light_btn">Save as Draft</a>
                             </div>
                             <div class="wrap last_child">
-                                <a href="./host-listing-add2.html" class="common_btn bg_grey text-light">Continue</a>
+                                <a href="#" class="common_btn bg_grey text-light">Continue</a>
                             </div>
                         </div>
                     </div>
@@ -279,8 +196,47 @@
         </section>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/calender/mini-event-calendar.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <!-- if you want to use events use #calTFooter class in calender css file to display block event contianer -->
+    <script>
+        var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+        var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+
+        // All dates should be provided in timestamps
+        var sampleEvents = [
+            {
+                title: "Soulful sundays bay area",
+                date: sameDaylastWeek, // Same day as today, last week
+                link: "#"
+            },
+            {
+                title: "London Comicon",
+                date: new Date().getTime(), // Today
+                link: "https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch"
+            },
+            {
+                title: "Youth Athletic Camp",
+                date: someDaynextMonth, // Some day as today, next month
+                link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
+            }
+        ];
+
+        $(document).ready(function () {
+            $("#calendar").MEC({
+                events: sampleEvents
+            });
+
+            // Make calendar start on monday
+            $("#calendar2").MEC({
+                from_monday: true,
+                events: sampleEvents
+            });
+        });
+    </script>
 </body>
 
 </html>

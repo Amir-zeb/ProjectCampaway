@@ -39,8 +39,8 @@
 .tags_sec {
     display: flex;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    align-items: flex-end;
+    padding: 2rem 3rem;
 
     h4 {
         color: $primary_color;
@@ -152,6 +152,11 @@
                 font-weight: 600;
                 margin-bottom: 0.5em;
             }
+
+            iframe {
+                width: 100%;
+                max-width: 100%;
+            }
         }
 
         .bottom_btn_wrapper {
@@ -167,6 +172,23 @@
             .last_child {
                 width: 30%;
             }
+        }
+
+        .sync_calender {
+            margin-bottom: 1rem;
+
+            a {
+                max-width: 200px;
+                margin-left: auto;
+                display: block;
+            }
+        }
+
+        .desc {
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
+            color: $primary_color;
+            margin-bottom: 1rem;
+            font-weight: 600;
         }
     }
 }
@@ -212,5 +234,138 @@
                 }
             }
         }
+    }
+}
+
+.card_flex {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    .card_wrapper {
+        max-width: 280px;
+        padding: 0.5em;
+        border-radius: 10px;
+
+        &:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        a {
+            background-color: $green;
+            color: #fff;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 0.5rem;
+            align-items: center;
+            padding: 0.2em 1em;
+            font-size: 0.85rem;
+            text-decoration: underline;
+            margin: 0.2rem 0.3rem 0;
+
+            i {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:991px) {
+    .edit_listings .edit_listing_tabs .nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:767px) {
+    .hide_sm {
+        display: none;
+    }
+
+    .card_flex {
+        flex-wrap: wrap;
+    }
+
+    .card_flex .card_wrapper {
+        max-width: 48%;
+    }
+
+    .edit_listings .edit_listing_tabs .nav li button {
+        font-size: 0.85rem !important;
+    }
+}
+
+
+@media (max-width:600px) {
+    .tags_sec {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+        row-gap: 2rem;
+    }
+
+    .tags_sec .last_child {
+        align-self: flex-end;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .host_listing .add_listings form iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width:575px) {
+    .host_listing .add_listings .bottom_btn_wrapper.first {
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .host_listing .add_listings .bottom_btn_wrapper.first .wrap {
+        width: 100%;
+    }
+
+    .listing_edit_card {
+        flex-direction: column;
+        row-gap: 1rem;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .listing_edit_card .img_wrapper>img {
+        width: 100%;
+    }
+
+    .listing_edit_card .caption {
+        padding-top: 0;
+    }
+
+    .listing_edit_card .caption h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:450px) {
+    .card_flex .card_wrapper {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .edit_listing_tabs .bottom_btn_wrapper .last_child {
+        width: 100% !important;
     }
 }

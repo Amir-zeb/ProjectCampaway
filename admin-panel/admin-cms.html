@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS | Admin Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./admin-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="./admin-reservations.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Reservations</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-wallet.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Wallet</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./host-profile.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Content Management</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Help</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="renter_dashboard host_dashboard">
+        <div class="breadcrumb_links border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>
+                            Content Management
+                        </h2>
+                        <div class="links">
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo;
+                            <a class="active">Content Management</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="cms_table_sec">
+            <div class="table-responsive">
+                <div class="custom_table">
+                    <div class="table_head">
+                        <div class="table_row">
+                            <div class="table_item">
+                                <h5>
+                                    Page Title
+                                </h5>
+                            </div>
+                            <div class="table_item">
+                                <h5>
+                                    Author
+                                </h5>
+                            </div>
+                            <div class="table_item">
+                                <h5>
+                                    Last Update
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <a href="./admin-cms2.html" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Home Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        About Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Listings Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Journal Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Become a Host Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Camper Standard Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Hoster Standard Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Hoster Standard Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Hoster Standard Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Hoster Standard Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="table_row">
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Hoster Standard Page
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        Admin
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="table_item">
+                                <p>
+                                    <strong>
+                                        09/11/21 01:40 pm
+                                    </strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -52,17 +52,17 @@
             p {
                 font-size: clamp(0.7rem, 1vw, 0.9rem);
                 color: $primary_color;
-                font-weight: 500;
+                font-weight: 600;
 
                 strong {
                     color: inherit;
-                    font-weight: 600;
+                    font-weight: 700;
                 }
             }
 
             .badge {
                 background-color: $green;
-                border-radius: 10px;
+                border-radius: 5px;
             }
 
             .btn_wrapper {
@@ -108,17 +108,18 @@ $mLeft : 3rem;
         h3 {
             font-size: clamp(0.9rem, 2vw, 1.2rem);
             margin-bottom: 2em;
+            font-weight: 600;
         }
 
         table {
             min-width: 200px;
 
             td {
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 border: 0;
 
                 strong {
-                    font-weight: 500;
+                    font-weight: 600;
                 }
 
                 a {
@@ -175,11 +176,11 @@ $mLeft : 3rem;
             border: 1px solid $green;
             border-radius: 5px;
             padding: 0.9rem 0.5rem;
-            background-color: $light-grey;
+            background-color: #EDEBEB;
             color: $green;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             margin-left: $mLeft;
             width: 100%;
             max-width: 80%;
@@ -188,14 +189,15 @@ $mLeft : 3rem;
                 color: inherit;
                 font-size: clamp(0.7rem, 2vw, 0.8rem);
                 padding-left: 2em;
-                font-weight: 500;
+                font-weight: 600;
             }
 
             span {
                 color: inherit;
                 display: block;
-                font-size: clamp(1rem, 2vw, 2rem);
+                font-size: clamp(1rem, 2vw, 2.5rem);
                 line-height: 0;
+                font-weight: 600;
                 cursor: pointer;
             }
         }
@@ -213,6 +215,7 @@ $mLeft : 3rem;
                 color: $primary_color;
                 margin-top: 1em;
                 margin-bottom: 1.5em;
+                font-weight: 600;
 
                 .badge {
                     background-color: $green;
@@ -301,7 +304,7 @@ $mLeft : 3rem;
 
             h5 {
                 font-size: 0.95rem;
-                font-weight: 600;
+                font-weight: 700;
             }
 
             span {
@@ -309,7 +312,7 @@ $mLeft : 3rem;
                 color: $txt_color;
 
                 strong {
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
 
@@ -318,7 +321,7 @@ $mLeft : 3rem;
                 color: $txt_color;
 
                 strong {
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
         }
@@ -339,7 +342,7 @@ $mLeft : 3rem;
                         font-size: 0.8rem;
 
                         strong {
-                            font-weight: 500;
+                            font-weight: 600;
                         }
                     }
                 }
@@ -367,19 +370,6 @@ $mLeft : 3rem;
         margin: 0 5rem;
     }
 }
-
-.alert_msg {
-    background-color: $light_purple;
-    border: 1px solid $dark_purple;
-    border-radius: 4px;
-
-    p {
-        color: $dark_purple;
-        font-size: clamp(0.75rem, 2vw, 0.9rem);
-        padding: 1em 0.5em;
-    }
-}
-
 
 @media (max-width:1200px) {
     .trips_table table td img {

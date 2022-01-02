@@ -17,10 +17,14 @@
 
 .breadcrumb_links {
     padding: 2.5em 0;
+    border: 0;
+    border-style: dashed !important;
+    border-color: $borderColor !important;
 
     h2 {
         font-size: clamp(1rem, 2vw, 1.3rem);
         color: $primary_color;
+        font-weight: 600;
     }
 
     .links {
@@ -29,6 +33,7 @@
         a {
             color: rgb(151, 151, 151);
             font-size: clamp(0.7rem, 2vw, 0.9rem);
+            font-weight: 600;
 
             &.active {
                 color: $primary_color !important;
@@ -51,6 +56,7 @@
 
         p {
             font-size: clamp(0.7rem, 2vw, 0.9rem);
+            font-weight: 600;
         }
     }
 }

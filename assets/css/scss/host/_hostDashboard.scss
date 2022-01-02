@@ -44,3 +44,25 @@
         }
     }
 }
+
+@media (max-width:1080px) {
+    .host_dashboard .trips_table table {
+        min-width: 1080px;
+    }
+}
+
+@media (max-width:475px) {
+    .host_grid .info_grid {
+        flex-direction: column;
+    }
+
+    .host_grid .info_grid li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px dashed $borderColor;
+    }
+
+    .host_grid .info_grid li:last-child {
+        border-bottom: 0;
+    }
+}

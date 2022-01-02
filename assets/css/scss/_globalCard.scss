@@ -17,6 +17,7 @@
         flex-direction: row;
         column-gap: 15px;
         max-width: 550px;
+        padding: 0.5em;
     }
 
     &.card_align_vr {
@@ -355,5 +356,9 @@
 
     .global_cards .card_body {
         padding: 0.5em;
+    }
+
+    .global_cards .card_header .img_wrapper img {
+        width: 100%;
     }
 }
