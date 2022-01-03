@@ -82,6 +82,7 @@ if(open_method){
             let type=open_method[i].getAttribute("data-type");
             let typeNum=Number(open_method[i].getAttribute("data-number"));
             console.log('>>',typeNum);
+            console.log(paypal_en[typeNum]);
             if(type=='paypal'){
                 paypal_en[typeNum].classList.remove('d-none');
                 stripe_en[typeNum].classList.add('d-none');

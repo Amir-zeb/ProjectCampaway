@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit My Listings | Host Dashboard</title>
+    <title>Edit My Listings | Admin Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid align-items-center">
-                <a class="navbar-brand" href="./host-dashboard.html">
+                <a class="navbar-brand" href="./admin-dashboard.html">
                     <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
                 </a>
                 <div class="wrapper">
@@ -65,31 +65,32 @@
                         <div class="user_dropdown_list">
                             <ul>
                                 <li>
-                                    <a href="../renter-panel/renter-dashboard.html">
-                                        <div class="img_wrapper">
-                                            <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Switch To Camper Dashboard</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-messages.html">
+                                    <a href="./admin-reservations.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Messages</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-reservations.html">
-                                        <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
                                         </div>
                                         <h4>Reservations</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-wallet.html">
+                                    <a href="./admin-listings.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-users.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
                                         </div>
@@ -97,35 +98,28 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-listing.html">
+                                    <a href="./admin-messages.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>My Listings</h4>
+                                        <h4>Messages</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-profile.html">
+                                    <a href="./admin-cms.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
                                         </div>
-                                        <h4>Profile</h4>
+                                        <h4>Content Management</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-account.html">
+                                    <a href="./admin-account.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Account</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Help</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -152,7 +146,7 @@
                             Edit My Listings
                         </h2>
                         <div class="links">
-                            <a href="./host-dashboard.html">Dashboard</a> &rsaquo; <a href="./host-listing.html">My
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-listings.html">My
                                 Listings</a> &rsaquo; <a class="active">Edit My Listings</a>
                         </div>
                     </div>
@@ -420,6 +414,15 @@
                                                                     <p class="form_para">*You'll be able to add the
                                                                         details for each site in the
                                                                         next step</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="global_input_wrapper">
+                                                                    <label for="">Address</label><br>
+                                                                    <input type="text" name="" id=""
+                                                                        placeholder="Enter the total Number of sites">
                                                                 </div>
                                                             </div>
                                                         </div>

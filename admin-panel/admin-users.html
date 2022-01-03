@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Management | Admin Dashboard</title>
+    <title>Users | Admin Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -13,7 +13,6 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
 </head>
 
 <body>
@@ -136,169 +135,172 @@
             </div>
         </nav>
     </header>
-    <main class="renter_dashboard host_dashboard">
-        <div class="breadcrumb_links border-bottom">
+    <main class="renter_trips">
+        <div class="breadcrumb_links">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h2>
-                            Content Management
+                            Users
                         </h2>
                         <div class="links">
-                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-cms.html">Content
-                                Management</a> &rsaquo; <a class="active">Home Page</a>
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a class="active">Users</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="cms_table_sec">
-            <div class="table-responsive">
-                <div class="custom_table">
-                    <div class="table_head">
-                        <div class="table_row">
-                            <div class="table_item">
-                                <h5>
-                                    Page Title
-                                </h5>
-                            </div>
-                            <div class="table_item">
-                                <h5>
-                                    Author
-                                </h5>
-                            </div>
-                            <div class="table_item">
-                                <h5>
-                                    Last Update
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table_body">
-                        <a href="./admin-cms3.html" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Banner Image
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Explore By Region
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Explore By Type
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Explore By Experience
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Campaway Host
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
+        <section class="tags_sec">
+            <div class="wrapper">
+                <h4>Manage</h4>
+                <ul class="tags">
+                    <li>
+                        <a href="#" class="common_btn text-light bg_grey">All (5)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="common_btn txt_grey">Admin (2)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="common_btn txt_grey">Campers (3)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="common_btn txt_grey">Host (1)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper last_child">
+                <div class="search_input">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Listings">
+                        <span class="input-group-text bg_grey" id="basic-addon1"><i
+                                class="fa fa-search text-light"></i></span>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="trips">
+            <div class="table-responsive trips_table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Avatar</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Role</th>
+                            <th>Email Verification</th>
+                            <th>ID Verification</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                </div>
+                            </td>
+                            <td>
+                                <p>John Doe</p>
+                            </td>
+                            <td>
+                                <p>abc@gmail.com</p>
+                            </td>
+                            <td>
+                                <p>0213456789</p>
+                            </td>
+                            <td>
+                                <p>Host</p>
+                            </td>
+                            <td>
+                                <span class="badge">Verified</span>
+                            </td>
+                            <td>
+                                <span class="badge">Verified</span>
+                            </td>
+                            <td>
+                                <div class="btn_wrapper">
+                                    <a href="#">Contact</a>
+                                    <a href="./admin-users-details.html">Details</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                </div>
+                            </td>
+                            <td>
+                                <p>John Doe</p>
+                            </td>
+                            <td>
+                                <p>abc@gmail.com</p>
+                            </td>
+                            <td>
+                                <p>0213456789</p>
+                            </td>
+                            <td>
+                                <p>Host</p>
+                            </td>
+                            <td>
+                                <span class="badge">Verified</span>
+                            </td>
+                            <td>
+                                <span class="badge">Verified</span>
+                            </td>
+                            <td>
+                                <div class="btn_wrapper">
+                                    <a href="#">Contact</a>
+                                    <a href="./admin-users-details.html">Details</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/users/Ellipse-2.png" alt="" class="img-fluid">
+                                </div>
+                            </td>
+                            <td>
+                                <p>John Doe</p>
+                            </td>
+                            <td>
+                                <p>abc@gmail.com</p>
+                            </td>
+                            <td>
+                                <p>0213456789</p>
+                            </td>
+                            <td>
+                                <p>Host</p>
+                            </td>
+                            <td>
+                                <span class="badge">Verified</span>
+                            </td>
+                            <td>
+                                <span class="badge">Verified</span>
+                            </td>
+                            <td>
+                                <div class="btn_wrapper">
+                                    <a href="#">Contact</a>
+                                    <a href="./admin-users-details.html">Details</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td colspan="12"></td>
+                            <td>
+                                <a href="#" class="view_all">View all</a>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
-
 </body>
 
 </html>

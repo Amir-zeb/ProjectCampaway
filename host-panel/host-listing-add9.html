@@ -15,6 +15,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="../assets/calender/mini-event-calendar.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 
 </head>
 
@@ -150,7 +151,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h2>
-                            Listings
+                            Add New Listings
                         </h2>
                         <div class="links">
                             <a href="./host-dashboard.html">Dashboard</a> &rsaquo; <a href="./host-listing.html">My
@@ -187,7 +188,7 @@
                                 <a href="#" class="common_btn light_btn">Save as Draft</a>
                             </div>
                             <div class="wrap last_child">
-                                <a href="#" class="common_btn bg_grey text-light">Continue</a>
+                                <a class="common_btn bg_grey text-light pop_up_bottom">Continue</a>
                             </div>
                         </div>
                     </div>
@@ -235,6 +236,23 @@
                 from_monday: true,
                 events: sampleEvents
             });
+        });
+
+        document.querySelector(".pop_up_bottom").addEventListener('click', function () {
+            Swal.fire({
+                toast: true,
+                icon: 'success',
+                title: 'success',
+                animation: false,
+                position: 'bottom',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
         });
     </script>
 </body>

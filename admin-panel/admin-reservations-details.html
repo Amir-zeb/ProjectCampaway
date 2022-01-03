@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations Details | Admin Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./admin-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="./admin-reservations.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
+                                        </div>
+                                        <h4>Reservations</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-listings.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-users.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Wallet</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-cms.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <h4>Content Management</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Account</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="renter_trips">
+        <div class="breadcrumb_links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>
+                            Reservations
+                        </h2>
+                        <div class="links">
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a
+                                href="./admin-reservations.html">Reservations</a> &rsaquo;
+                            <a class="active">Reservations Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="trips_details">
+            <div class="flex_wrapper">
+                <div class="column_left">
+                    <div class="success_msg">
+                        <p>Well done! Payment received the reservation has been booked</p><span>&times;</span>
+                    </div>
+                    <div class="heading_wrapper">
+                        <h3>Reservation #1440<span class="badge">Booked</span></h3>
+                        <div class="icon_wrapper">
+                            <a href="#" class="img_wrapper">
+                                <img src="../assets/images/icons/fax.png" alt="">
+                            </a>
+                            <a href="#" class="img_wrapper">
+                                <img src="../assets/images/icons/evenlope.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cancel_booking d-none">
+                        <form action="">
+                            <h4>Cancel Reason</h4>
+                            <div class="input_wrapper">
+                                <textarea name="" id="" rows="3"></textarea>
+                            </div>
+                            <div class="wrapper">
+                                <p>
+                                    Depending on the Host's Terms & Conditions, you may receive a full or partial refund
+                                    on your booking minus service fees as specified in our <a href="#">Terms of Use</a>
+                                </p>
+                                <input type="button" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="booked_details">
+                        <div class="wrapper">
+                            <div class="table-responsive">
+                                <table class="table details_table">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" align="left" width="280px">
+                                                <h5>Date Booked:</h5>
+                                                <span>November 01, 2021 14:07</span>
+                                            </td>
+                                            <td valign="top" align="left" width="250px">
+                                                <p><strong>Host:</strong> Lea</p>
+                                                <p><strong>Listing Name:</strong> LABC</p>
+                                                <p><strong>Site Name</strong> LXYZ</p>
+                                            </td>
+                                            <td valign="top" align="right">
+                                                <div class="img_wrapper">
+                                                    <img src="../assets/images/users/Ellipse-35.png" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left">
+                                                <h5>Details:</h5>
+                                            </td>
+                                            <td valign="top" align="left">
+                                                <span>Check In: <strong>04-11-2021</strong></span>
+                                                <br />
+                                                <span>Check Out: <strong>06-11-2021</strong></span>
+                                            </td>
+                                            <td colspan="2" valign="top" align="left">
+                                                <span>Nights: <strong>4</strong></span>
+                                                <br />
+                                                <span>Campers: <strong>6</strong></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left" style="border: 0;">
+                                                <h5>Additional Services:</h5>
+                                            </td>
+                                            <td colspan="3" valign="top" align="left" style="border: 0;">
+                                                <div class="flex_span">
+                                                    <span>XYC Services</span>
+                                                    <span>XYC Services</span>
+                                                    <span>XYC Services</span>
+                                                    <span>XYC Services</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left">
+                                                <h5>Payment:</h5>
+                                            </td>
+                                            <td colspan="3" valign="top" align="left">
+                                                <table width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>7 nights (0)</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$1,400.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>Cleaning fee</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$40.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>Security Deposit</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$1.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <font>Services fees</font>
+                                                            </td>
+                                                            <td align="right">
+                                                                <font><strong>$14.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" class="pb-3">
+                                                                <font>Taxes 15%</font>
+                                                            </td>
+                                                            <td align="right" class="pb-3">
+                                                                <font><strong>$100.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" class="pt-3">
+                                                                <font><strong>Total</strong></font>
+                                                            </td>
+                                                            <td align="right" class="pt-3">
+                                                                <font><strong>$1,900.00</strong></font>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_right">
+                    <h3>Payment</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td align="left">
+                                        <strong>Total</strong>
+                                    </td>
+                                    <td align="right">
+                                        $6,450.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="center">
+                                        Includes taxes and fees
+                                    </td>
+                                    <td align="right">
+                                        <a href="#" onclick="CloseMsg()">View Details</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_wrapper">
+                        <a href="./admin-invoices.html" class="green">View My Invoice</a>
+                        <a href="#" class="grey">Edit My Booking</a>
+                        <a onclick="CloseMsg()">Cancel My Booking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

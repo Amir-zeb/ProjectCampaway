@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
 </head>
 
 <body>
@@ -417,10 +419,10 @@
                                 <div class="row">
                                     <div class="col-md-4 col-sm-12">
                                         <div class="global_input_wrapper for_radio">
-                                            <label for="paypal" class="open_method" data-number="1"
+                                            <label for="paypal2" class="open_method" data-number="1"
                                                 data-type="paypal">Paypal</label><br>
                                             <label class="custom_radio">
-                                                <input type="radio" checked id="paypal" name="payment-method">
+                                                <input type="radio" checked id="paypal2" name="payment-method">
                                                 <span class="checkmark open_method" data-number="1"
                                                     data-type="paypal"></span>
                                             </label>
@@ -428,10 +430,10 @@
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                         <div class="global_input_wrapper for_radio">
-                                            <label for="stripe" class="open_method" data-number="1"
+                                            <label for="stripe2" class="open_method" data-number="1"
                                                 data-type="stripe">Stripe</label><br>
                                             <label class="custom_radio">
-                                                <input type="radio" name="payment-method" id="stripe">
+                                                <input type="radio" name="payment-method" id="stripe2">
                                                 <span class="checkmark open_method" data-number="1"
                                                     data-type="stripe"></span>
                                             </label>
@@ -439,11 +441,11 @@
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                         <div class="global_input_wrapper for_radio">
-                                            <label for="wire-transfer" class="open_method" data-number="1"
+                                            <label for="wire-transfer2" class="open_method" data-number="1"
                                                 data-type="wire-transfer">Wire
                                                 Transfer</label><br>
                                             <label class="custom_radio">
-                                                <input type="radio" name="payment-method" id="wire-transfer">
+                                                <input type="radio" name="payment-method" id="wire-transfer2">
                                                 <span class="checkmark open_method" data-number="1"
                                                     data-type="wire-transfer"></span>
                                             </label>
@@ -539,8 +541,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4 offset-md-8 col-sm-12">
-                                        <input type="button" data-bs-toggle="modal" data-bs-target="#confrm-passs"
-                                            class="bg_grey form_btn" value="Save">
+                                        <input type="button" class="pop_up_bottom bg_grey form_btn" value="Save">
                                     </div>
                                 </div>
                             </form>
@@ -553,6 +554,24 @@
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script>
+        document.querySelector(".pop_up_bottom").addEventListener('click', function () {
+            Swal.fire({
+                toast: true,
+                icon: 'success',
+                title: 'success',
+                animation: false,
+                position: 'bottom',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>

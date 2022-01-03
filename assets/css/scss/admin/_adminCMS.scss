@@ -81,8 +81,11 @@
 }
 
 .cms_table_sec {
+    padding-bottom: 3rem;
+
     .custom_table {
         border: 0;
+        min-width: 600px;
 
         .table_row {
             display: flex;

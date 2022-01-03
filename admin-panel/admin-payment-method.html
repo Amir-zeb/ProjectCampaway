@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment | Admin Dashboard</title>
+    <title>Payment methods | Admin Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -13,6 +13,9 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
 </head>
 
 <body>
@@ -65,13 +68,14 @@
                                 <li>
                                     <a href="./admin-reservations.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
                                         </div>
                                         <h4>Reservations</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./admin-listings.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
                                         </div>
@@ -79,15 +83,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-account.html">
+                                    <a href="./admin-users.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Users</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-wallet.html">
+                                    <a href="#">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
                                         </div>
@@ -103,19 +107,20 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-profile.html">
+                                    <a href="./admin-cms.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
                                         </div>
                                         <h4>Content Management</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./admin-account.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Help</h4>
+                                        <h4>Account</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -201,47 +206,127 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
                                 <div class="global_input_wrapper for_radio">
-                                    <label for="paypal">Paypal</label><br>
+                                    <label for="paypal" class="open_method" data-number='0'
+                                        data-type="paypal">Paypal</label><br>
                                     <label class="custom_radio">
-                                        <input type="radio" checked="checked" id="paypal" name="payment-method">
-                                        <span class="checkmark"></span>
+                                        <input type="radio" checked id="paypal" name="payment-method">
+                                        <span class="checkmark open_method" data-number='0' data-type="paypal"></span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-12">
                                 <div class="global_input_wrapper for_radio">
-                                    <label for="stripe">Stripe</label><br>
+                                    <label for="stripe" class="open_method" data-number='0'
+                                        data-type="stripe">Stripe</label><br>
                                     <label class="custom_radio">
                                         <input type="radio" name="payment-method" id="stripe">
-                                        <span class="checkmark"></span>
+                                        <span class="checkmark open_method" data-number='0' data-type="stripe"></span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-12">
                                 <div class="global_input_wrapper for_radio">
-                                    <label for="wire-transfer">Wire Transfer</label><br>
+                                    <label for="wire-transfer" class="open_method" data-number='0'
+                                        data-type="wire-transfer">Wire
+                                        Transfer</label><br>
                                     <label class="custom_radio">
                                         <input type="radio" name="payment-method" id="wire-transfer">
-                                        <span class="checkmark"></span>
+                                        <span class="checkmark open_method" data-number='0'
+                                            data-type="wire-transfer"></span>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-3 mt-3">
-                            <h4 class="form_inner_hd">Paypal Account Information</h4>
+                        <div class="paypal_en">
+                            <div class="mt-3 mt-3">
+                                <h4 class="form_inner_hd">Paypal Account Information</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Enter your Paypal Email</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Enter your Paypal Email</label><br>
-                                    <input type="text" name="" id="" value="">
+                        <div class="stripe_en d-none">
+                            <div class="mt-3 mt-3">
+                                <h4 class="form_inner_hd">Stripe Account Information</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Resident Email</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wire_transfer_en d-none">
+                            <div class="mt-3 mt-3">
+                                <h4 class="form_inner_hd">Paypal Account Information</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Beneficiary Account Information</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">SWIFT or IBN</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Bank Name</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Street Address</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Apt. Suite</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">City</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Region</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Postal Code</label><br>
+                                        <input type="text" name="" id="" value="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 offset-md-8 col-sm-12">
-                                <input type="button" data-bs-toggle="modal" data-bs-target="#confrm-passs"
-                                    class="bg_grey form_btn" value="Save">
+                                <input type="button" class="bg_grey form_btn pop_up_bottom" value="Save">
                             </div>
                         </div>
                     </form>
@@ -252,6 +337,24 @@
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script>
+        document.querySelector(".pop_up_bottom").addEventListener('click', function () {
+            Swal.fire({
+                toast: true,
+                icon: 'success',
+                title: 'Success',
+                animation: false,
+                position: 'bottom',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>

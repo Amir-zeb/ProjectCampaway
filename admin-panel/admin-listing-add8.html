@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Management | Admin Dashboard</title>
+    <title>Add New Listings | Host Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -13,7 +13,6 @@
     <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
 </head>
 
 <body>
@@ -136,160 +135,113 @@
             </div>
         </nav>
     </header>
-    <main class="renter_dashboard host_dashboard">
-        <div class="breadcrumb_links border-bottom">
+    <main class="host_listing">
+        <div class="breadcrumb_links">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h2>
-                            Content Management
+                            Add New Listings
                         </h2>
                         <div class="links">
-                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-cms.html">Content
-                                Management</a> &rsaquo; <a class="active">Home Page</a>
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-listings.html">My
+                                Listings</a> &rsaquo; <a class="active">Add New Listings</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="cms_table_sec">
-            <div class="table-responsive">
-                <div class="custom_table">
-                    <div class="table_head">
-                        <div class="table_row">
-                            <div class="table_item">
-                                <h5>
-                                    Page Title
-                                </h5>
+        <div class="listing_timeline">
+            <div class="flex_wrapper">
+                <p class="done">Experience</p><span class="done"></span>
+                <p class="done">Details</p><span class="done"></span>
+                <p class="done">Sites</p><span class="done"></span>
+                <p class="done">Facilities & Services</p><span class="done"></span>
+                <p class="done">Pricing</p><span class="done"></span>
+                <p class="done">Gear</p><span class="done"></span>
+                <p class="done">Terms</p><span class="done"></span>
+                <p class="done">Media</p><span></span>
+                <p>Calender</p>
+            </div>
+        </div>
+        <section class="add_listings pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <h4 class="sec_hd ps-0">
+                                Media
+                            </h4>
+                        </div>
+                        <form action="" class="global_form_wrapper">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="drag_area">
+                                        <div class="zone1">
+                                            <div class="img_wrapper">
+                                                <img src="../assets/images/icons/img-icon.png" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="para">Drag and drop the images to customize the gallery order.
+                                                Click on the star icon to set the featured image
+                                                <span>(Minimum size 1440 x 900 px)</span>
+                                            </p>
+                                            <input type="file" hidden class="img_input">
+                                            <a class="img_picker common_btn"><i class="fas fa-cloud-upload-alt"></i>
+                                                Select and upload</a>
+                                        </div>
+                                        <div class="zone2 d-none">
+                                            <div class="img_wrapper">
+                                                <img src="../assets/images/media/card-img1.png" alt=""
+                                                    class="img-fluid img_container">
+                                            </div>
+                                            <p class="file_name">card-img1</p>
+                                            <div class="global_input_wrapper">
+                                                <input type="text" name="" id=""><input type="button"
+                                                    class="form_btn text-light bg_green" value="upload">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="table_item">
-                                <h5>
-                                    Author
-                                </h5>
+                        </form>
+                        <div class="card_flex">
+                            <div class="card_wrapper">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/card-img1.png" alt="" class="img-fluid">
+                                </div>
+                                <a href="#">
+                                    Make Thumbnail
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
                             </div>
-                            <div class="table_item">
-                                <h5>
-                                    Last Update
-                                </h5>
+                            <div class="card_wrapper">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/card-img1.png" alt="" class="img-fluid">
+                                </div>
+                                <a href="#">
+                                    Make Thumbnail
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
+                            </div>
+                            <div class="card_wrapper">
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/card-img1.png" alt="" class="img-fluid">
+                                </div>
+                                <a href="#">
+                                    Make Thumbnail
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="table_body">
-                        <a href="./admin-cms3.html" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Banner Image
-                                    </strong>
-                                </p>
+                        <div class="bottom_btn_wrapper">
+                            <div class="wrap first_child">
+                                <a href="./admin-listing-add7.html" class="common_btn light_btn">Back</a>
+                                <a href="#" class="common_btn light_btn">Save as Draft</a>
                             </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
+                            <div class="wrap last_child">
+                                <a href="./admin-listing-add9.html" class="common_btn bg_grey text-light">Continue</a>
                             </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Explore By Region
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Explore By Type
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Explore By Experience
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="table_row">
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Campaway Host
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        Admin
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="table_item">
-                                <p>
-                                    <strong>
-                                        09/11/21 01:40 pm
-                                    </strong>
-                                </p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,7 +250,6 @@
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
-
 </body>
 
 </html>

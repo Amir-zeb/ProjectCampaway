@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment | Admin Dashboard</title>
+    <title>Add New Listings | Host Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -65,13 +65,14 @@
                                 <li>
                                     <a href="./admin-reservations.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
                                         </div>
                                         <h4>Reservations</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./admin-listings.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
                                         </div>
@@ -79,15 +80,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-account.html">
+                                    <a href="./admin-users.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Users</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-wallet.html">
+                                    <a href="#">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
                                         </div>
@@ -103,19 +104,20 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-profile.html">
+                                    <a href="./admin-cms.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
                                         </div>
                                         <h4>Content Management</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./admin-account.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>Help</h4>
+                                        <h4>Account</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -133,118 +135,107 @@
             </div>
         </nav>
     </header>
-    <main class="renter_pay_method">
-        <section class="pay_method_sec">
+    <main class="host_listing">
+        <div class="breadcrumb_links">
             <div class="container">
                 <div class="row">
-                    <div class="page_heading">
-                        <div class="wrap d-flex align-items-center justify-content-between">
-                            <h2>Payment methods</h2>
-                            <a href="#" style="margin: 3rem 1rem 1rem;"
-                                class="common_btn bg_green text-light border-0">Submit A Payout</a>
+                    <div class="col-12">
+                        <h2>
+                            Add New Listings
+                        </h2>
+                        <div class="links">
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-listings.html">My
+                                Listings</a> &rsaquo; <a class="active">Add New Listings</a>
                         </div>
                     </div>
-                    <form action="" class="pay_method_form global_form_wrapper">
-                        <p class="info_msg">Update your payment method using our secure payment system</p>
-                        <h4 class="form_inner_hd">Payee Information</h4>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">First Name</label><br>
-                                    <input type="text" name="" id="" value="">
+                </div>
+            </div>
+        </div>
+        <div class="listing_timeline">
+            <div class="flex_wrapper">
+                <p class="done">Experience</p><span class="done"></span>
+                <p class="done">Details</p><span class="done"></span>
+                <p class="done">Sites</p><span></span>
+                <p>Facilities & Services</p><span></span>
+                <p>Pricing</p><span></span>
+                <p>Gear</p><span></span>
+                <p>Terms</p><span></span>
+                <p>Media</p><span></span>
+                <p>Calender</p>
+            </div>
+        </div>
+        <section class="add_listings pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <h4 class="sec_hd ps-0">
+                                Sites
+                            </h4>
+                        </div>
+                        <form action="" class="global_form_wrapper">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Site Name*</label><br>
+                                        <input type="text" name="" id="" placeholder="Enter the listing title">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Capacity*</label><br>
+                                        <input type="text" name="" id="" placeholder="Enter the listing title">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Last Name</label><br>
-                                    <input type="text" name="" id="" value="">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Accessibility*</label><br>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="">Accessibility</option>
+                                                <option value="">Short walk</option>
+                                                <option value="">Hike - In</option>
+                                                <option value="">By Boat</option>
+                                                <option value="">By horse</option>
+                                                <option value="">Wheelchair Accessible</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Wheelchair Accessible*</label><br>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="">Wheelchair Accessible</option>
+                                                <option value="">Yes</option>
+                                                <option value="">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="bottom_btn_wrapper first">
+                            <div class="wrap last_child">
+                                <a href="#" class="common_btn bg_grey text-light">- Remove this site</a>
+                            </div>
+                            <div class="wrap last_child">
+                                <a href="#" class="common_btn bg_grey text-light">+ Add another site</a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Street Address</label><br>
-                                    <input type="text" name="" id="" value="">
-                                </div>
+                        <div class="bottom_btn_wrapper">
+                            <div class="wrap first_child">
+                                <a href="./admin-listing-add2.html" class="common_btn light_btn">Back</a>
+                                <a href="#" class="common_btn light_btn">Save as Draft</a>
                             </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Apt. Suite</label><br>
-                                    <input type="text" name="" id="" value="">
-                                </div>
+                            <div class="wrap last_child">
+                                <a href="./admin-listing-add4.html" class="common_btn bg_grey text-light">Continue</a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">City</label><br>
-                                    <input type="text" name="" id="" value="">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Region</label><br>
-                                    <input type="text" name="" id="" value="">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Postal Code</label><br>
-                                    <input type="text" name="" id="" value="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-3 mt-3">
-                            <h4 class="form_inner_hd">Select Payment Method</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper for_radio">
-                                    <label for="paypal">Paypal</label><br>
-                                    <label class="custom_radio">
-                                        <input type="radio" id="paypal" name="payment-method">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper for_radio">
-                                    <label for="stripe">Stripe</label><br>
-                                    <label class="custom_radio">
-                                        <input type="radio" checked="checked" name="payment-method" id="stripe">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="global_input_wrapper for_radio">
-                                    <label for="wire-transfer">Wire Transfer</label><br>
-                                    <label class="custom_radio">
-                                        <input type="radio" name="payment-method" id="wire-transfer">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-3 mt-3">
-                            <h4 class="form_inner_hd">Sripe Account Information</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="global_input_wrapper">
-                                    <label for="">Resident Email</label><br>
-                                    <input type="text" name="" id="" value="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 offset-md-8 col-sm-12">
-                                <input type="button" data-bs-toggle="modal" data-bs-target="#confrm-passs"
-                                    class="bg_grey form_btn" value="Save">
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>

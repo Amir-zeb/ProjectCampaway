@@ -18,17 +18,24 @@
     transition: 0.2s all ease-in-out;
     display: block;
     text-align: center;
+    transition: 0.2s all ease-in-out;
 }
 
-.hover_dark:hover {
-    background-color: $primary_color;
-    color: #fff !important;
+
+.common_btn:hover,
+.form_btn:hover {
+    box-shadow: 3px 3px 8px #6e6e6e85;
 }
 
-.hover_light:hover {
-    background-color: #fff;
-    color: $primary_color !important;
-}
+// .hover_dark:hover {
+//     background-color: $primary_color;
+//     color: #fff !important;
+// }
+
+// .hover_light:hover {
+//     background-color: #fff;
+//     color: $primary_color !important;
+// }
 
 .star_ratings {
     display: flex;

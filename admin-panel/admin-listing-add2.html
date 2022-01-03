@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid align-items-center">
-                <a class="navbar-brand" href="./host-dashboard.html">
+                <a class="navbar-brand" href="./admin-dashboard.html">
                     <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
                 </a>
                 <div class="wrapper">
@@ -63,31 +63,32 @@
                         <div class="user_dropdown_list">
                             <ul>
                                 <li>
-                                    <a href="../renter-panel/renter-dashboard.html">
-                                        <div class="img_wrapper">
-                                            <img src="../assets/images/users/Ellipse-35.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Switch To Camper Dashboard</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-messages.html">
+                                    <a href="./admin-reservations.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Messages</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./host-reservations.html">
-                                        <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/calender.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
                                         </div>
                                         <h4>Reservations</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-wallet.html">
+                                    <a href="./admin-listings.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-users.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
                                         </div>
@@ -95,35 +96,28 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-listing.html">
+                                    <a href="./admin-messages.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
                                         </div>
-                                        <h4>My Listings</h4>
+                                        <h4>Messages</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-profile.html">
+                                    <a href="./admin-cms.html">
                                         <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/user-1.png" alt="" class="img-fluid">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
                                         </div>
-                                        <h4>Profile</h4>
+                                        <h4>Content Management</h4>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./host-account.html">
+                                    <a href="./admin-account.html">
                                         <div class="icon_wrapper">
                                             <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
                                         </div>
                                         <h4>Account</h4>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="icon_wrapper">
-                                            <img src="../assets/images/icons/help.png" alt="" class="img-fluid">
-                                        </div>
-                                        <h4>Help</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -150,11 +144,24 @@
                             Add New Listings
                         </h2>
                         <div class="links">
-                            <a href="./host-dashboard.html">Dashboard</a> &rsaquo; <a href="./host-listing.html">My
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a href="./admin-listings.html">My
                                 Listings</a> &rsaquo; <a class="active">Add New Listings</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="listing_timeline">
+            <div class="flex_wrapper">
+                <p class="done">Experience</p><span class="done"></span>
+                <p class="done">Details</p><span></span>
+                <p>Sites</p><span></span>
+                <p>Facilities & Services</p><span></span>
+                <p>Pricing</p><span></span>
+                <p>Gear</p><span></span>
+                <p>Terms</p><span></span>
+                <p>Media</p><span></span>
+                <p>Calender</p>
             </div>
         </div>
         <section class="add_listings pb-5">
@@ -163,118 +170,102 @@
                     <div class="col-12">
                         <div class="py-5">
                             <h4 class="sec_hd ps-0">
-                                Pricing
+                                Details
                             </h4>
                         </div>
                         <form action="" class="global_form_wrapper">
                             <div class="row">
-                                <div class="col-md-6 col-sm-12">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="global_input_wrapper">
-                                        <label for="">Nightly*</label><br>
-                                        <input type="text" name="" id="" placeholder="">
+                                        <label for="">First Name</label><br>
+                                        <input type="text" name="" id="" placeholder="Enter the listing title">
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="global_input_wrapper">
-                                        <label for="">Weekends</label><br>
-                                        <input type="text" name="" id="" placeholder="">
+                                        <label for="">Description</label><br>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Text"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="global_input_wrapper">
-                                        <label for="">Select the days to apply weekend pricing</label><br>
+                                        <label for="">Type of listings*</label><br>
                                         <div class="custom-select">
                                             <select>
-                                                <option value="">&nbsp;</option>
-                                                <option value="">Test1</option>
-                                                <option value="">Test1</option>
-                                                <option value="">Test1</option>
+                                                <option value="">Select Listing Type</option>
+                                                <option value="">Boat</option>
+                                                <option value="">Cabins, Chalets & Huts</option>
+                                                <option value="">Campervan Site</option>
+                                                <option value="">Campsite</option>
+                                                <option value="">Glamping tent</option>
+                                                <option value="">Tiny House</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <h4 class="sec_hd ps-0 pb-3 pt-3">
-                                Additional Cost
-                            </h4>
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="global_input_wrapper">
-                                        <label for="">Allow additional campers</label><br>
-                                        <input type="text" name="" id="" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <div class="global_input_wrapper">
-                                        <label for="">Cost</label><br>
-                                        <input type="text" name="" id="" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <div class="global_input_wrapper">
-                                        <label for="">No of Guests</label><br>
-                                        <input type="text" name="" id="" placeholder="">
+                                        <label for="">Number of sites</label><br>
+                                        <input type="text" name="" id="" placeholder="Enter the Number of sites">
+                                        <p class="form_para">*You'll be able to add the details for each site in the
+                                            next step</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="global_input_wrapper">
-                                        <label for="">Cleaning fee</label><br>
-                                        <input type="text" name="" id="" placeholder="">
+                                        <label for="">Address</label><br>
+                                        <input type="text" name="" id="" placeholder="Enter the total Number of sites">
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <div class="global_input_wrapper mb-0">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Drag and drop the pin on map to find exact location</label><br>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38507582.712823614!2d-126.9557971705769!3d42.02494350778707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1640599371229!5m2!1sen!2s"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="">Find the address on the map</label><br>
+                                        <input type="text" name="" id="" placeholder="Latitude">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
                                         <label for="" class="hide_sm">&nbsp;</label>
                                         <span class="hide_sm"><br /></span>
-                                    </div>
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="daily">Daily</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="daily" name="cleaning-fee">
-                                            <span class="checkmark"></span>
-                                        </label>
+                                        <input type="text" name="" id="" placeholder="Longititude">
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <div class="global_input_wrapper mb-0">
-                                        <label class="hide_sm">&nbsp;</label>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="global_input_wrapper">
+                                        <label for="" class="hide_sm">&nbsp;</label>
                                         <span class="hide_sm"><br /></span>
-                                    </div>
-                                    <div class="global_input_wrapper for_radio">
-                                        <label for="per-stay">Per Stay</label><br>
-                                        <label class="custom_radio">
-                                            <input type="radio" id="per-stay" name="cleaning-fee">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="global_input_wrapper">
-                                        <label for="">Security deposit</label><br>
-                                        <input type="text" name="" id="" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="global_input_wrapper">
-                                        <label for="">Tax %</label><br>
-                                        <input type="text" name="" id="" placeholder="">
+                                        <input type="button" name="" id="" class="bg_grey text-light"
+                                            value="Find Address">
                                     </div>
                                 </div>
                             </div>
                         </form>
                         <div class="bottom_btn_wrapper">
                             <div class="wrap first_child">
-                                <a href="./host-listing-add4.html" class="common_btn light_btn">Back</a>
+                                <a href="./admin-listing-add1.html" class="common_btn light_btn">Back</a>
                                 <a href="#" class="common_btn light_btn">Save as Draft</a>
                             </div>
                             <div class="wrap last_child">
-                                <a href="./host-listing-add6.html" class="common_btn bg_grey text-light">Continue</a>
+                                <a href="./admin-listing-add3.html" class="common_btn bg_grey text-light">Continue</a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings | Admin Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=0.1">
+    <!-- <link rel="stylesheet" href="../assets/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="./admin-dashboard.html">
+                    <img src="../assets/images/logo/logo-white.png" alt="Site Logo" class="img-fluid">
+                </a>
+                <div class="wrapper">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Journal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notifications">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/icons/bell-icon.png" alt="bell-icon" class="img-fluid">
+                            </div>
+                            <span class="noti_true"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="user_dropdown">
+                        <a class="user_info">
+                            <div class="img_wrapper">
+                                <img src="../assets/images/users/Ellipse-35.png" alt="user-image" class="img-fluid">
+                            </div>
+                            <div class="user_info">
+                                <h4>Lea Joe</h4>
+                            </div>
+                        </a>
+                        <div class="user_dropdown_list">
+                            <ul>
+                                <li>
+                                    <a href="./admin-reservations.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/calender.png" alt=""
+                                                class="img-fluid icon_small">
+                                        </div>
+                                        <h4>Reservations</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-listings.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/listings.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Listings</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-users.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/users.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Users</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/wallet.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Wallet</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-messages.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/envelope-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Messages</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-cms.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/content-manage.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <h4>Content Management</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./admin-account.html">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/user-white.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Account</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon_wrapper">
+                                            <img src="../assets/images/icons/logout.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>Logout</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="host_listing">
+        <div class="breadcrumb_links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>
+                            Listings
+                        </h2>
+                        <div class="links">
+                            <a href="./admin-dashboard.html">Dashboard</a> &rsaquo; <a class="active">My Listings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="tags_sec">
+            <div class="wrapper">
+                <h4>Manage</h4>
+                <ul class="tags">
+                    <li>
+                        <a href="#" class="common_btn text-light bg_grey">All (5)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="common_btn txt_grey">Published (3)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="common_btn txt_grey">Disabled (1)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper last_child">
+                <a href="#" class="common_btn bg_grey text-light">Add New Listing</a>
+                <div class="search_input">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Listings">
+                        <span class="input-group-text bg_grey" id="basic-addon1"><i
+                                class="fa fa-search text-light"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trips edit_table_for_listings">
+            <div class="table-responsive trips_table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Listing Name</th>
+                            <th>Address</th>
+                            <th>Listing Type</th>
+                            <th>Price</th>
+                            <th>ID</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                    <p>ABCDE</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>ABCDE <br>
+                                    <span>asdasd</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Boat</p>
+                            </td>
+                            <td>
+                                <p>$44.00/night</p>
+                            </td>
+                            <td>
+                                <p>1234</p>
+                            </td>
+                            <td>
+                                <span class="badge">Published</span>
+                            </td>
+                            <td>
+                                <ul class="icon_wrapper">
+                                    <li>
+                                        <a href="./admin-listing-edit1.html"><img
+                                                src="../assets/images/icons/icon-edit.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-trash.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="./admin-listing-add1.html"><img
+                                                src="../assets/images/icons/icon-play.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-see.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                    <p>ABCDE</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>ABCDE <br>
+                                    <span>asdasd</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Boat</p>
+                            </td>
+                            <td>
+                                <p>$44.00/night</p>
+                            </td>
+                            <td>
+                                <p>1234</p>
+                            </td>
+                            <td>
+                                <span class="badge bg-danger">Disabled</span>
+                            </td>
+                            <td>
+                                <ul class="icon_wrapper">
+                                    <li>
+                                        <a href="./admin-listing-edit1.html"><img
+                                                src="../assets/images/icons/icon-edit.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-trash.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="./admin-listing-add1.html"><img
+                                                src="../assets/images/icons/icon-play.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-see.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                    <p>ABCDE</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>ABCDE <br>
+                                    <span>asdasd</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Boat</p>
+                            </td>
+                            <td>
+                                <p>$44.00/night</p>
+                            </td>
+                            <td>
+                                <p>1234</p>
+                            </td>
+                            <td>
+                                <span class="badge bg-danger">Disabled</span>
+                            </td>
+                            <td>
+                                <ul class="icon_wrapper">
+                                    <li>
+                                        <a href="./admin-listing-edit1.html"><img
+                                                src="../assets/images/icons/icon-edit.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-trash.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="./admin-listing-add1.html"><img
+                                                src="../assets/images/icons/icon-play.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-see.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                    <p>ABCDE</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>ABCDE <br>
+                                    <span>asdasd</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Boat</p>
+                            </td>
+                            <td>
+                                <p>$44.00/night</p>
+                            </td>
+                            <td>
+                                <p>1234</p>
+                            </td>
+                            <td>
+                                <span class="badge bg-danger">Disabled</span>
+                            </td>
+                            <td>
+                                <ul class="icon_wrapper">
+                                    <li>
+                                        <a href="./admin-listing-edit1.html"><img
+                                                src="../assets/images/icons/icon-edit.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-trash.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="./admin-listing-add1.html"><img
+                                                src="../assets/images/icons/icon-play.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-see.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img_wrapper">
+                                    <img src="../assets/images/media/scene1.png" alt="" class="img-fluid">
+                                    <p>ABCDE</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>ABCDE <br>
+                                    <span>asdasd</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Boat</p>
+                            </td>
+                            <td>
+                                <p>$44.00/night</p>
+                            </td>
+                            <td>
+                                <p>1234</p>
+                            </td>
+                            <td>
+                                <span class="badge bg-danger">Disabled</span>
+                            </td>
+                            <td>
+                                <ul class="icon_wrapper">
+                                    <li>
+                                        <a href="./admin-listing-edit1.html"><img
+                                                src="../assets/images/icons/icon-edit.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-trash.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="./admin-listing-add1.html"><img
+                                                src="../assets/images/icons/icon-play.png" alt="" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="../assets/images/icons/icon-see.png" alt=""
+                                                class="img-fluid"></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td colspan="12"></td>
+                            <td>
+                                <a href="#" class="view_all">View all</a>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
